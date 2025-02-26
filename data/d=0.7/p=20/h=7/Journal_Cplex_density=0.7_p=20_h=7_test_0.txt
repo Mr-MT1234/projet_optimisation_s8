@@ -1,0 +1,38 @@
+Tried aggregator 0 times.
+Reduced MIP has 5544 rows, 5280 columns, and 152340 nonzeros.
+Reduced MIP has 5280 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (4.84 ticks)
+Probing fixed 146 vars, tightened 0 bounds.
+Probing changed sense of 148 constraints.
+Probing time = 0.14 sec. (16.38 ticks)
+Clique table members: 18407.
+Changed sense of 10 constraints.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 1.33 sec. (776.75 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0  2144670.0000   366                2144670.0000       16         
+      0     2  2144670.0000   366                2144670.0000       16         
+Elapsed time = 7.41 sec. (6886.56 ticks, tree = 0.00 MB, solutions = 0)
+      1     3  2144670.0000   493                2144670.0000       83         
+      2     4  2144677.5000   184                2144670.0000      575         
+      3     5  2144686.0000    80                2144670.0000      607         
+      4     6  2144670.0000   472                2144670.0000      704         
+      5     7  2144674.0000   202                2144670.0000      907         
+      6     8  2144670.0000   492                2144670.0000      934         
+*     7     7      integral     0  2144674.0000  2144670.0000      942    0.00%
+      7     6  2144674.0000     0  2144674.0000  2144670.0000      942    0.00%
+      8     7  2144670.0000   498  2144674.0000  2144670.0000      985    0.00%
+
+Root node processing (before b&c):
+  Real time             =    7.35 sec. (6834.75 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    3.18 sec. (3232.22 ticks)
+  Sync time (average)   =    2.55 sec.
+  Wait time (average)   =    2.58 sec.
+                          ------------
+Total (root+branch&cut) =   10.53 sec. (10066.97 ticks)

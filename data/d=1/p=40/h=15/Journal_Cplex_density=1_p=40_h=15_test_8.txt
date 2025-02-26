@@ -1,0 +1,40 @@
+
+Found incumbent of value 1.0223355e+007 after 0.11 sec. (66.02 ticks)
+Tried aggregator 0 times.
+Reduced MIP has 50553 rows, 49320 columns, and 6054760 nonzeros.
+Reduced MIP has 49320 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.28 sec. (168.81 ticks)
+Probing fixed 294 vars, tightened 0 bounds.
+Probing time = 1.09 sec. (720.03 ticks)
+Clique table members: 115446.
+Changed sense of 13 constraints.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 252.00 sec. (82307.64 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                      1.02234e+007        0.0000           100.00%
+*     0+    0                      1.02227e+007        0.0000           100.00%
+      0     0  1.01839e+007  5174  1.02227e+007  1.01839e+007       15    0.38%
+      0     0  1.01839e+007  5109  1.02227e+007   ZeroHalf: 3      392    0.38%
+      0     0  1.01839e+007  4825  1.02227e+007   ZeroHalf: 2     1573    0.38%
+      0     0  1.01839e+007  4829  1.02227e+007   ZeroHalf: 4     2009    0.38%
+      0     0  1.01839e+007   236  1.02227e+007   ZeroHalf: 2    17073    0.38%
+      0     0  1.01839e+007   948  1.02227e+007  ZeroHalf: 17    17836    0.38%
+*     0+    0                      1.01839e+007  1.01839e+007             0.00%
+*     0     0      integral     0  1.01839e+007  1.01839e+007    17836    0.00%
+Elapsed time = 2312.25 sec. (1207189.28 ticks, tree = 0.00 MB, solutions = 3)
+
+Zero-half cuts applied:  6
+
+Root node processing (before b&c):
+  Real time             = 2312.29 sec. (1207191.73 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) = 2312.29 sec. (1207191.73 ticks)

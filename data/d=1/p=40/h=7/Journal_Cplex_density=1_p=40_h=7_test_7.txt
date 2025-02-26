@@ -1,0 +1,40 @@
+Found incumbent of value 6406102.000000 after 0.03 sec. (28.04 ticks)
+Tried aggregator 0 times.
+Reduced MIP has 31898 rows, 31120 columns, and 2505880 nonzeros.
+Reduced MIP has 31120 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.13 sec. (71.41 ticks)
+Probing fixed 744 vars, tightened 0 bounds.
+Probing changed sense of 139 constraints.
+Probing time = 0.61 sec. (388.84 ticks)
+Clique table members: 73553.
+Changed sense of 43 constraints.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 45.97 sec. (16048.01 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                      6406102.0000        0.0000           100.00%
+*     0+    0                      6405758.0000        0.0000           100.00%
+      0     0  6390326.0000  2951  6405758.0000  6390326.0000       16    0.24%
+      0     0  6390326.0000  2837  6405758.0000   ZeroHalf: 3      448    0.24%
+Heuristic still looking.
+      0     2  6390326.0000  2837  6405758.0000  6390326.0000      448    0.24%
+Elapsed time = 474.73 sec. (245134.67 ticks, tree = 0.00 MB, solutions = 2)
+      1     3  6390326.0000   228  6405758.0000  6390326.0000     6175    0.24%
+      2     4  6390326.0000    94  6405758.0000  6390326.0000     6216    0.24%
+*     3     3      integral     0  6390326.0000  6390326.0000    10552    0.00%
+      3     3  6390326.0000     0  6390326.0000  6390326.0000    10552    0.00%
+
+Zero-half cuts applied:  3
+
+Root node processing (before b&c):
+  Real time             =  473.77 sec. (243744.36 ticks)
+Parallel b&c, 8 threads:
+  Real time             =   79.64 sec. (44606.83 ticks)
+  Sync time (average)   =   69.30 sec.
+  Wait time (average)   =   69.34 sec.
+                          ------------
+Total (root+branch&cut) =  553.41 sec. (288351.19 ticks)

@@ -1,0 +1,40 @@
+constraints.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 881.11 sec. (208847.31 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0  8362648.0000   549                8362648.0000    27726         
+Heuristic still looking.
+*     0+    0                      8364320.0000  8362648.0000             0.02%
+Heuristic still looking.
+*     0+    0                      8363488.0000  8362648.0000             0.01%
+      0     2  8362648.0000   549  8363488.0000  8362648.0000    27726    0.01%
+Elapsed time = 1069.51 sec. (322746.76 ticks, tree = 0.00 MB, solutions = 2)
+*     1     1      integral     0  8362648.0000  8362648.0000    31698    0.00%
+      1     0  8362648.0000     0  8362648.0000  8362648.0000    31698    0.00%
+
+Root node processing (before b&c):
+  Real time             = 1068.05 sec. (320147.81 ticks)
+Parallel b&c, 8 threads:
+  Real time             =   30.20 sec. (20158.68 ticks)
+  Sync time (average)   =   26.07 sec.
+  Wait time (average)   =   26.11 sec.
+                          ------------
+Total (root+branch&cut) = 1098.25 sec. (340306.49 ticks)
+Tried aggregator 0 times.
+Reduced MIP has 44075 rows, 43000 columns, and 4711160 nonzeros.
+Reduced MIP has 43000 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.22 sec. (132.02 ticks)
+Probing fixed 694 vars, tightened 0 bounds.
+Probing changed sense of 183 constraints.
+Probing time = 0.98 sec. (784.05 ticks)
+Clique table members: 114150.
+Changed sense of 39 constraints.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time =

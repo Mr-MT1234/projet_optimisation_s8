@@ -1,0 +1,213 @@
+
+
+**********Flights assigned to aircraft 0 are :**********
+
+Flight n°  <22 "B" "A" 2060 2255>
+
+Flight n°  <80 "B" "T" 940 1150>
+
+Flight n°  <81 "T" "B" 1225 1450>
+
+**********Flights assigned to aircraft 1 are :**********
+
+**********Flights assigned to aircraft 2 are :**********
+
+Flight n°  <8 "D" "B" 9695 9990>
+
+Flight n°  <9 "A" "J" 5450 5625>
+
+Flight n°  <10 "J" "A" 5655 5835>
+
+Flight n°  <11 "D" "B" 8255 8550>
+
+Flight n°  <12 "B" "I" 4930 5070>
+
+Flight n°  <13 "I" "K" 5140 5245>
+
+Flight n°  <14 "K" "A" 5275 5420>
+
+Flight n°  <15 "C" "A" 6770 7015>
+
+Flight n°  <16 "A" "K" 7070 7180>
+
+Flight n°  <17 "K" "B" 7750 7910>
+
+Flight n°  <18 "B" "D" 7940 8215>
+
+Flight n°  <19 "A" "B" 6285 6475>
+
+Flight n°  <20 "B" "C" 6510 6715>
+
+Flight n°  <21 "A" "B" 3730 3985>
+
+Flight n°  <23 "A" "B" 2290 2545>
+
+Flight n°  <24 "B" "P" 2580 2770>
+
+Flight n°  <25 "P" "B" 2840 2990>
+
+Flight n°  <26 "B" "A" 3500 3695>
+
+Flight n°  <30 "B" "P" 4020 4210>
+
+Flight n°  <31 "P" "B" 4280 4430>
+
+Flight n°  <36 "E" "D" 9395 9650>
+
+Flight n°  <39 "B" "E" 9175 9360>
+
+Flight n°  <94 "C" "A" 645 935>
+
+**********Flights assigned to aircraft 3 are :**********
+
+**********Flights assigned to aircraft 4 are :**********
+
+Flight n°  <79 "C" "B" 640 845>
+
+**********Flights assigned to aircraft 5 are :**********
+
+Flight n°  <6 "E" "D" 9395 9650>
+
+Flight n°  <7 "B" "E" 9175 9360>
+
+Flight n°  <33 "D" "E" 4855 5060>
+
+Flight n°  <34 "E" "F" 5130 5240>
+
+Flight n°  <35 "G" "B" 8550 8700>
+
+Flight n°  <37 "D" "H" 9690 9795>
+
+Flight n°  <38 "H" "D" 9870 9990>
+
+Flight n°  <40 "F" "B" 5275 5425>
+
+Flight n°  <41 "B" "D" 5455 5730>
+
+Flight n°  <42 "G" "I" 7190 7300>
+
+Flight n°  <43 "I" "J" 7745 7915>
+
+Flight n°  <44 "J" "I" 7945 8110>
+
+Flight n°  <45 "I" "B" 8140 8315>
+
+Flight n°  <46 "B" "G" 8415 8520>
+
+Flight n°  <47 "B" "C" 1405 1605>
+
+Flight n°  <48 "C" "D" 4090 4295>
+
+Flight n°  <49 "C" "P" 2060 2365>
+
+Flight n°  <50 "P" "N" 2440 2490>
+
+Flight n°  <51 "N" "A" 2560 2675>
+
+Flight n°  <52 "A" "K" 2750 2860>
+
+Flight n°  <53 "K" "C" 3490 3705>
+
+Flight n°  <54 "C" "R" 3790 3895>
+
+Flight n°  <55 "R" "C" 3925 4035>
+
+Flight n°  <56 "A" "D" 810 1025>
+
+Flight n°  <57 "D" "B" 1055 1350>
+
+Flight n°  <58 "D" "L" 6410 6575>
+
+Flight n°  <59 "L" "K" 6675 6800>
+
+Flight n°  <60 "K" "I" 6870 6975>
+
+Flight n°  <61 "I" "G" 7015 7160>
+
+**********Flights assigned to aircraft 6 are :**********
+
+Flight n°  <62 "J" "A" 555 735>
+
+Flight n°  <85 "H" "D" 4110 4230>
+
+Flight n°  <86 "B" "C" 6685 6885>
+
+Flight n°  <87 "C" "G" 6915 7190>
+
+Flight n°  <88 "C" "H" 3415 3630>
+
+Flight n°  <89 "A" "K" 1310 1420>
+
+Flight n°  <90 "K" "I" 2055 2160>
+
+Flight n°  <91 "I" "H" 2190 2490>
+
+Flight n°  <92 "H" "C" 2760 3050>
+
+Flight n°  <93 "E" "B" 5660 5845>
+
+Flight n°  <95 "D" "E" 4960 5225>
+
+**********Flights assigned to aircraft 7 are :**********
+
+Flight n°  <1 "H" "C" 1110 1400>
+
+Flight n°  <4 "I" "H" 750 1050>
+
+**********Flights assigned to aircraft 8 are :**********
+
+Flight n°  <27 "C" "Q" 1225 1350>
+
+Flight n°  <28 "Q" "B" 1405 1650>
+
+Flight n°  <29 "L" "C" 940 1115>
+
+Flight n°  <32 "C" "L" 655 845>
+
+Flight n°  <63 "F" "B" 5275 5425>
+
+Flight n°  <64 "B" "D" 5455 5730>
+
+Flight n°  <65 "D" "B" 6360 6615>
+
+Flight n°  <66 "B" "F" 5145 5245>
+
+Flight n°  <67 "C" "R" 8435 8545>
+
+Flight n°  <68 "R" "B" 9440 9665>
+
+Flight n°  <69 "B" "I" 2050 2190>
+
+Flight n°  <70 "I" "K" 2260 2365>
+
+Flight n°  <71 "K" "A" 2395 2540>
+
+Flight n°  <72 "A" "B" 2670 2865>
+
+Flight n°  <73 "B" "Q" 6860 7095>
+
+Flight n°  <74 "Q" "C" 7185 7360>
+
+Flight n°  <75 "M" "B" 3785 3915>
+
+Flight n°  <76 "B" "E" 4000 4185>
+
+Flight n°  <77 "E" "B" 4220 4405>
+
+Flight n°  <78 "B" "M" 3515 3685>
+
+Flight n°  <82 "B" "E" 9760 9945>
+
+Flight n°  <83 "C" "T" 7900 8100>
+
+Flight n°  <84 "T" "C" 8130 8340>
+
+**********Flights assigned to aircraft 9 are :**********
+
+Flight n°  <2 "C" "G" 1430 1705>
+
+Flight n°  <3 "B" "Q" 5420 5655>
+
+Flight n°  <5 "G" "B" 4595 4710>
+-->0
+>--950

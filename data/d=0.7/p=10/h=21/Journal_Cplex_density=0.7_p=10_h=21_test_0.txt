@@ -1,0 +1,28 @@
+Tried aggregator 0 times.
+Reduced MIP has 3465 rows, 3150 columns, and 98240 nonzeros.
+Reduced MIP has 3150 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (3.09 ticks)
+Probing fixed 50 vars, tightened 0 bounds.
+Probing changed sense of 107 constraints.
+Probing time = 0.08 sec. (8.34 ticks)
+Clique table members: 4185.
+Changed sense of 6 constraints.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.84 sec. (533.64 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0     0      integral     0  2578671.0000  2578671.0000     4099    0.00%
+Elapsed time = 1.03 sec. (657.82 ticks, tree = 0.00 MB, solutions = 1)
+
+Root node processing (before b&c):
+  Real time             =    1.03 sec. (657.93 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    1.03 sec. (657.93 ticks)

@@ -1,0 +1,35 @@
+Found incumbent of value 7266555.000000 after 0.03 sec. (17.88 ticks)
+Tried aggregator 0 times.
+Reduced MIP has 18480 rows, 17600 columns, and 1590880 nonzeros.
+Reduced MIP has 17600 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.05 sec. (45.04 ticks)
+Probing fixed 166 vars, tightened 0 bounds.
+Probing changed sense of 106 constraints.
+Probing time = 0.22 sec. (148.52 ticks)
+Cover probing fixed 7 vars, tightened 32 bounds.
+Clique table members: 30604.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 34.57 sec. (17012.80 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                      7266555.0000        0.0000           100.00%
+*     0+    0                      7266424.0000        0.0000           100.00%
+      0     0  7243850.0000  2489  7266424.0000  7243850.0000       12    0.31%
+Heuristic still looking.
+      0     2  7243850.0000  2489  7266424.0000  7243850.0000       12    0.31%
+Elapsed time = 145.50 sec. (97260.63 ticks, tree = 0.00 MB, solutions = 2)
+*     1     1      integral     0  7243850.0000  7243850.0000     2973    0.00%
+      1     0  7243850.0000     0  7243850.0000  7243850.0000     2973    0.00%
+
+Root node processing (before b&c):
+  Real time             =  145.02 sec. (96481.85 ticks)
+Parallel b&c, 8 threads:
+  Real time             =   14.46 sec. (11002.66 ticks)
+  Sync time (average)   =   12.43 sec.
+  Wait time (average)   =   12.46 sec.
+                          ------------
+Total (root+branch&cut) =  159.48 sec. (107484.51 ticks)

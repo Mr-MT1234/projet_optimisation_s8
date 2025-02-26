@@ -1,0 +1,45 @@
+Found incumbent of value 4749921.000000 after 0.01 sec. (3.18 ticks)
+Tried aggregator 3 times.
+MIP Presolve eliminated 1738 rows and 236 columns.
+MIP Presolve modified 1 coefficients.
+Aggregator did 5 substitutions.
+Reduced MIP has 4615 rows, 5539 columns, and 204374 nonzeros.
+Reduced MIP has 5539 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.28 sec. (364.37 ticks)
+Probing fixed 18 vars, tightened 0 bounds.
+Probing changed sense of 121 constraints.
+Probing time = 0.14 sec. (10.24 ticks)
+Tried aggregator 2 times.
+MIP Presolve eliminated 144 rows and 136 columns.
+MIP Presolve modified 4 coefficients.
+Aggregator did 3 substitutions.
+Reduced MIP has 4468 rows, 5400 columns, and 193691 nonzeros.
+Reduced MIP has 5400 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.19 sec. (189.95 ticks)
+Probing fixed 24 vars, tightened 0 bounds.
+Probing changed sense of 136 constraints.
+Probing time = 0.02 sec. (12.62 ticks)
+Clique table members: 7986.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 1.98 sec. (1724.86 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                      4749921.0000   118447.0000            97.51%
+      0     0  4740576.0000   232  4749921.0000  4740576.0000        0    0.20%
+*     0+    0                      4740730.0000  4740576.0000             0.00%
+
+Zero-half cuts applied:  3
+Gomory fractional cuts applied:  3
+
+Root node processing (before b&c):
+  Real time             =    8.63 sec. (9762.86 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    8.63 sec. (9762.86 ticks)

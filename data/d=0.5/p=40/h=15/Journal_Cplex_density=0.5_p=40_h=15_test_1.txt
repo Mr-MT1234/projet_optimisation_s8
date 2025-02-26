@@ -1,0 +1,47 @@
+Tried aggregator 0 times.
+Reduced MIP has 27224 rows, 26560 columns, and 1823720 nonzeros.
+Reduced MIP has 26560 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.08 sec. (52.54 ticks)
+Probing fixed 517 vars, tightened 0 bounds.
+Probing changed sense of 226 constraints.
+Probing time = 0.39 sec. (311.42 ticks)
+Clique table members: 76688.
+Changed sense of 40 constraints.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 35.16 sec. (13241.68 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0  5431309.0000  2697                5431309.0000       15         
+Heuristic still looking.
+      0     2  5431309.0000  2697                5431309.0000       15         
+Elapsed time = 141.70 sec. (82406.03 ticks, tree = 0.00 MB, solutions = 0)
+      1     3  5431309.0000  2627                5431309.0000      160         
+      2     4  5431309.0000   482                5431309.0000     7348         
+      3     5  5431309.0000  2687                5431309.0000     7392         
+      4     6  5431309.0000  2617                5431309.0000     7750         
+      5     7  5431309.0000   269                5431309.0000     8576         
+      6     8  5431309.0000   132                5431309.0000    14059         
+      7     9  5431309.0000   647                5431309.0000    20953         
+      8    10  5431309.0000   250                5431309.0000    26895         
+      9    11  5431309.0000    86                5431309.0000    32034         
+     10    12  5431309.0000    85                5431309.0000    39567         
+Elapsed time = 292.58 sec. (155285.03 ticks, tree = 0.00 MB, solutions = 0)
+*    11    10      integral     0  5431309.0000  5431309.0000    45376    0.00%
+     12     8 -1.00000e+075     0  5431309.0000  5431309.0000    58643    0.00%
+     12     8  5431309.0000     0  5431309.0000  5431309.0000    58643    0.00%
+     13     9  5431309.0000   457  5431309.0000  5431309.0000    69069    0.00%
+     14     8 -1.00000e+075     0  5431309.0000  5431309.0000    76873    0.00%
+     14     7  5431309.0000     0  5431309.0000  5431309.0000    76873    0.00%
+
+Root node processing (before b&c):
+  Real time             =  141.18 sec. (81618.77 ticks)
+Parallel b&c, 8 threads:
+  Real time             =  182.08 sec. (89223.76 ticks)
+  Sync time (average)   =  128.02 sec.
+  Wait time (average)   =  128.05 sec.
+                          ------------
+Total (root+branch&cut) =  323.27 sec. (170842.52 ticks)

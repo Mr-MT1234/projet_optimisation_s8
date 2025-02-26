@@ -1,0 +1,45 @@
+Found incumbent of value 4707461.000000 after 0.02 sec. (3.17 ticks)
+Tried aggregator 3 times.
+MIP Presolve eliminated 1833 rows and 253 columns.
+MIP Presolve modified 1 coefficients.
+Aggregator did 4 substitutions.
+Reduced MIP has 4477 rows, 5483 columns, and 199133 nonzeros.
+Reduced MIP has 5483 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.30 sec. (371.08 ticks)
+Probing fixed 6 vars, tightened 0 bounds.
+Probing changed sense of 96 constraints.
+Probing time = 0.13 sec. (10.15 ticks)
+Tried aggregator 1 time.
+MIP Presolve eliminated 112 rows and 102 columns.
+Reduced MIP has 4365 rows, 5381 columns, and 192145 nonzeros.
+Reduced MIP has 5381 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.11 sec. (97.69 ticks)
+Probing fixed 4 vars, tightened 0 bounds.
+Probing changed sense of 103 constraints.
+Probing time = 0.01 sec. (11.91 ticks)
+Clique table members: 6003.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 2.28 sec. (1954.49 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                      4707461.0000   108853.0000            97.69%
+      0     0  4697785.5000   664  4707461.0000  4697785.5000        0    0.21%
+*     0+    0                      4697787.0000  4697785.5000             0.00%
+      0     0        cutoff        4697787.0000  4697785.5000       53    0.00%
+Elapsed time = 6.68 sec. (7095.06 ticks, tree = 0.00 MB, solutions = 2)
+
+Zero-half cuts applied:  2
+Gomory fractional cuts applied:  2
+
+Root node processing (before b&c):
+  Real time             =    6.68 sec. (7095.30 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    6.68 sec. (7095.30 ticks)

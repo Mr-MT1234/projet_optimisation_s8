@@ -1,0 +1,2561 @@
+
+
+**********Flights assigned to aircraft 0 are :**********
+
+Flight n°  <83 "A" "B" 20685 20875>
+
+Flight n°  <147 "B" "I" 9250 9390>
+
+Flight n°  <215 "J" "M" 19320 19435>
+
+Flight n°  <216 "M" "C" 19465 19635>
+
+Flight n°  <217 "C" "A" 19670 19955>
+
+Flight n°  <255 "I" "J" 18230 18395>
+
+Flight n°  <399 "B" "E" 6880 7065>
+
+Flight n°  <400 "E" "B" 7745 7925>
+
+Flight n°  <410 "Q" "S" 14260 14360>
+
+Flight n°  <435 "B" "C" 8030 8240>
+
+Flight n°  <436 "C" "Q" 8310 8430>
+
+Flight n°  <437 "Q" "B" 8605 8850>
+
+Flight n°  <444 "C" "Q" 14070 14190>
+
+Flight n°  <454 "A" "K" 555 720>
+
+Flight n°  <455 "K" "L" 800 910>
+
+Flight n°  <456 "L" "D" 1625 1735>
+
+Flight n°  <484 "B" "K" 21090 21260>
+
+Flight n°  <492 "R" "B" 3680 3905>
+
+Flight n°  <509 "S" "Q" 15820 15900>
+
+Flight n°  <510 "Q" "C" 17265 17440>
+
+Flight n°  <511 "C" "I" 17905 18195>
+
+Flight n°  <745 "B" "C" 12650 12855>
+
+Flight n°  <797 "B" "C" 4010 4215>
+
+Flight n°  <798 "C" "G" 4310 4585>
+
+Flight n°  <823 "D" "T" 2160 2260>
+
+Flight n°  <824 "T" "K" 2455 2590>
+
+Flight n°  <825 "K" "B" 2660 2785>
+
+Flight n°  <882 "B" "R" 2865 3070>
+
+Flight n°  <899 "C" "F" 13670 13800>
+
+Flight n°  <900 "F" "C" 13860 13990>
+
+Flight n°  <1013 "I" "B" 12260 12440>
+
+Flight n°  <1037 "C" "H" 10825 11085>
+
+Flight n°  <1038 "H" "I" 11730 12085>
+
+Flight n°  <1163 "I" "C" 9785 10065>
+
+Flight n°  <1181 "C" "B" 6595 6805>
+
+Flight n°  <1201 "G" "C" 6055 6325>
+
+**********Flights assigned to aircraft 1 are :**********
+
+Flight n°  <114 "G" "I" 15830 15940>
+
+Flight n°  <401 "B" "F" 8025 8125>
+
+Flight n°  <402 "F" "G" 8515 8655>
+
+Flight n°  <418 "B" "M" 20795 20965>
+
+Flight n°  <606 "I" "C" 16445 16685>
+
+Flight n°  <643 "F" "G" 1315 1455>
+
+Flight n°  <793 "C" "F" 1120 1245>
+
+Flight n°  <934 "C" "B" 18005 18215>
+
+Flight n°  <1001 "G" "B" 3160 3270>
+
+**********Flights assigned to aircraft 2 are :**********
+
+Flight n°  <125 "K" "L" 20960 21070>
+
+Flight n°  <126 "L" "C" 21100 21275>
+
+Flight n°  <252 "C" "H" 16375 16590>
+
+Flight n°  <253 "H" "D" 17070 17190>
+
+Flight n°  <304 "C" "P" 3500 3805>
+
+Flight n°  <305 "P" "N" 3880 3930>
+
+Flight n°  <308 "I" "B" 4870 5040>
+
+Flight n°  <309 "B" "O" 5075 5220>
+
+Flight n°  <311 "C" "B" 5470 5670>
+
+Flight n°  <358 "O" "C" 5260 5435>
+
+Flight n°  <363 "A" "K" 7755 7920>
+
+Flight n°  <364 "K" "L" 8000 8110>
+
+Flight n°  <365 "L" "C" 8140 8315>
+
+Flight n°  <366 "C" "D" 8410 8615>
+
+Flight n°  <487 "K" "B" 1990 2150>
+
+Flight n°  <488 "B" "C" 2270 2485>
+
+Flight n°  <489 "C" "Q" 2550 2670>
+
+Flight n°  <497 "B" "K" 6690 6860>
+
+Flight n°  <498 "K" "B" 6980 7105>
+
+Flight n°  <597 "B" "I" 11085 11230>
+
+Flight n°  <598 "I" "K" 11300 11410>
+
+Flight n°  <616 "Q" "C" 2865 3040>
+
+Flight n°  <630 "I" "M" 12145 12325>
+
+Flight n°  <631 "M" "B" 12840 12970>
+
+Flight n°  <689 "D" "K" 17980 18190>
+
+Flight n°  <690 "K" "D" 18220 18415>
+
+Flight n°  <691 "D" "K" 19420 19630>
+
+Flight n°  <692 "K" "D" 19660 19855>
+
+Flight n°  <710 "D" "K" 9340 9550>
+
+Flight n°  <711 "K" "D" 9580 9775>
+
+Flight n°  <748 "C" "T" 15100 15300>
+
+Flight n°  <749 "T" "C" 15330 15540>
+
+Flight n°  <780 "T" "B" 13810 14070>
+
+Flight n°  <781 "B" "C" 14215 14465>
+
+Flight n°  <808 "M" "D" 13275 13460>
+
+Flight n°  <809 "D" "T" 13680 13780>
+
+Flight n°  <878 "D" "C" 850 1110>
+
+Flight n°  <879 "C" "K" 1220 1425>
+
+Flight n°  <895 "K" "I" 11500 11610>
+
+Flight n°  <937 "I" "K" 20800 20905>
+
+Flight n°  <945 "N" "I" 4600 4705>
+
+Flight n°  <1004 "B" "A" 5765 5970>
+
+Flight n°  <1005 "A" "B" 6475 6610>
+
+Flight n°  <1006 "B" "A" 7205 7410>
+
+Flight n°  <1011 "I" "B" 10820 11000>
+
+Flight n°  <1099 "D" "I" 20120 20355>
+
+Flight n°  <1114 "D" "I" 10040 10275>
+
+Flight n°  <1124 "K" "D" 625 820>
+
+Flight n°  <1206 "B" "M" 13120 13245>
+
+**********Flights assigned to aircraft 3 are :**********
+
+Flight n°  <130 "B" "D" 1135 1410>
+
+Flight n°  <161 "B" "I" 15010 15150>
+
+Flight n°  <162 "I" "N" 15320 15430>
+
+Flight n°  <163 "N" "B" 15500 15705>
+
+Flight n°  <290 "C" "D" 17890 18095>
+
+Flight n°  <291 "D" "C" 18130 18390>
+
+Flight n°  <368 "E" "B" 9980 10165>
+
+Flight n°  <559 "C" "B" 7840 8040>
+
+Flight n°  <590 "K" "C" 6370 6585>
+
+Flight n°  <591 "C" "B" 6685 6895>
+
+Flight n°  <592 "B" "C" 7015 7265>
+
+Flight n°  <617 "C" "A" 3525 3815>
+
+Flight n°  <618 "A" "K" 4020 4125>
+
+Flight n°  <619 "K" "C" 4195 4395>
+
+Flight n°  <627 "B" "E" 9760 9945>
+
+Flight n°  <655 "B" "U" 11205 11420>
+
+Flight n°  <656 "U" "R" 12635 12735>
+
+Flight n°  <657 "R" "B" 14205 14415>
+
+Flight n°  <703 "C" "A" 4965 5255>
+
+Flight n°  <704 "A" "K" 5630 5740>
+
+Flight n°  <788 "C" "T" 19420 19620>
+
+Flight n°  <789 "T" "C" 19650 19860>
+
+Flight n°  <803 "B" "C" 8330 8535>
+
+Flight n°  <870 "B" "R" 15825 16030>
+
+Flight n°  <912 "C" "B" 725 935>
+
+Flight n°  <933 "R" "C" 17255 17365>
+
+Flight n°  <1176 "D" "M" 1820 2010>
+
+Flight n°  <1177 "M" "C" 3240 3380>
+
+Flight n°  <1184 "C" "B" 9475 9685>
+
+Flight n°  <1211 "C" "R" 19955 20065>
+
+**********Flights assigned to aircraft 4 are :**********
+
+Flight n°  <173 "B" "A" 620 815>
+
+Flight n°  <174 "A" "B" 850 1105>
+
+Flight n°  <243 "C" "Q" 9750 9870>
+
+Flight n°  <265 "C" "H" 1975 2190>
+
+Flight n°  <378 "Q" "S" 17140 17240>
+
+Flight n°  <381 "S" "Q" 19665 19750>
+
+Flight n°  <519 "B" "C" 1255 1505>
+
+Flight n°  <638 "Q" "C" 20230 20360>
+
+Flight n°  <675 "H" "C" 8520 8810>
+
+**********Flights assigned to aircraft 5 are :**********
+
+Flight n°  <12 "H" "D" 4110 4230>
+
+Flight n°  <25 "B" "E" 10615 10800>
+
+Flight n°  <26 "E" "D" 10835 11090>
+
+Flight n°  <27 "D" "H" 11130 11235>
+
+Flight n°  <28 "H" "D" 11310 11430>
+
+Flight n°  <29 "D" "B" 12120 12375>
+
+Flight n°  <30 "B" "C" 12445 12645>
+
+Flight n°  <31 "C" "G" 12675 12950>
+
+Flight n°  <48 "B" "E" 3415 3600>
+
+Flight n°  <49 "E" "D" 3635 3890>
+
+Flight n°  <50 "D" "H" 3930 4035>
+
+Flight n°  <98 "C" "G" 5475 5750>
+
+Flight n°  <167 "C" "M" 18185 18325>
+
+Flight n°  <203 "F" "B" 13505 13610>
+
+Flight n°  <209 "F" "B" 16385 16490>
+
+Flight n°  <210 "B" "D" 16580 16855>
+
+Flight n°  <211 "D" "F" 16950 17195>
+
+Flight n°  <212 "F" "C" 17930 18100>
+
+Flight n°  <214 "M" "J" 18395 18510>
+
+Flight n°  <256 "J" "M" 19320 19435>
+
+Flight n°  <257 "M" "C" 19465 19635>
+
+Flight n°  <261 "C" "D" 610 815>
+
+Flight n°  <262 "D" "C" 850 1110>
+
+Flight n°  <310 "O" "C" 5260 5435>
+
+Flight n°  <312 "B" "C" 6380 6585>
+
+Flight n°  <313 "C" "M" 6665 6805>
+
+Flight n°  <314 "M" "J" 6875 6990>
+
+Flight n°  <315 "J" "F" 7060 7175>
+
+Flight n°  <316 "F" "C" 7850 8020>
+
+Flight n°  <357 "B" "O" 5075 5220>
+
+Flight n°  <417 "O" "B" 19875 19975>
+
+Flight n°  <426 "B" "S" 2560 2790>
+
+Flight n°  <427 "S" "Q" 2860 2940>
+
+Flight n°  <438 "B" "M" 9275 9445>
+
+Flight n°  <439 "M" "B" 9960 10090>
+
+Flight n°  <443 "B" "C" 13790 14000>
+
+Flight n°  <625 "C" "I" 8130 8415>
+
+Flight n°  <626 "I" "B" 8450 8630>
+
+Flight n°  <639 "C" "A" 20805 21095>
+
+Flight n°  <640 "A" "B" 21390 21585>
+
+Flight n°  <726 "C" "O" 19675 19845>
+
+Flight n°  <730 "C" "K" 1220 1425>
+
+Flight n°  <830 "G" "B" 6035 6150>
+
+Flight n°  <841 "C" "F" 14080 14205>
+
+Flight n°  <880 "K" "F" 2060 2245>
+
+Flight n°  <881 "F" "B" 2280 2390>
+
+Flight n°  <1122 "B" "C" 20250 20455>
+
+Flight n°  <1131 "D" "E" 4305 4580>
+
+Flight n°  <1132 "E" "B" 4865 5045>
+
+Flight n°  <1188 "G" "F" 13135 13270>
+
+Flight n°  <1189 "F" "J" 14385 14500>
+
+Flight n°  <1190 "J" "F" 15700 15815>
+
+Flight n°  <1232 "Q" "B" 2970 3265>
+
+**********Flights assigned to aircraft 6 are :**********
+
+Flight n°  <91 "H" "C" 2550 2840>
+
+Flight n°  <249 "P" "B" 13775 13980>
+
+Flight n°  <250 "B" "Q" 14060 14295>
+
+Flight n°  <251 "Q" "C" 15510 15640>
+
+Flight n°  <270 "B" "A" 4940 5135>
+
+Flight n°  <271 "A" "B" 5170 5425>
+
+Flight n°  <272 "B" "D" 5455 5730>
+
+Flight n°  <284 "B" "P" 12660 12850>
+
+Flight n°  <338 "C" "P" 17900 18205>
+
+Flight n°  <339 "P" "N" 18280 18330>
+
+Flight n°  <340 "N" "A" 19840 19955>
+
+Flight n°  <360 "D" "E" 6400 6665>
+
+Flight n°  <361 "E" "F" 6695 6805>
+
+Flight n°  <362 "F" "A" 6875 7095>
+
+Flight n°  <372 "P" "B" 12335 12540>
+
+Flight n°  <652 "B" "U" 8325 8540>
+
+Flight n°  <712 "D" "T" 9860 9960>
+
+Flight n°  <713 "T" "B" 10930 11190>
+
+Flight n°  <714 "B" "P" 11220 11410>
+
+Flight n°  <751 "K" "C" 16775 16985>
+
+Flight n°  <784 "C" "K" 16540 16745>
+
+Flight n°  <910 "A" "C" 20785 21075>
+
+Flight n°  <977 "C" "H" 2185 2445>
+
+Flight n°  <1007 "A" "B" 7915 8050>
+
+Flight n°  <1028 "P" "B" 4280 4430>
+
+Flight n°  <1051 "C" "I" 805 1045>
+
+Flight n°  <1052 "I" "R" 1115 1335>
+
+Flight n°  <1053 "R" "C" 1415 1525>
+
+Flight n°  <1080 "C" "K" 3695 3900>
+
+Flight n°  <1081 "K" "P" 3930 4105>
+
+Flight n°  <1113 "U" "D" 9030 9130>
+
+**********Flights assigned to aircraft 7 are :**********
+
+Flight n°  <88 "D" "B" 1055 1350>
+
+Flight n°  <202 "D" "F" 12630 12875>
+
+Flight n°  <306 "N" "B" 3980 4185>
+
+Flight n°  <503 "B" "D" 11020 11305>
+
+Flight n°  <546 "B" "D" 19660 19945>
+
+Flight n°  <842 "F" "B" 15240 15350>
+
+Flight n°  <944 "B" "N" 2875 3085>
+
+**********Flights assigned to aircraft 8 are :**********
+
+Flight n°  <61 "K" "A" 9595 9740>
+
+Flight n°  <84 "B" "C" 20910 21115>
+
+Flight n°  <89 "B" "C" 1405 1605>
+
+Flight n°  <127 "C" "B" 535 745>
+
+Flight n°  <129 "F" "B" 955 1105>
+
+Flight n°  <140 "C" "H" 4855 5070>
+
+Flight n°  <150 "A" "J" 9770 9945>
+
+Flight n°  <151 "J" "A" 10635 10815>
+
+Flight n°  <152 "A" "D" 10890 11105>
+
+Flight n°  <207 "B" "D" 15140 15415>
+
+Flight n°  <213 "C" "M" 18185 18325>
+
+Flight n°  <218 "A" "B" 20685 20875>
+
+Flight n°  <222 "B" "F" 825 925>
+
+Flight n°  <232 "C" "B" 4030 4230>
+
+Flight n°  <267 "C" "D" 3490 3695>
+
+Flight n°  <268 "D" "C" 3730 3990>
+
+Flight n°  <276 "R" "B" 8000 8225>
+
+Flight n°  <277 "B" "Q" 8300 8535>
+
+Flight n°  <292 "C" "P" 19340 19645>
+
+Flight n°  <293 "P" "N" 19720 19770>
+
+Flight n°  <326 "C" "P" 12140 12445>
+
+Flight n°  <327 "P" "N" 12520 12570>
+
+Flight n°  <328 "N" "B" 12620 12825>
+
+Flight n°  <467 "Q" "C" 8625 8800>
+
+Flight n°  <526 "H" "C" 5430 5720>
+
+Flight n°  <569 "K" "B" 14950 15110>
+
+Flight n°  <602 "C" "A" 13605 13895>
+
+Flight n°  <603 "A" "K" 14100 14205>
+
+Flight n°  <608 "I" "C" 17885 18125>
+
+Flight n°  <750 "C" "K" 16540 16745>
+
+Flight n°  <785 "K" "C" 16775 16985>
+
+Flight n°  <804 "C" "K" 9340 9545>
+
+Flight n°  <838 "B" "C" 12925 13125>
+
+Flight n°  <854 "B" "C" 4285 4485>
+
+Flight n°  <871 "R" "I" 17245 17460>
+
+Flight n°  <911 "C" "I" 21290 21575>
+
+Flight n°  <996 "N" "A" 19840 19955>
+
+Flight n°  <1043 "D" "C" 15535 15800>
+
+Flight n°  <1054 "C" "I" 2245 2485>
+
+Flight n°  <1062 "C" "I" 6565 6805>
+
+Flight n°  <1063 "I" "R" 6875 7095>
+
+Flight n°  <1066 "D" "C" 11215 11480>
+
+Flight n°  <1154 "I" "C" 2585 2865>
+
+Flight n°  <1210 "M" "C" 19080 19220>
+
+Flight n°  <1225 "C" "R" 17075 17185>
+
+**********Flights assigned to aircraft 9 are :**********
+
+Flight n°  <208 "D" "F" 15510 15755>
+
+Flight n°  <279 "C" "D" 10690 10895>
+
+Flight n°  <280 "D" "C" 10930 11190>
+
+Flight n°  <465 "I" "C" 6710 6990>
+
+Flight n°  <466 "C" "Q" 7075 7195>
+
+Flight n°  <695 "A" "N" 620 740>
+
+Flight n°  <696 "N" "B" 810 1020>
+
+Flight n°  <697 "B" "C" 1130 1335>
+
+Flight n°  <795 "G" "F" 2965 3145>
+
+Flight n°  <819 "C" "F" 20870 21000>
+
+Flight n°  <820 "F" "C" 21060 21190>
+
+Flight n°  <839 "C" "F" 13670 13800>
+
+Flight n°  <840 "F" "C" 13860 13990>
+
+Flight n°  <856 "F" "C" 5220 5350>
+
+Flight n°  <857 "C" "I" 5450 5735>
+
+Flight n°  <901 "C" "I" 14090 14375>
+
+Flight n°  <917 "F" "A" 3995 4215>
+
+Flight n°  <918 "A" "F" 4285 4505>
+
+Flight n°  <930 "I" "D" 15040 15300>
+
+Flight n°  <987 "C" "Q" 11305 11430>
+
+Flight n°  <988 "Q" "C" 13030 13160>
+
+Flight n°  <1000 "C" "G" 1430 1705>
+
+Flight n°  <1020 "F" "J" 17265 17380>
+
+Flight n°  <1021 "J" "I" 18385 18510>
+
+Flight n°  <1022 "I" "C" 19475 19765>
+
+Flight n°  <1035 "C" "S" 9440 9555>
+
+Flight n°  <1036 "S" "C" 10070 10185>
+
+Flight n°  <1203 "Q" "C" 8710 8840>
+
+**********Flights assigned to aircraft 10 are :**********
+
+Flight n°  <55 "G" "B" 7110 7260>
+
+Flight n°  <137 "I" "B" 3820 3995>
+
+Flight n°  <145 "B" "K" 8130 8300>
+
+Flight n°  <146 "K" "B" 8420 8545>
+
+Flight n°  <183 "B" "G" 4095 4200>
+
+Flight n°  <416 "B" "O" 19475 19620>
+
+Flight n°  <420 "B" "M" 635 805>
+
+Flight n°  <1214 "M" "I" 3460 3640>
+
+**********Flights assigned to aircraft 11 are :**********
+
+Flight n°  <3 "C" "A" 1010 1255>
+
+Flight n°  <4 "A" "D" 1305 1525>
+
+Flight n°  <66 "B" "E" 12055 12240>
+
+Flight n°  <67 "E" "F" 12330 12440>
+
+Flight n°  <68 "F" "B" 12475 12625>
+
+Flight n°  <273 "D" "A" 6385 6600>
+
+Flight n°  <274 "A" "C" 6670 6960>
+
+Flight n°  <403 "G" "C" 10140 10370>
+
+Flight n°  <733 "H" "D" 2950 3070>
+
+Flight n°  <734 "D" "C" 3585 3795>
+
+Flight n°  <735 "C" "D" 3835 4080>
+
+Flight n°  <736 "D" "H" 4195 4310>
+
+Flight n°  <737 "H" "D" 5830 5950>
+
+Flight n°  <744 "M" "B" 11400 11530>
+
+Flight n°  <754 "C" "K" 19420 19625>
+
+Flight n°  <755 "K" "C" 19655 19865>
+
+Flight n°  <756 "C" "T" 20860 21060>
+
+Flight n°  <757 "T" "C" 21090 21300>
+
+Flight n°  <761 "D" "C" 2145 2355>
+
+Flight n°  <762 "C" "D" 2395 2640>
+
+Flight n°  <763 "D" "H" 2755 2870>
+
+Flight n°  <764 "H" "D" 4390 4510>
+
+Flight n°  <765 "D" "C" 5025 5235>
+
+Flight n°  <766 "C" "D" 5275 5520>
+
+Flight n°  <767 "D" "H" 5635 5750>
+
+Flight n°  <807 "B" "M" 11210 11330>
+
+Flight n°  <816 "B" "C" 18410 18615>
+
+Flight n°  <850 "A" "C" 650 935>
+
+Flight n°  <861 "I" "F" 7830 8030>
+
+Flight n°  <862 "F" "I" 8110 8315>
+
+Flight n°  <863 "I" "C" 8345 8625>
+
+Flight n°  <864 "C" "D" 9350 9565>
+
+Flight n°  <865 "D" "I" 9595 9865>
+
+Flight n°  <902 "I" "D" 15040 15300>
+
+Flight n°  <904 "U" "C" 15850 16020>
+
+Flight n°  <963 "H" "I" 14610 14965>
+
+Flight n°  <965 "D" "U" 15340 15445>
+
+Flight n°  <992 "C" "H" 16585 16845>
+
+Flight n°  <993 "H" "I" 17490 17845>
+
+Flight n°  <994 "I" "B" 18020 18200>
+
+Flight n°  <1014 "B" "I" 13025 13165>
+
+Flight n°  <1041 "I" "H" 13710 14010>
+
+Flight n°  <1186 "C" "B" 10915 11125>
+
+Flight n°  <1220 "I" "G" 9895 10040>
+
+Flight n°  <1228 "C" "U" 21400 21580>
+
+Flight n°  <1235 "C" "I" 7000 7280>
+
+**********Flights assigned to aircraft 12 are :**********
+
+Flight n°  <10 "B" "D" 3620 3895>
+
+Flight n°  <11 "D" "H" 3930 4035>
+
+Flight n°  <51 "H" "D" 4110 4230>
+
+Flight n°  <52 "D" "B" 4920 5175>
+
+Flight n°  <263 "C" "B" 1150 1350>
+
+Flight n°  <285 "P" "B" 13775 13980>
+
+Flight n°  <367 "D" "E" 9280 9545>
+
+Flight n°  <383 "A" "K" 555 720>
+
+Flight n°  <384 "K" "L" 800 910>
+
+Flight n°  <385 "L" "C" 940 1115>
+
+Flight n°  <411 "S" "Q" 15820 15900>
+
+Flight n°  <419 "M" "B" 21065 21195>
+
+Flight n°  <448 "Q" "C" 18705 18880>
+
+Flight n°  <508 "B" "S" 14080 14310>
+
+Flight n°  <523 "K" "B" 3430 3590>
+
+Flight n°  <556 "B" "D" 5260 5545>
+
+Flight n°  <557 "D" "H" 5635 5750>
+
+Flight n°  <558 "H" "C" 7080 7370>
+
+Flight n°  <564 "B" "A" 11085 11280>
+
+Flight n°  <565 "A" "N" 12140 12260>
+
+Flight n°  <566 "N" "A" 12640 12755>
+
+Flight n°  <567 "A" "P" 13580 13690>
+
+Flight n°  <628 "E" "B" 10625 10805>
+
+Flight n°  <708 "C" "L" 7855 8045>
+
+Flight n°  <709 "L" "D" 8825 8935>
+
+Flight n°  <817 "C" "F" 19430 19560>
+
+Flight n°  <849 "I" "M" 20785 20965>
+
+Flight n°  <875 "F" "I" 19630 19835>
+
+Flight n°  <913 "B" "N" 1435 1645>
+
+Flight n°  <914 "N" "A" 2560 2675>
+
+Flight n°  <915 "A" "K" 2750 2860>
+
+**********Flights assigned to aircraft 13 are :**********
+
+Flight n°  <15 "F" "A" 5335 5555>
+
+Flight n°  <16 "A" "K" 5630 5740>
+
+Flight n°  <228 "B" "I" 2780 2955>
+
+Flight n°  <470 "B" "S" 9760 9990>
+
+Flight n°  <471 "S" "Q" 11500 11580>
+
+Flight n°  <472 "Q" "C" 12945 13120>
+
+Flight n°  <515 "C" "O" 19675 19845>
+
+Flight n°  <516 "O" "B" 21315 21415>
+
+Flight n°  <663 "I" "M" 625 805>
+
+Flight n°  <664 "M" "B" 1320 1450>
+
+Flight n°  <687 "D" "L" 16490 16655>
+
+Flight n°  <688 "L" "D" 17465 17575>
+
+Flight n°  <725 "D" "C" 19425 19635>
+
+Flight n°  <888 "D" "F" 6870 7115>
+
+Flight n°  <889 "F" "B" 8040 8150>
+
+Flight n°  <979 "I" "D" 3520 3780>
+
+Flight n°  <980 "D" "F" 3990 4235>
+
+Flight n°  <989 "C" "H" 13705 13965>
+
+Flight n°  <990 "H" "D" 14470 14590>
+
+Flight n°  <1084 "K" "D" 6385 6580>
+
+**********Flights assigned to aircraft 14 are :**********
+
+Flight n°  <92 "C" "B" 3415 3625>
+
+Flight n°  <93 "B" "F" 3705 3805>
+
+Flight n°  <94 "F" "B" 3835 3985>
+
+Flight n°  <95 "B" "D" 4015 4290>
+
+Flight n°  <172 "I" "N" 21080 21190>
+
+Flight n°  <254 "D" "I" 17895 18130>
+
+Flight n°  <258 "C" "D" 19675 19920>
+
+Flight n°  <259 "D" "I" 20775 21010>
+
+Flight n°  <299 "I" "B" 1990 2160>
+
+Flight n°  <300 "B" "O" 2195 2340>
+
+Flight n°  <301 "O" "C" 2380 2555>
+
+Flight n°  <302 "C" "B" 2590 2790>
+
+Flight n°  <393 "D" "L" 4970 5135>
+
+Flight n°  <394 "L" "K" 5235 5360>
+
+Flight n°  <395 "K" "I" 5430 5535>
+
+Flight n°  <396 "I" "B" 5570 5750>
+
+Flight n°  <464 "C" "I" 6385 6675>
+
+Flight n°  <506 "C" "R" 13585 13690>
+
+Flight n°  <512 "I" "J" 18230 18395>
+
+Flight n°  <513 "J" "M" 19320 19435>
+
+Flight n°  <514 "M" "C" 19465 19635>
+
+Flight n°  <543 "R" "B" 15645 15855>
+
+Flight n°  <599 "K" "C" 12130 12345>
+
+Flight n°  <600 "C" "B" 12445 12655>
+
+Flight n°  <653 "U" "R" 9755 9855>
+
+Flight n°  <654 "R" "B" 9885 10095>
+
+Flight n°  <826 "B" "C" 2845 3045>
+
+Flight n°  <833 "D" "T" 7920 8020>
+
+Flight n°  <834 "T" "K" 8215 8350>
+
+Flight n°  <835 "K" "B" 8420 8545>
+
+Flight n°  <869 "R" "B" 14205 14415>
+
+Flight n°  <890 "B" "R" 8625 8830>
+
+Flight n°  <894 "T" "K" 11095 11230>
+
+Flight n°  <903 "D" "U" 15340 15445>
+
+Flight n°  <923 "I" "K" 10720 10825>
+
+Flight n°  <924 "K" "T" 10895 11025>
+
+Flight n°  <932 "U" "R" 15515 15615>
+
+Flight n°  <964 "I" "D" 15040 15300>
+
+Flight n°  <1010 "B" "I" 10145 10285>
+
+Flight n°  <1016 "B" "I" 14465 14605>
+
+Flight n°  <1018 "B" "K" 15910 16035>
+
+Flight n°  <1019 "K" "F" 16460 16645>
+
+Flight n°  <1064 "R" "U" 8900 9000>
+
+Flight n°  <1101 "C" "K" 815 1020>
+
+Flight n°  <1102 "K" "P" 1050 1225>
+
+Flight n°  <1103 "P" "I" 1530 1630>
+
+Flight n°  <1133 "B" "C" 5850 6055>
+
+Flight n°  <1159 "I" "D" 6805 7075>
+
+Flight n°  <1167 "B" "C" 13050 13255>
+
+Flight n°  <1191 "F" "D" 17340 17570>
+
+**********Flights assigned to aircraft 15 are :**********
+
+Flight n°  <44 "C" "H" 535 750>
+
+Flight n°  <45 "H" "C" 1110 1400>
+
+Flight n°  <168 "M" "J" 18395 18510>
+
+Flight n°  <169 "J" "A" 19275 19455>
+
+Flight n°  <170 "A" "D" 19530 19745>
+
+Flight n°  <171 "D" "I" 20775 21010>
+
+Flight n°  <197 "B" "C" 10700 10905>
+
+Flight n°  <198 "C" "M" 10985 11125>
+
+Flight n°  <199 "M" "J" 11195 11310>
+
+Flight n°  <260 "I" "N" 21080 21190>
+
+Flight n°  <475 "J" "C" 14105 14310>
+
+Flight n°  <593 "C" "A" 7845 8135>
+
+Flight n°  <594 "A" "J" 8330 8505>
+
+Flight n°  <595 "J" "I" 9680 9850>
+
+Flight n°  <596 "I" "B" 9890 10070>
+
+Flight n°  <644 "G" "C" 2940 3170>
+
+Flight n°  <698 "C" "G" 1430 1705>
+
+Flight n°  <719 "C" "L" 15055 15245>
+
+Flight n°  <720 "L" "C" 16325 16525>
+
+Flight n°  <722 "B" "M" 16970 17090>
+
+Flight n°  <799 "G" "F" 5845 6025>
+
+Flight n°  <827 "C" "D" 3590 3805>
+
+Flight n°  <828 "D" "I" 3835 4105>
+
+Flight n°  <829 "I" "G" 4135 4280>
+
+Flight n°  <905 "C" "B" 16565 16775>
+
+Flight n°  <1031 "F" "I" 6670 6875>
+
+Flight n°  <1032 "I" "C" 6905 7185>
+
+Flight n°  <1092 "J" "C" 12665 12870>
+
+Flight n°  <1168 "C" "J" 13790 13990>
+
+**********Flights assigned to aircraft 16 are :**********
+
+Flight n°  <99 "G" "I" 7190 7300>
+
+Flight n°  <122 "B" "C" 19470 19675>
+
+Flight n°  <486 "P" "K" 1300 1435>
+
+Flight n°  <662 "U" "R" 21275 21375>
+
+Flight n°  <715 "P" "K" 12820 12955>
+
+Flight n°  <731 "K" "I" 2055 2160>
+
+Flight n°  <1075 "C" "U" 20975 21110>
+
+Flight n°  <1104 "I" "B" 2480 2660>
+
+Flight n°  <1117 "K" "D" 13585 13780>
+
+Flight n°  <1138 "I" "P" 8500 8605>
+
+Flight n°  <1200 "B" "G" 4420 4530>
+
+Flight n°  <1208 "D" "B" 15840 16130>
+
+**********Flights assigned to aircraft 17 are :**********
+
+Flight n°  <70 "D" "B" 13560 13815>
+
+Flight n°  <71 "B" "C" 13885 14085>
+
+Flight n°  <72 "C" "G" 14115 14390>
+
+Flight n°  <73 "G" "B" 15750 15900>
+
+Flight n°  <135 "I" "J" 3425 3595>
+
+Flight n°  <136 "J" "I" 3625 3790>
+
+Flight n°  <164 "B" "A" 16460 16655>
+
+Flight n°  <165 "A" "B" 16690 16945>
+
+Flight n°  <219 "B" "O" 20915 21060>
+
+Flight n°  <220 "O" "C" 21100 21275>
+
+Flight n°  <307 "B" "I" 4220 4395>
+
+Flight n°  <468 "C" "R" 9265 9370>
+
+Flight n°  <469 "R" "B" 9440 9665>
+
+Flight n°  <483 "K" "B" 20710 20870>
+
+Flight n°  <496 "K" "B" 5540 5665>
+
+Flight n°  <530 "H" "C" 8520 8810>
+
+Flight n°  <581 "B" "I" 2470 2645>
+
+Flight n°  <582 "I" "K" 2675 2780>
+
+Flight n°  <583 "K" "I" 2860 2970>
+
+Flight n°  <622 "B" "I" 6790 6965>
+
+Flight n°  <623 "I" "K" 6995 7100>
+
+Flight n°  <673 "K" "I" 7815 7920>
+
+Flight n°  <674 "I" "H" 7950 8250>
+
+Flight n°  <681 "C" "L" 12175 12365>
+
+Flight n°  <682 "L" "D" 13145 13255>
+
+Flight n°  <723 "M" "C" 18025 18195>
+
+Flight n°  <724 "C" "D" 18235 18480>
+
+Flight n°  <800 "F" "B" 6600 6710>
+
+Flight n°  <836 "B" "P" 9780 9970>
+
+Flight n°  <892 "I" "K" 10720 10825>
+
+Flight n°  <893 "K" "T" 10895 11025>
+
+Flight n°  <925 "T" "K" 11095 11230>
+
+Flight n°  <926 "K" "C" 11395 11595>
+
+Flight n°  <940 "I" "D" 640 900>
+
+Flight n°  <941 "D" "U" 940 1045>
+
+Flight n°  <943 "C" "B" 2165 2375>
+
+Flight n°  <946 "I" "K" 4960 5065>
+
+Flight n°  <947 "K" "T" 5135 5265>
+
+Flight n°  <948 "T" "K" 5335 5470>
+
+Flight n°  <976 "U" "C" 1450 1620>
+
+Flight n°  <998 "C" "Q" 21385 21510>
+
+Flight n°  <1029 "B" "K" 5830 5955>
+
+Flight n°  <1030 "K" "F" 6380 6565>
+
+Flight n°  <1106 "I" "B" 3920 4100>
+
+Flight n°  <1139 "P" "I" 10170 10270>
+
+Flight n°  <1192 "D" "E" 18705 18980>
+
+Flight n°  <1193 "E" "K" 19330 19525>
+
+Flight n°  <1194 "K" "I" 19555 19660>
+
+Flight n°  <1195 "I" "K" 19955 20060>
+
+Flight n°  <1209 "B" "M" 17440 17565>
+
+**********Flights assigned to aircraft 18 are :**********
+
+Flight n°  <96 "D" "B" 4920 5175>
+
+Flight n°  <97 "B" "C" 5245 5445>
+
+Flight n°  <133 "N" "B" 2540 2745>
+
+Flight n°  <179 "B" "I" 2780 2955>
+
+Flight n°  <225 "D" "I" 2055 2290>
+
+Flight n°  <226 "I" "N" 2360 2470>
+
+Flight n°  <294 "N" "B" 20970 21180>
+
+Flight n°  <359 "C" "D" 5530 5735>
+
+Flight n°  <501 "B" "K" 9570 9740>
+
+Flight n°  <502 "K" "B" 9860 9985>
+
+Flight n°  <507 "R" "B" 13760 13985>
+
+Flight n°  <570 "B" "A" 15405 15600>
+
+Flight n°  <571 "A" "P" 16460 16570>
+
+Flight n°  <572 "P" "K" 17140 17275>
+
+Flight n°  <573 "K" "C" 17890 18105>
+
+Flight n°  <574 "C" "B" 18205 18415>
+
+Flight n°  <629 "B" "I" 11110 11285>
+
+Flight n°  <632 "B" "E" 14080 14265>
+
+Flight n°  <633 "E" "B" 14945 15125>
+
+Flight n°  <738 "D" "C" 6465 6675>
+
+Flight n°  <739 "C" "O" 6715 6885>
+
+Flight n°  <740 "O" "B" 6915 7015>
+
+Flight n°  <741 "B" "P" 7090 7285>
+
+Flight n°  <759 "I" "H" 750 1050>
+
+Flight n°  <760 "H" "D" 1510 1630>
+
+Flight n°  <868 "B" "R" 12945 13150>
+
+Flight n°  <927 "C" "B" 12245 12455>
+
+Flight n°  <984 "P" "B" 8600 8750>
+
+Flight n°  <995 "B" "N" 18715 18925>
+
+Flight n°  <1130 "I" "D" 3925 4195>
+
+Flight n°  <1238 "I" "C" 11405 11690>
+
+**********Flights assigned to aircraft 19 are :**********
+
+Flight n°  <82 "C" "A" 19730 19975>
+
+Flight n°  <386 "C" "D" 1210 1415>
+
+Flight n°  <576 "A" "P" 20780 20890>
+
+Flight n°  <775 "I" "G" 9895 10040>
+
+Flight n°  <792 "A" "C" 650 935>
+
+Flight n°  <801 "B" "M" 6890 7010>
+
+Flight n°  <843 "B" "R" 15825 16030>
+
+Flight n°  <867 "G" "B" 11800 11910>
+
+Flight n°  <907 "R" "C" 18695 18805>
+
+Flight n°  <928 "B" "N" 12955 13165>
+
+Flight n°  <929 "N" "I" 14680 14785>
+
+Flight n°  <1119 "I" "B" 15440 15620>
+
+Flight n°  <1199 "D" "B" 2880 3170>
+
+Flight n°  <1219 "M" "I" 9220 9400>
+
+**********Flights assigned to aircraft 20 are :**********
+
+Flight n°  <37 "C" "B" 17815 18025>
+
+Flight n°  <38 "B" "F" 18105 18205>
+
+Flight n°  <39 "F" "B" 18235 18385>
+
+Flight n°  <40 "B" "E" 19255 19440>
+
+Flight n°  <41 "E" "D" 19475 19730>
+
+Flight n°  <186 "B" "C" 5070 5275>
+
+Flight n°  <187 "C" "B" 5360 5570>
+
+Flight n°  <188 "B" "P" 5650 5845>
+
+Flight n°  <189 "P" "C" 6465 6770>
+
+Flight n°  <190 "C" "B" 6800 7010>
+
+Flight n°  <191 "B" "P" 7090 7285>
+
+Flight n°  <192 "P" "C" 7905 8210>
+
+Flight n°  <193 "C" "B" 8240 8450>
+
+Flight n°  <321 "C" "R" 9550 9655>
+
+Flight n°  <322 "R" "C" 9685 9795>
+
+Flight n°  <344 "C" "P" 620 925>
+
+Flight n°  <345 "P" "N" 1000 1050>
+
+Flight n°  <346 "N" "A" 1120 1235>
+
+Flight n°  <347 "A" "F" 1305 1520>
+
+Flight n°  <348 "F" "C" 2090 2260>
+
+Flight n°  <349 "C" "R" 2350 2455>
+
+Flight n°  <350 "R" "C" 2485 2595>
+
+Flight n°  <351 "C" "D" 2650 2855>
+
+Flight n°  <352 "D" "A" 3505 3720>
+
+Flight n°  <353 "A" "C" 3790 4080>
+
+Flight n°  <354 "C" "R" 4115 4225>
+
+Flight n°  <356 "I" "B" 4870 5040>
+
+Flight n°  <375 "C" "R" 15025 15130>
+
+Flight n°  <376 "R" "B" 15200 15425>
+
+Flight n°  <473 "C" "I" 13585 13875>
+
+Flight n°  <474 "I" "J" 13910 14075>
+
+Flight n°  <504 "D" "A" 12145 12360>
+
+Flight n°  <505 "A" "C" 12430 12720>
+
+Flight n°  <636 "B" "S" 16960 17190>
+
+Flight n°  <658 "B" "U" 15525 15740>
+
+Flight n°  <721 "C" "B" 16565 16775>
+
+Flight n°  <772 "B" "I" 8540 8715>
+
+Flight n°  <773 "I" "C" 9245 9485>
+
+Flight n°  <790 "C" "D" 20870 21085>
+
+Flight n°  <883 "R" "I" 4285 4500>
+
+Flight n°  <898 "U" "C" 12970 13140>
+
+Flight n°  <957 "C" "K" 9860 10065>
+
+Flight n°  <958 "K" "I" 10695 10800>
+
+Flight n°  <966 "U" "C" 15850 16020>
+
+Flight n°  <974 "D" "I" 21115 21385>
+
+Flight n°  <1045 "S" "C" 17270 17385>
+
+Flight n°  <1074 "D" "C" 19855 20120>
+
+Flight n°  <1121 "G" "B" 19000 19110>
+
+Flight n°  <1140 "I" "D" 11125 11395>
+
+Flight n°  <1169 "J" "C" 14105 14310>
+
+Flight n°  <1173 "B" "G" 18820 18930>
+
+Flight n°  <1239 "C" "U" 12760 12940>
+
+**********Flights assigned to aircraft 21 are :**********
+
+Flight n°  <42 "D" "H" 19770 19875>
+
+Flight n°  <43 "H" "C" 21270 21560>
+
+Flight n°  <142 "C" "H" 6295 6510>
+
+Flight n°  <389 "B" "C" 3500 3705>
+
+Flight n°  <476 "C" "I" 15025 15315>
+
+Flight n°  <477 "I" "J" 15350 15515>
+
+Flight n°  <478 "J" "M" 16440 16555>
+
+Flight n°  <479 "M" "C" 16585 16755>
+
+Flight n°  <480 "C" "O" 16795 16965>
+
+Flight n°  <481 "O" "B" 18435 18535>
+
+Flight n°  <550 "B" "T" 940 1150>
+
+Flight n°  <551 "T" "B" 1225 1450>
+
+Flight n°  <552 "B" "T" 2380 2590>
+
+Flight n°  <553 "T" "B" 2665 2890>
+
+Flight n°  <585 "C" "B" 3805 4015>
+
+Flight n°  <586 "B" "C" 4135 4385>
+
+Flight n°  <601 "B" "C" 12775 13025>
+
+Flight n°  <707 "H" "C" 7080 7370>
+
+Flight n°  <746 "C" "T" 13660 13860>
+
+Flight n°  <747 "T" "C" 13890 14100>
+
+Flight n°  <1060 "C" "J" 5125 5330>
+
+Flight n°  <1061 "J" "C" 5465 5670>
+
+Flight n°  <1097 "B" "K" 18790 18915>
+
+Flight n°  <1098 "K" "D" 19345 19540>
+
+Flight n°  <1115 "I" "B" 11120 11300>
+
+Flight n°  <1136 "C" "K" 8015 8220>
+
+Flight n°  <1137 "K" "I" 8310 8415>
+
+Flight n°  <1212 "K" "B" 720 845>
+
+Flight n°  <1236 "I" "P" 8500 8605>
+
+Flight n°  <1237 "P" "I" 10170 10270>
+
+**********Flights assigned to aircraft 22 are :**********
+
+Flight n°  <175 "B" "D" 1135 1410>
+
+Flight n°  <238 "B" "P" 7090 7285>
+
+Flight n°  <248 "B" "P" 12660 12850>
+
+Flight n°  <387 "D" "E" 2080 2345>
+
+Flight n°  <388 "E" "B" 2780 2965>
+
+Flight n°  <485 "A" "P" 620 730>
+
+Flight n°  <542 "C" "R" 15310 15415>
+
+Flight n°  <568 "P" "K" 14260 14395>
+
+Flight n°  <604 "K" "C" 15010 15225>
+
+Flight n°  <613 "P" "B" 815 1020>
+
+Flight n°  <742 "P" "B" 8600 8750>
+
+Flight n°  <1149 "R" "U" 18980 19080>
+
+**********Flights assigned to aircraft 23 are :**********
+
+Flight n°  <100 "I" "J" 7745 7915>
+
+Flight n°  <101 "J" "I" 7945 8110>
+
+Flight n°  <102 "I" "B" 8140 8315>
+
+Flight n°  <103 "B" "G" 8415 8520>
+
+Flight n°  <104 "G" "I" 10070 10180>
+
+Flight n°  <105 "I" "J" 10625 10795>
+
+Flight n°  <106 "J" "I" 10825 10990>
+
+Flight n°  <107 "I" "B" 11020 11195>
+
+Flight n°  <108 "B" "G" 11295 11400>
+
+Flight n°  <229 "I" "B" 3430 3600>
+
+Flight n°  <230 "B" "O" 3635 3780>
+
+Flight n°  <231 "O" "C" 3820 3995>
+
+Flight n°  <245 "C" "B" 12055 12265>
+
+Flight n°  <246 "B" "F" 12345 12445>
+
+Flight n°  <247 "F" "B" 12475 12625>
+
+Flight n°  <269 "C" "B" 4030 4230>
+
+Flight n°  <332 "C" "P" 15020 15325>
+
+Flight n°  <333 "P" "N" 15400 15450>
+
+Flight n°  <334 "N" "A" 15520 15635>
+
+Flight n°  <335 "A" "K" 16395 16560>
+
+Flight n°  <336 "K" "L" 16640 16750>
+
+Flight n°  <337 "L" "C" 16780 16955>
+
+Flight n°  <379 "S" "Q" 18225 18310>
+
+Flight n°  <380 "Q" "S" 18580 18680>
+
+Flight n°  <421 "M" "B" 905 1035>
+
+Flight n°  <422 "B" "Q" 1100 1335>
+
+Flight n°  <423 "Q" "B" 1405 1650>
+
+Flight n°  <424 "B" "M" 2075 2245>
+
+Flight n°  <425 "M" "B" 2345 2475>
+
+Flight n°  <588 "B" "I" 5350 5525>
+
+Flight n°  <589 "I" "K" 5555 5660>
+
+Flight n°  <665 "B" "M" 2570 2690>
+
+Flight n°  <666 "M" "B" 2760 2890>
+
+Flight n°  <676 "C" "L" 9295 9485>
+
+Flight n°  <677 "L" "K" 9555 9680>
+
+Flight n°  <678 "K" "I" 9750 9855>
+
+Flight n°  <679 "I" "G" 9895 10040>
+
+Flight n°  <680 "G" "C" 11580 11810>
+
+Flight n°  <716 "K" "I" 13575 13680>
+
+Flight n°  <717 "I" "H" 13710 14010>
+
+Flight n°  <718 "H" "C" 14280 14570>
+
+Flight n°  <821 "J" "M" 600 715>
+
+Flight n°  <847 "C" "D" 19430 19645>
+
+Flight n°  <848 "D" "I" 19675 19945>
+
+Flight n°  <858 "I" "F" 6390 6590>
+
+Flight n°  <859 "F" "C" 6660 6790>
+
+Flight n°  <860 "C" "I" 6890 7175>
+
+Flight n°  <876 "I" "F" 20790 20990>
+
+Flight n°  <877 "F" "I" 21070 21275>
+
+Flight n°  <949 "K" "I" 5740 5850>
+
+Flight n°  <1002 "B" "A" 4325 4530>
+
+Flight n°  <1003 "A" "B" 5035 5170>
+
+Flight n°  <1046 "C" "S" 18080 18195>
+
+Flight n°  <1047 "S" "C" 18710 18825>
+
+Flight n°  <1105 "B" "I" 2945 3085>
+
+Flight n°  <1116 "B" "K" 13030 13155>
+
+Flight n°  <1183 "G" "C" 8935 9205>
+
+**********Flights assigned to aircraft 24 are :**********
+
+Flight n°  <1 "A" "B" 525 715>
+
+Flight n°  <2 "B" "C" 750 955>
+
+Flight n°  <200 "J" "A" 12075 12255>
+
+Flight n°  <201 "A" "D" 12330 12545>
+
+Flight n°  <289 "D" "C" 16690 16950>
+
+Flight n°  <531 "C" "I" 9265 9555>
+
+Flight n°  <649 "B" "U" 5445 5660>
+
+Flight n°  <683 "D" "L" 13610 13775>
+
+Flight n°  <684 "L" "D" 14585 14695>
+
+Flight n°  <752 "C" "T" 17980 18180>
+
+Flight n°  <753 "T" "C" 18210 18420>
+
+Flight n°  <818 "F" "C" 19620 19750>
+
+Flight n°  <851 "C" "F" 1120 1245>
+
+Flight n°  <908 "C" "F" 19430 19560>
+
+Flight n°  <931 "D" "U" 15340 15445>
+
+Flight n°  <1025 "F" "J" 1425 1540>
+
+Flight n°  <1026 "J" "I" 2545 2670>
+
+Flight n°  <1027 "I" "P" 2740 2845>
+
+Flight n°  <1033 "C" "S" 8000 8115>
+
+Flight n°  <1034 "S" "C" 8630 8745>
+
+Flight n°  <1071 "U" "D" 16230 16330>
+
+Flight n°  <1082 "P" "B" 4280 4430>
+
+Flight n°  <1088 "I" "B" 9680 9860>
+
+Flight n°  <1089 "B" "K" 10150 10275>
+
+Flight n°  <1090 "K" "F" 10700 10835>
+
+Flight n°  <1091 "F" "J" 11505 11620>
+
+Flight n°  <1135 "U" "C" 7760 7910>
+
+Flight n°  <1151 "C" "J" 20990 21190>
+
+**********Flights assigned to aircraft 25 are :**********
+
+Flight n°  <428 "Q" "S" 4180 4280>
+
+Flight n°  <429 "S" "Q" 5265 5350>
+
+Flight n°  <430 "Q" "B" 5725 5970>
+
+Flight n°  <547 "D" "L" 20810 20975>
+
+Flight n°  <548 "L" "K" 21075 21200>
+
+Flight n°  <743 "B" "M" 9770 9890>
+
+Flight n°  <975 "D" "U" 940 1045>
+
+Flight n°  <1073 "T" "D" 18325 18420>
+
+Flight n°  <1095 "D" "T" 15620 15720>
+
+Flight n°  <1207 "M" "D" 14715 14900>
+
+Flight n°  <1230 "U" "C" 2000 2150>
+
+Flight n°  <1231 "C" "Q" 2665 2790>
+
+**********Flights assigned to aircraft 26 are :**********
+
+Flight n°  <32 "G" "B" 14310 14460>
+
+Flight n°  <33 "B" "E" 14935 15120>
+
+Flight n°  <34 "E" "D" 15155 15410>
+
+Flight n°  <62 "A" "J" 9770 9945>
+
+Flight n°  <63 "J" "A" 10635 10815>
+
+Flight n°  <64 "A" "D" 10890 11105>
+
+Flight n°  <110 "I" "J" 13505 13675>
+
+Flight n°  <111 "J" "I" 13705 13870>
+
+Flight n°  <112 "I" "B" 13900 14075>
+
+Flight n°  <113 "B" "G" 14175 14280>
+
+Flight n°  <128 "B" "F" 825 925>
+
+Flight n°  <131 "D" "I" 2055 2290>
+
+Flight n°  <132 "I" "N" 2360 2470>
+
+Flight n°  <148 "I" "K" 9460 9565>
+
+Flight n°  <149 "K" "A" 9595 9740>
+
+Flight n°  <153 "D" "B" 11135 11430>
+
+Flight n°  <178 "N" "B" 2540 2745>
+
+Flight n°  <221 "C" "B" 535 745>
+
+Flight n°  <223 "F" "B" 955 1105>
+
+Flight n°  <224 "B" "D" 1135 1410>
+
+Flight n°  <303 "B" "C" 2845 3045>
+
+Flight n°  <449 "C" "I" 19345 19635>
+
+Flight n°  <450 "I" "J" 19670 19835>
+
+Flight n°  <451 "J" "M" 20760 20875>
+
+Flight n°  <452 "M" "C" 20905 21075>
+
+Flight n°  <453 "C" "O" 21115 21285>
+
+Flight n°  <645 "C" "L" 3535 3725>
+
+Flight n°  <646 "L" "K" 3795 3920>
+
+Flight n°  <647 "K" "I" 3990 4095>
+
+Flight n°  <648 "I" "B" 4130 4310>
+
+Flight n°  <727 "O" "B" 21315 21415>
+
+Flight n°  <845 "I" "M" 17905 18085>
+
+Flight n°  <846 "M" "C" 19080 19220>
+
+Flight n°  <950 "I" "K" 6400 6505>
+
+Flight n°  <951 "K" "T" 6575 6705>
+
+Flight n°  <952 "T" "D" 6805 6900>
+
+Flight n°  <953 "D" "T" 6980 7080>
+
+Flight n°  <967 "C" "H" 16585 16845>
+
+Flight n°  <968 "H" "I" 17490 17845>
+
+Flight n°  <991 "D" "C" 15535 15800>
+
+Flight n°  <1012 "B" "I" 11585 11725>
+
+Flight n°  <1039 "I" "C" 12275 12565>
+
+Flight n°  <1040 "C" "I" 12650 12935>
+
+Flight n°  <1086 "T" "D" 8245 8340>
+
+Flight n°  <1087 "D" "I" 8600 8835>
+
+Flight n°  <1107 "B" "C" 4410 4615>
+
+Flight n°  <1108 "C" "K" 5135 5340>
+
+Flight n°  <1109 "K" "P" 5370 5545>
+
+Flight n°  <1158 "P" "I" 5850 5950>
+
+**********Flights assigned to aircraft 27 are :**********
+
+Flight n°  <58 "D" "B" 8255 8550>
+
+Flight n°  <143 "H" "D" 6990 7110>
+
+Flight n°  <185 "I" "B" 4870 5040>
+
+Flight n°  <323 "C" "D" 9850 10055>
+
+Flight n°  <324 "D" "A" 10705 10920>
+
+Flight n°  <325 "A" "C" 10990 11280>
+
+Flight n°  <495 "B" "K" 5250 5420>
+
+Flight n°  <607 "C" "I" 16770 17055>
+
+Flight n°  <693 "D" "K" 20860 21070>
+
+Flight n°  <694 "K" "D" 21100 21295>
+
+Flight n°  <705 "K" "I" 6375 6480>
+
+Flight n°  <706 "I" "H" 6510 6810>
+
+Flight n°  <955 "B" "A" 8645 8850>
+
+Flight n°  <956 "A" "C" 9290 9575>
+
+Flight n°  <969 "I" "K" 17920 18025>
+
+Flight n°  <970 "K" "T" 18095 18225>
+
+Flight n°  <971 "T" "D" 18325 18420>
+
+Flight n°  <972 "D" "T" 19440 19540>
+
+Flight n°  <973 "T" "D" 19765 19860>
+
+Flight n°  <1069 "R" "C" 14375 14485>
+
+Flight n°  <1070 "C" "U" 15215 15350>
+
+Flight n°  <1128 "I" "D" 2485 2755>
+
+Flight n°  <1129 "D" "I" 2840 3075>
+
+Flight n°  <1152 "I" "C" 1145 1425>
+
+Flight n°  <1153 "C" "I" 1505 1745>
+
+Flight n°  <1215 "I" "K" 4115 4220>
+
+Flight n°  <1216 "K" "I" 4300 4410>
+
+Flight n°  <1222 "C" "R" 12755 12865>
+
+Flight n°  <1224 "U" "C" 16400 16600>
+
+**********Flights assigned to aircraft 28 are :**********
+
+Flight n°  <46 "C" "G" 1430 1705>
+
+Flight n°  <47 "G" "B" 2790 2940>
+
+Flight n°  <109 "G" "I" 12950 13060>
+
+Flight n°  <286 "B" "Q" 14060 14295>
+
+Flight n°  <287 "Q" "C" 15510 15640>
+
+Flight n°  <382 "Q" "S" 21460 21560>
+
+Flight n°  <637 "S" "Q" 18700 18780>
+
+Flight n°  <667 "B" "C" 4010 4215>
+
+Flight n°  <668 "C" "G" 4310 4585>
+
+Flight n°  <999 "D" "C" 1135 1400>
+
+Flight n°  <1015 "I" "B" 13700 13880>
+
+Flight n°  <1044 "C" "S" 16640 16755>
+
+**********Flights assigned to aircraft 29 are :**********
+
+Flight n°  <13 "D" "E" 4855 5060>
+
+Flight n°  <14 "E" "F" 5155 5265>
+
+Flight n°  <115 "I" "J" 16385 16555>
+
+Flight n°  <116 "J" "I" 16585 16750>
+
+Flight n°  <117 "I" "B" 16780 16955>
+
+Flight n°  <166 "B" "C" 17900 18105>
+
+Flight n°  <194 "B" "P" 8530 8725>
+
+Flight n°  <195 "P" "C" 9345 9650>
+
+Flight n°  <196 "C" "B" 9680 9890>
+
+Flight n°  <295 "D" "A" 625 840>
+
+Flight n°  <296 "A" "C" 910 1200>
+
+Flight n°  <297 "C" "R" 1235 1345>
+
+Flight n°  <298 "R" "I" 1405 1620>
+
+Flight n°  <390 "C" "R" 3790 3895>
+
+Flight n°  <391 "R" "C" 3925 4035>
+
+Flight n°  <392 "C" "D" 4090 4295>
+
+Flight n°  <527 "C" "B" 6400 6600>
+
+Flight n°  <528 "B" "D" 6700 6985>
+
+Flight n°  <529 "D" "H" 7075 7190>
+
+Flight n°  <537 "B" "D" 12460 12745>
+
+Flight n°  <541 "I" "C" 15005 15245>
+
+Flight n°  <577 "P" "K" 21460 21595>
+
+Flight n°  <584 "I" "C" 3485 3725>
+
+Flight n°  <605 "C" "I" 15330 15615>
+
+Flight n°  <609 "C" "I" 18210 18495>
+
+Flight n°  <610 "I" "M" 19345 19525>
+
+Flight n°  <611 "M" "B" 19625 19755>
+
+Flight n°  <661 "B" "U" 19845 20060>
+
+Flight n°  <732 "I" "H" 2190 2490>
+
+Flight n°  <768 "H" "D" 7270 7390>
+
+Flight n°  <769 "D" "C" 7905 8115>
+
+Flight n°  <770 "C" "O" 8155 8325>
+
+Flight n°  <771 "O" "B" 8355 8455>
+
+Flight n°  <919 "F" "G" 5725 5865>
+
+Flight n°  <960 "C" "Q" 11305 11430>
+
+Flight n°  <978 "H" "I" 3090 3445>
+
+Flight n°  <985 "B" "A" 10085 10290>
+
+Flight n°  <986 "A" "C" 10730 11015>
+
+Flight n°  <1050 "K" "P" 21210 21385>
+
+Flight n°  <1118 "D" "I" 14360 14595>
+
+Flight n°  <1120 "B" "G" 17370 17485>
+
+Flight n°  <1123 "C" "K" 20975 21180>
+
+Flight n°  <1141 "D" "E" 12945 13220>
+
+Flight n°  <1142 "E" "K" 13570 13765>
+
+Flight n°  <1143 "K" "I" 13795 13900>
+
+Flight n°  <1144 "I" "D" 14005 14275>
+
+Flight n°  <1150 "U" "C" 20720 20870>
+
+Flight n°  <1172 "G" "B" 17560 17670>
+
+Flight n°  <1180 "G" "C" 6055 6325>
+
+Flight n°  <1205 "Q" "B" 11610 11905>
+
+**********Flights assigned to aircraft 30 are :**********
+
+Flight n°  <22 "B" "C" 8125 8325>
+
+Flight n°  <23 "C" "G" 8355 8630>
+
+Flight n°  <24 "G" "B" 9990 10140>
+
+Flight n°  <80 "A" "B" 19245 19435>
+
+Flight n°  <86 "K" "B" 550 710>
+
+Flight n°  <87 "B" "D" 740 1015>
+
+Flight n°  <118 "B" "I" 17890 18030>
+
+Flight n°  <119 "I" "K" 18100 18205>
+
+Flight n°  <120 "K" "A" 18235 18380>
+
+Flight n°  <154 "B" "I" 12130 12270>
+
+Flight n°  <155 "I" "K" 12340 12445>
+
+Flight n°  <156 "K" "A" 12475 12620>
+
+Flight n°  <157 "A" "J" 12650 12825>
+
+Flight n°  <158 "J" "A" 13515 13695>
+
+Flight n°  <159 "A" "D" 13770 13985>
+
+Flight n°  <205 "D" "F" 14070 14315>
+
+Flight n°  <206 "F" "B" 14945 15050>
+
+Flight n°  <281 "C" "B" 11230 11430>
+
+Flight n°  <431 "B" "M" 6395 6565>
+
+Flight n°  <432 "M" "B" 6665 6795>
+
+Flight n°  <433 "B" "E" 6880 7065>
+
+Flight n°  <434 "E" "B" 7745 7925>
+
+Flight n°  <440 "B" "C" 10910 11120>
+
+Flight n°  <482 "B" "K" 19650 19820>
+
+Flight n°  <544 "B" "T" 16780 16990>
+
+Flight n°  <620 "C" "A" 4965 5255>
+
+Flight n°  <621 "A" "B" 5550 5745>
+
+Flight n°  <701 "B" "U" 4005 4220>
+
+Flight n°  <702 "U" "C" 4330 4500>
+
+Flight n°  <791 "D" "I" 21115 21385>
+
+Flight n°  <1055 "I" "R" 2555 2775>
+
+Flight n°  <1056 "R" "C" 2855 2965>
+
+Flight n°  <1096 "T" "B" 17065 17290>
+
+Flight n°  <1125 "D" "E" 1425 1700>
+
+Flight n°  <1126 "E" "K" 2050 2245>
+
+Flight n°  <1127 "K" "I" 2275 2380>
+
+Flight n°  <1178 "C" "B" 3715 3925>
+
+Flight n°  <1196 "K" "D" 20785 20980>
+
+**********Flights assigned to aircraft 31 are :**********
+
+Flight n°  <65 "D" "B" 11135 11430>
+
+Flight n°  <160 "D" "B" 14015 14310>
+
+Flight n°  <204 "B" "D" 13700 13975>
+
+Flight n°  <237 "C" "B" 6800 7010>
+
+Flight n°  <355 "R" "I" 4285 4500>
+
+Flight n°  <490 "Q" "C" 2865 3040>
+
+Flight n°  <491 "C" "R" 3505 3610>
+
+Flight n°  <549 "C" "B" 640 840>
+
+Flight n°  <612 "B" "I" 21190 21365>
+
+Flight n°  <614 "B" "S" 1120 1350>
+
+Flight n°  <615 "S" "Q" 1420 1500>
+
+Flight n°  <886 "I" "C" 5465 5745>
+
+Flight n°  <1065 "U" "D" 10470 10570>
+
+Flight n°  <1111 "B" "C" 7290 7495>
+
+Flight n°  <1112 "C" "U" 8015 8150>
+
+Flight n°  <1171 "B" "G" 15930 16045>
+
+Flight n°  <1174 "G" "B" 20440 20550>
+
+**********Flights assigned to aircraft 32 are :**********
+
+Flight n°  <5 "D" "E" 1990 2245>
+
+Flight n°  <6 "E" "F" 2375 2485>
+
+Flight n°  <7 "F" "A" 2555 2775>
+
+Flight n°  <8 "A" "F" 2845 3065>
+
+Flight n°  <9 "F" "B" 3425 3530>
+
+Flight n°  <53 "B" "C" 5245 5445>
+
+Flight n°  <54 "C" "G" 5475 5750>
+
+Flight n°  <56 "B" "E" 7735 7920>
+
+Flight n°  <57 "E" "D" 7955 8210>
+
+Flight n°  <139 "G" "C" 4380 4610>
+
+Flight n°  <329 "B" "C" 13580 13785>
+
+Flight n°  <330 "C" "R" 13870 13975>
+
+Flight n°  <341 "A" "K" 20715 20880>
+
+Flight n°  <342 "K" "L" 20960 21070>
+
+Flight n°  <343 "L" "C" 21100 21275>
+
+Flight n°  <373 "B" "Q" 12620 12855>
+
+Flight n°  <412 "Q" "B" 17245 17490>
+
+Flight n°  <413 "B" "C" 17900 18105>
+
+Flight n°  <414 "C" "I" 18195 18430>
+
+Flight n°  <442 "Q" "B" 12925 13170>
+
+Flight n°  <446 "B" "C" 16670 16880>
+
+Flight n°  <447 "C" "Q" 16950 17070>
+
+Flight n°  <461 "B" "C" 3805 4005>
+
+Flight n°  <462 "C" "G" 4035 4310>
+
+Flight n°  <463 "G" "C" 5820 6050>
+
+Flight n°  <532 "I" "B" 9680 9860>
+
+Flight n°  <533 "B" "C" 9895 10145>
+
+Flight n°  <534 "C" "B" 10720 10920>
+
+Flight n°  <535 "B" "T" 11020 11230>
+
+Flight n°  <536 "T" "B" 11305 11530>
+
+Flight n°  <578 "C" "B" 640 845>
+
+Flight n°  <579 "B" "A" 1005 1200>
+
+Flight n°  <580 "A" "B" 1230 1425>
+
+Flight n°  <587 "C" "B" 4960 5160>
+
+Flight n°  <635 "E" "B" 16385 16565>
+
+Flight n°  <650 "U" "R" 6875 6975>
+
+Flight n°  <651 "R" "B" 7005 7215>
+
+Flight n°  <685 "D" "K" 15100 15310>
+
+Flight n°  <686 "K" "D" 15340 15535>
+
+Flight n°  <822 "M" "D" 1755 1940>
+
+Flight n°  <874 "I" "F" 19350 19550>
+
+Flight n°  <909 "F" "A" 19670 19930>
+
+Flight n°  <920 "G" "B" 7480 7590>
+
+Flight n°  <1094 "U" "D" 14790 14890>
+
+Flight n°  <1134 "C" "U" 6575 6710>
+
+Flight n°  <1145 "D" "E" 15825 16100>
+
+Flight n°  <1160 "D" "E" 8625 8900>
+
+Flight n°  <1161 "E" "K" 9250 9445>
+
+Flight n°  <1162 "K" "I" 9475 9580>
+
+Flight n°  <1166 "C" "B" 12355 12565>
+
+Flight n°  <1182 "B" "G" 7300 7410>
+
+Flight n°  <1187 "B" "G" 11620 11730>
+
+Flight n°  <1213 "B" "M" 1600 1725>
+
+Flight n°  <1221 "G" "C" 11815 12085>
+
+Flight n°  <1223 "R" "U" 14660 14760>
+
+**********Flights assigned to aircraft 33 are :**********
+
+Flight n°  <90 "C" "H" 1975 2190>
+
+Flight n°  <239 "P" "C" 7905 8210>
+
+Flight n°  <240 "C" "B" 8240 8450>
+
+Flight n°  <241 "B" "P" 8530 8725>
+
+Flight n°  <242 "P" "C" 9345 9650>
+
+Flight n°  <244 "Q" "C" 11190 11320>
+
+Flight n°  <266 "H" "C" 2760 3050>
+
+Flight n°  <288 "C" "D" 16450 16655>
+
+Flight n°  <331 "R" "C" 14005 14115>
+
+Flight n°  <545 "T" "B" 18130 18390>
+
+Flight n°  <782 "C" "K" 15100 15305>
+
+Flight n°  <783 "K" "C" 15335 15545>
+
+Flight n°  <855 "C" "F" 5030 5160>
+
+Flight n°  <935 "B" "N" 18715 18925>
+
+Flight n°  <936 "N" "I" 20440 20545>
+
+Flight n°  <942 "U" "C" 1450 1620>
+
+Flight n°  <981 "F" "J" 5745 5860>
+
+Flight n°  <982 "J" "I" 6865 6990>
+
+Flight n°  <983 "I" "P" 7060 7165>
+
+Flight n°  <1049 "I" "K" 20980 21085>
+
+Flight n°  <1057 "C" "I" 3685 3925>
+
+Flight n°  <1058 "I" "R" 3995 4215>
+
+Flight n°  <1059 "R" "C" 4295 4405>
+
+Flight n°  <1067 "C" "I" 12325 12565>
+
+Flight n°  <1068 "I" "R" 12635 12855>
+
+Flight n°  <1072 "D" "T" 17060 17160>
+
+Flight n°  <1076 "C" "U" 815 950>
+
+Flight n°  <1204 "C" "Q" 9865 9990>
+
+**********Flights assigned to aircraft 34 are :**********
+
+Flight n°  <278 "Q" "C" 9750 9880>
+
+Flight n°  <699 "G" "F" 2965 3145>
+
+Flight n°  <700 "F" "B" 3710 3815>
+
+Flight n°  <852 "F" "G" 1315 1455>
+
+Flight n°  <1024 "K" "F" 620 805>
+
+Flight n°  <1093 "C" "U" 13775 13910>
+
+Flight n°  <1164 "C" "J" 10910 11110>
+
+Flight n°  <1165 "J" "C" 11225 11430>
+
+Flight n°  <1202 "C" "Q" 6985 7110>
+
+Flight n°  <1233 "B" "M" 4480 4605>
+
+Flight n°  <1234 "M" "C" 6120 6260>
+
+**********Flights assigned to aircraft 35 are :**********
+
+Flight n°  <69 "B" "D" 12655 12930>
+
+Flight n°  <74 "B" "I" 16450 16590>
+
+Flight n°  <75 "I" "K" 16660 16765>
+
+Flight n°  <76 "K" "A" 16795 16940>
+
+Flight n°  <77 "A" "B" 17805 17995>
+
+Flight n°  <78 "B" "C" 18030 18235>
+
+Flight n°  <79 "C" "A" 18290 18535>
+
+Flight n°  <81 "B" "C" 19470 19675>
+
+Flight n°  <121 "A" "B" 19245 19435>
+
+Flight n°  <123 "C" "A" 19730 19975>
+
+Flight n°  <124 "A" "K" 20715 20880>
+
+Flight n°  <144 "D" "B" 7800 8055>
+
+Flight n°  <233 "B" "A" 4940 5135>
+
+Flight n°  <234 "A" "B" 5170 5425>
+
+Flight n°  <235 "B" "P" 5460 5650>
+
+Flight n°  <264 "B" "C" 1405 1605>
+
+Flight n°  <282 "B" "A" 12140 12335>
+
+Flight n°  <283 "A" "B" 12370 12625>
+
+Flight n°  <369 "B" "A" 10700 10895>
+
+Flight n°  <370 "A" "B" 10930 11185>
+
+Flight n°  <371 "B" "P" 11220 11410>
+
+Flight n°  <377 "B" "Q" 15500 15735>
+
+Flight n°  <397 "B" "M" 6395 6565>
+
+Flight n°  <398 "M" "B" 6665 6795>
+
+Flight n°  <445 "Q" "B" 15805 16050>
+
+Flight n°  <493 "B" "E" 4000 4185>
+
+Flight n°  <494 "E" "B" 4220 4405>
+
+Flight n°  <499 "B" "T" 8140 8350>
+
+Flight n°  <500 "T" "B" 8425 8650>
+
+Flight n°  <517 "I" "C" 605 845>
+
+Flight n°  <518 "C" "B" 925 1135>
+
+Flight n°  <520 "C" "R" 2065 2170>
+
+Flight n°  <521 "R" "C" 2485 2595>
+
+Flight n°  <522 "C" "K" 2660 2865>
+
+Flight n°  <538 "D" "L" 13610 13775>
+
+Flight n°  <539 "L" "K" 13875 14000>
+
+Flight n°  <540 "K" "I" 14070 14175>
+
+Flight n°  <562 "B" "A" 9645 9840>
+
+Flight n°  <796 "F" "B" 3720 3830>
+
+Flight n°  <802 "M" "B" 7080 7210>
+
+Flight n°  <806 "A" "B" 9870 10065>
+
+Flight n°  <831 "B" "M" 6890 7010>
+
+Flight n°  <832 "M" "D" 7515 7700>
+
+Flight n°  <837 "P" "B" 11480 11630>
+
+Flight n°  <916 "K" "F" 3500 3685>
+
+Flight n°  <938 "K" "T" 20975 21105>
+
+Flight n°  <939 "T" "K" 21175 21310>
+
+Flight n°  <1008 "B" "I" 8705 8845>
+
+Flight n°  <1009 "I" "B" 9380 9560>
+
+Flight n°  <1017 "I" "B" 15140 15320>
+
+Flight n°  <1110 "P" "B" 5720 5870>
+
+Flight n°  <1218 "B" "M" 7360 7485>
+
+**********Flights assigned to aircraft 36 are :**********
+
+Flight n°  <141 "H" "C" 5430 5720>
+
+Flight n°  <317 "C" "R" 8110 8215>
+
+Flight n°  <318 "R" "C" 8245 8355>
+
+Flight n°  <319 "C" "F" 8400 8535>
+
+Flight n°  <320 "F" "C" 9290 9460>
+
+Flight n°  <524 "B" "D" 3820 4105>
+
+Flight n°  <525 "D" "H" 4195 4310>
+
+Flight n°  <624 "K" "C" 7810 8025>
+
+Flight n°  <670 "C" "L" 6415 6605>
+
+Flight n°  <671 "L" "C" 6700 6875>
+
+Flight n°  <672 "C" "K" 6980 7185>
+
+Flight n°  <774 "C" "I" 9570 9855>
+
+Flight n°  <776 "G" "F" 11605 11785>
+
+Flight n°  <777 "F" "C" 12170 12340>
+
+Flight n°  <778 "C" "D" 12475 12720>
+
+Flight n°  <779 "D" "T" 13680 13780>
+
+Flight n°  <794 "F" "G" 1315 1455>
+
+Flight n°  <810 "T" "B" 13810 14070>
+
+Flight n°  <811 "B" "I" 14300 14475>
+
+Flight n°  <812 "I" "M" 15025 15205>
+
+Flight n°  <813 "M" "D" 16155 16340>
+
+Flight n°  <814 "D" "T" 16560 16660>
+
+Flight n°  <815 "T" "B" 16690 16950>
+
+Flight n°  <853 "G" "B" 3155 3270>
+
+Flight n°  <866 "I" "G" 9895 10040>
+
+Flight n°  <906 "B" "R" 17265 17470>
+
+Flight n°  <1023 "C" "S" 20960 21075>
+
+Flight n°  <1226 "R" "U" 18980 19080>
+
+Flight n°  <1227 "U" "C" 20720 20870>
+
+**********Flights assigned to aircraft 37 are :**********
+
+Flight n°  <236 "P" "C" 6465 6770>
+
+Flight n°  <275 "C" "R" 6995 7105>
+
+Flight n°  <659 "U" "R" 16955 17055>
+
+Flight n°  <660 "R" "B" 18525 18735>
+
+Flight n°  <891 "R" "I" 10045 10260>
+
+Flight n°  <896 "I" "D" 12160 12420>
+
+Flight n°  <897 "D" "U" 12460 12565>
+
+Flight n°  <1078 "D" "T" 2660 2760>
+
+Flight n°  <1079 "T" "C" 3295 3545>
+
+Flight n°  <1155 "C" "J" 3710 3910>
+
+Flight n°  <1156 "J" "I" 3985 4110>
+
+Flight n°  <1157 "I" "P" 4180 4285>
+
+Flight n°  <1175 "F" "D" 1500 1730>
+
+Flight n°  <1197 "J" "F" 1300 1415>
+
+**********Flights assigned to aircraft 38 are :**********
+
+Flight n°  <17 "K" "B" 6310 6470>
+
+Flight n°  <18 "B" "D" 6500 6775>
+
+Flight n°  <19 "D" "H" 6810 6915>
+
+Flight n°  <20 "H" "D" 6990 7110>
+
+Flight n°  <21 "D" "B" 7800 8055>
+
+Flight n°  <59 "B" "I" 9250 9390>
+
+Flight n°  <60 "I" "K" 9460 9565>
+
+Flight n°  <85 "C" "A" 21170 21415>
+
+Flight n°  <134 "B" "I" 2780 2955>
+
+Flight n°  <138 "B" "G" 4095 4200>
+
+Flight n°  <176 "D" "I" 2055 2290>
+
+Flight n°  <177 "I" "N" 2360 2470>
+
+Flight n°  <180 "I" "J" 3425 3595>
+
+Flight n°  <181 "J" "I" 3625 3790>
+
+Flight n°  <182 "I" "B" 3820 3995>
+
+Flight n°  <184 "G" "I" 4310 4420>
+
+Flight n°  <227 "N" "B" 2540 2745>
+
+Flight n°  <374 "Q" "C" 14070 14200>
+
+Flight n°  <404 "C" "R" 10705 10810>
+
+Flight n°  <405 "R" "B" 10880 11105>
+
+Flight n°  <406 "B" "S" 11200 11430>
+
+Flight n°  <407 "S" "Q" 12465 12550>
+
+Flight n°  <408 "Q" "S" 12820 12920>
+
+Flight n°  <409 "S" "Q" 13905 13990>
+
+Flight n°  <415 "I" "B" 19270 19440>
+
+Flight n°  <560 "B" "A" 8205 8400>
+
+Flight n°  <561 "A" "B" 8430 8625>
+
+Flight n°  <563 "A" "B" 9870 10065>
+
+Flight n°  <575 "B" "A" 19725 19920>
+
+Flight n°  <634 "B" "E" 15520 15705>
+
+Flight n°  <641 "I" "C" 755 1045>
+
+Flight n°  <642 "C" "F" 1120 1245>
+
+Flight n°  <758 "K" "I" 615 720>
+
+Flight n°  <805 "K" "A" 9595 9740>
+
+Flight n°  <844 "R" "I" 17245 17460>
+
+Flight n°  <872 "I" "F" 17910 18110>
+
+Flight n°  <873 "F" "I" 18190 18395>
+
+Flight n°  <884 "I" "F" 4950 5150>
+
+Flight n°  <885 "F" "I" 5230 5435>
+
+Flight n°  <997 "A" "C" 20810 21095>
+
+Flight n°  <1083 "B" "K" 5830 5955>
+
+Flight n°  <1146 "E" "K" 16450 16645>
+
+Flight n°  <1147 "K" "I" 16675 16780>
+
+Flight n°  <1148 "I" "R" 16955 17175>
+
+Flight n°  <1170 "C" "B" 15235 15445>
+
+Flight n°  <1185 "B" "C" 10170 10375>
+
+Flight n°  <1198 "F" "D" 1500 1730>
+
+Flight n°  <1217 "I" "B" 5540 5720>
+
+**********Flights assigned to aircraft 39 are :**********
+
+Flight n°  <35 "D" "H" 15450 15555>
+
+Flight n°  <36 "H" "C" 16950 17240>
+
+Flight n°  <441 "C" "Q" 11190 11310>
+
+Flight n°  <457 "D" "L" 2090 2255>
+
+Flight n°  <458 "L" "K" 2355 2480>
+
+Flight n°  <459 "K" "I" 2550 2655>
+
+Flight n°  <460 "I" "B" 2690 2870>
+
+Flight n°  <554 "B" "T" 3820 4030>
+
+Flight n°  <555 "T" "B" 4105 4330>
+
+Flight n°  <669 "G" "C" 5820 6050>
+
+Flight n°  <728 "C" "T" 700 900>
+
+Flight n°  <729 "T" "C" 930 1140>
+
+Flight n°  <786 "C" "K" 17980 18185>
+
+Flight n°  <787 "K" "C" 18215 18425>
+
+Flight n°  <887 "C" "D" 6470 6685>
+
+Flight n°  <921 "B" "N" 8635 8845>
+
+Flight n°  <922 "N" "I" 10360 10465>
+
+Flight n°  <954 "T" "B" 8050 8310>
+
+Flight n°  <959 "I" "C" 10835 11125>
+
+Flight n°  <961 "Q" "C" 13030 13160>
+
+Flight n°  <962 "C" "H" 13705 13965>
+
+Flight n°  <1042 "H" "D" 14715 14875>
+
+Flight n°  <1048 "C" "I" 19525 19765>
+
+Flight n°  <1077 "U" "D" 1830 1930>
+
+Flight n°  <1085 "D" "T" 6980 7080>
+
+Flight n°  <1100 "I" "C" 20915 21205>
+
+Flight n°  <1179 "B" "G" 4420 4530>
+
+Flight n°  <1229 "C" "U" 1240 1420>
+-->5
+>--49560
