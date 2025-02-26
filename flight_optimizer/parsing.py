@@ -1,33 +1,5 @@
 import numpy as np
-from dataclasses import dataclass
-
-
-@dataclass
-class Airport:
-    name: str
-
-
-@dataclass
-class Flight:
-    id: int
-    departure_airport: Airport
-    arrival_airport: Airport
-    departure_time: int
-    arrival_time: int
-
-
-@dataclass
-class Aircraft:
-    id: int
-    starting_airport: Airport
-
-
-@dataclass
-class FlightProblem:
-    airports: list[Airport]
-    aircrafts: list[Aircraft]
-    flights: list[Flight]
-    flight_costs: np.ndarray
+from .commun import *
 
 
 def parse_problem(filepath: str) -> FlightProblem:
@@ -63,23 +35,24 @@ def parse_problem(filepath: str) -> FlightProblem:
             data[5].replace("Aircraft = \n", "").strip(";").strip("[]").split(" ,")[:-1]
         )
         InitialPositions = [i.strip("<>").split(",") for i in InitialPositions]
-        InitialPositions = [
-            {"id": int(i[0]), "airport": i[1]} for i in InitialPositions
-        ]
+        InitialPositions = {
+            int(i[0]):  i[1] for i in InitialPositions
+        }
 
-    airports = [Airport(name=name) for name in Airports]
+    airports_map = {name: Airport(id=i, name=name) for i, name in enumerate(Airports)}
+    airports = [airports_map[name] for name in Airports]
     aircrafts = [
         Aircraft(
-            id=aircraft_id, 
-            starting_airport=Airport(InitialPositions[aircraft_id]['airport'])
+            id=aircraft_id,
+            starting_airport=airports_map[airport_name],
         )
-        for aircraft_id in Aircrafts
+        for aircraft_id, airport_name in InitialPositions.items()
     ]
     flights = [
         Flight(
             id=flight["id"],
-            departure_airport=Airport(flight["origin"]),
-            arrival_airport=Airport(flight["destination"]),
+            departure_airport=airports_map[flight["origin"]],
+            arrival_airport=airports_map[flight["destination"]],
             departure_time=int(flight["departure"]),
             arrival_time=int(flight["arrival"]),
         )
@@ -88,9 +61,4 @@ def parse_problem(filepath: str) -> FlightProblem:
 
     flight_costs = Cost
 
-    return FlightProblem(
-        airports,
-        aircrafts,
-        flights,
-        flight_costs
-    )
+    return FlightProblem(airports, aircrafts, flights, flight_costs)
