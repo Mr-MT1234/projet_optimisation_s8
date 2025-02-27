@@ -6,7 +6,7 @@ from ..commun import *
 class IntervalSolver(Solver):
 
     def solve(self, problem: FlightProblem) -> FlightSolution:
-        instants = self.__get_instants(problem)
+        instants = problem.get_instants()
 
         nb_flights = len(problem.flights)
         nb_airports = len(problem.airports)
@@ -127,19 +127,15 @@ class IntervalSolver(Solver):
             assignment={
                 aircraft_id: [problem.flights[flight_id - 1] for flight_id in flights]
                 for aircraft_id, flights in assignment.items()
-            }
-        )
-
-    def __get_instants(self, problem: FlightProblem) -> list[int]:
-        departure_instants = [flight.departure_time for flight in problem.flights]
-        arrival_instants = [flight.arrival_time for flight in problem.flights]
-        instants = list(sorted(set(arrival_instants + departure_instants)))
-        return instants
+            },
+            aircrafts=problem.aircrafts,
+            airports=problem.airports,
+        )        
     
-    def __assignment(self, solution):
+    def __assignment(self, solution: np.ndarray) -> FlightSolution:
         solution = solution.argmax(axis=1)
 
         a = {}
         for i, j in enumerate(solution):
-            a.setdefault(j, []).append(i)
+            a.setdefault(j, []).append(i + 1)
         return a
