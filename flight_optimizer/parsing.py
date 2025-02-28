@@ -2,7 +2,7 @@ import numpy as np
 from .commun import *
 
 
-def parse_problem(filepath: str) -> FlightProblem:
+def parse_problem(filepath: str):
     with open(filepath, "r") as file:
         data = file.read().split(";\n")
         Airports = data[0].replace("Airports =  ", "").strip("{}").split(",")[:-1]
@@ -39,26 +39,20 @@ def parse_problem(filepath: str) -> FlightProblem:
             int(i[0]):  i[1] for i in InitialPositions
         }
 
-    airports_map = {name: Airport(id=i, name=name) for i, name in enumerate(Airports)}
-    airports = [airports_map[name] for name in Airports]
-    aircrafts = [
-        Aircraft(
-            id=aircraft_id,
-            starting_airport=airports_map[airport_name],
-        )
-        for aircraft_id, airport_name in InitialPositions.items()
-    ]
-    flights = [
-        Flight(
-            id=flight["id"],
-            departure_airport=airports_map[flight["origin"]],
-            arrival_airport=airports_map[flight["destination"]],
-            departure_time=int(flight["departure"]),
-            arrival_time=int(flight["arrival"]),
-        )
-        for flight in Flights
-    ]
+    return Airports, Aircrafts, Flights, Cost, InitialPositions
 
-    flight_costs = Cost
+def parse_solution(path):
+     with open(path, 'r') as f:
+            assignment = {}
+            current_aircraft = None
+            for line in f:
+                if line.startswith("**********Flights assigned to aircraft"):
+                    splited = line.strip("*").split(" ")
+                    current_aircraft = int(splited[4])
+                elif line.startswith("Flight n"):
+                    start = line.find('<') + 1
+                    end = line.find(' ', start)
+                    flight_id = int(line[start:end])
+                    assignment.setdefault(current_aircraft, []).append(flight_id)
 
-    return FlightProblem(airports, aircrafts, flights, flight_costs)
+            return assignment

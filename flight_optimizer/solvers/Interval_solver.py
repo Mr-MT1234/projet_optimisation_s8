@@ -1,6 +1,8 @@
 import gurobipy as gp
 from .solver import Solver
 from ..commun import *
+from ..solution import FlightSolution
+from ..flight_problem import FlightProblem
 
 
 class IntervalSolver(Solver):
@@ -123,14 +125,7 @@ class IntervalSolver(Solver):
 
         assignment = self.__assignment(x_solution)
 
-        return FlightSolution(
-            assignment={
-                aircraft_id: [problem.flights[flight_id - 1] for flight_id in flights]
-                for aircraft_id, flights in assignment.items()
-            },
-            aircrafts=problem.aircrafts,
-            airports=problem.airports,
-        )        
+        return FlightSolution.from_assignment(assignment, problem)    
     
     def __assignment(self, solution: np.ndarray) -> FlightSolution:
         solution = solution.argmax(axis=1)

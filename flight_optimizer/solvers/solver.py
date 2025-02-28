@@ -1,5 +1,7 @@
 from abc import ABC, abstractmethod
 from ..commun import *
+from ..flight_problem import FlightProblem
+from ..solution import FlightSolution
 
 
 class Solver(ABC):
