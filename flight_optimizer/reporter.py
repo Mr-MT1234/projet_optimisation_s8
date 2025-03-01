@@ -19,9 +19,13 @@ class Reporter:
 
         if colors is None:
             colors_iter = ['r', 'g', 'b', 'pink', 'puple', 'black']
+        else:
+            colors_iter = colors
 
         if legend is None:
             legend_iter = [f'solution{i}' for i in range(len(solutions))]
+        else:
+            legend_iter = legend
 
 
         for i, (solution, legend) in enumerate(zip(solutions, legend_iter)):
@@ -40,6 +44,7 @@ class Reporter:
                         [flight.departure_time, flight.arrival_time],
                         [aircraft_id, aircraft_id],
                         color+"-",
+                        alpha=0.7
                     )
                     plt.scatter(
                         [flight.departure_time, flight.arrival_time],
@@ -76,3 +81,12 @@ class Reporter:
         ax.grid(True)
 
         return fig
+
+    def report_txt(self, solution: FlightSolution, path: str, execution_time: float | None =None):
+        with open(path, 'w') as file:
+            file.write("Solution:\n")
+            file.write(f"cost={solution.cost}\n")
+            if execution_time is not None:
+                file.write(f"execution time={execution_time}s\n")
+            file.write(str(solution))
+
