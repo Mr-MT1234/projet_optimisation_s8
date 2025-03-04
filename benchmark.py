@@ -34,6 +34,10 @@ solver = IntervalSolver()
 reporter = Reporter()
 
 args = parser.parse_args()
+
+if args.density == 1.0:
+    args.density = 1
+
 print("Loading problem ...")
 problem = FlightProblem.from_file(problem_path(args.density, args.planes, args.horizon, args.index))
 correct_solution = FlightSolution.from_file(
