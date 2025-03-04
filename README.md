@@ -8,8 +8,8 @@ To run the project, follow these steps:
 
 Clone the repository:
 ```bash
-git clone https://github.com/your-username/flight-assignment-optimization.git
-cd flight-assignment-optimization
+git clone https://github.com/Mr-MT1234/projet_optimisation_s8.git
+cd projet_optimisation_s8
 ```
 
 Install the required dependencies:
