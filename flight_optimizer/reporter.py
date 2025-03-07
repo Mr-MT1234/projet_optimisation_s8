@@ -18,7 +18,7 @@ class Reporter:
         max_aircraft = float('-inf')
 
         if colors is None:
-            colors_iter = ['r', 'g', 'b', 'pink', 'puple', 'black']
+            colors_iter = ['r', 'g', 'b', 'pink', 'black']
         else:
             colors_iter = colors
 
@@ -43,7 +43,7 @@ class Reporter:
                     plt.plot(
                         [flight.departure_time, flight.arrival_time],
                         [aircraft_id, aircraft_id],
-                        color+"-",
+                        color,
                         alpha=0.7
                     )
                     plt.scatter(
