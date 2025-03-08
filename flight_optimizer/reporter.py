@@ -112,10 +112,8 @@ class Reporter:
                 flight_graph_nx.add_edge(flight2.id, flight1.id)
                 flight_graph[flight2.id].append(flight1.id)
 
-        for aircraft, fig in zip(solution.aircrafts[:1], figs):
+        for aircraft, fig in zip(solution.aircrafts, figs):
             ax = fig.subplots(1, 1)
-
-
 
             layers = self.__assign_layers(flight_graph)
             pos = nx.multipartite_layout(flight_graph_nx, subset_key=layers)
@@ -134,11 +132,35 @@ class Reporter:
                 ax=ax,
             )
 
-            sorted_flights = sorted(solution.assignment[aircraft.id], key=lambda x: x.departure_time)
+            sorted_flights = sorted(
+                solution.assignment[aircraft.id], key=lambda x: x.departure_time
+            )
 
-            path = [(sorted_flights[i], sorted_flights[i+1]) for i in range(len(sorted_flights) - 1)]
+            path_valid = [
+                (sorted_flights[i].id, sorted_flights[i + 1].id)
+                for i in range(len(sorted_flights) - 1)
+                if sorted_flights[i + 1].id in flight_graph[sorted_flights[i].id]
+            ]
+            path_invalid = [
+                (sorted_flights[i].id, sorted_flights[i + 1].id)
+                for i in range(len(sorted_flights) - 1)
+                if sorted_flights[i + 1].id not in flight_graph[sorted_flights[i].id]
+            ]
 
-            nx.draw_networkx_edges()
+            nx.draw_networkx_edges(
+                flight_graph_nx,
+                pos,
+                path_valid,
+                edge_color="b",
+                ax=ax,
+            )
+            nx.draw_networkx_edges(
+                flight_graph_nx,
+                pos,
+                path_invalid,
+                edge_color="r",
+                ax=ax,
+            )
 
             ax.set_title(f"Flight graph aircraft {aircraft}")
 
