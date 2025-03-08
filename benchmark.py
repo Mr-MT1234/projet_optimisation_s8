@@ -92,7 +92,7 @@ fig = reporter.plot_solution(
     [solution, correct_solution], legend=["Found solution", "Optimal solution"]
 )
 
-benchmark_dir = f"./bechmarks/{args.method}"
+benchmark_dir = f"./benchmarks/{args.method}"
 output_dir = os.path.join(
     benchmark_dir,
     f"problem_d={args.density}_p={args.planes}_h={args.horizon}_i={args.index}",

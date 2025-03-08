@@ -5,6 +5,7 @@ import gurobipy as gp
 from flight_optimizer.flight_problem import FlightProblem
 from flight_optimizer.solution import FlightSolution
 from .solver import Solver
+from ..graph_utils import inverse_graph
 
 
 class FlowSolver(Solver):
@@ -36,7 +37,7 @@ class FlowSolver(Solver):
             ]
 
         dependency_graph_inv = {
-            aircraft: self.__inv_graph(subgraph)
+            aircraft: inverse_graph(subgraph)
             for aircraft, subgraph in dependency_graph.items()
         }
 
@@ -121,12 +122,3 @@ class FlowSolver(Solver):
 
         return FlightSolution.from_assignment(assignment, problem)
 
-    def __inv_graph(self, graph):
-        inv = {}
-
-        for node, successors in graph.items():
-            inv.setdefault(node, [])
-            for succ in successors:
-                inv.setdefault(succ, []).append(node)
-
-        return inv
