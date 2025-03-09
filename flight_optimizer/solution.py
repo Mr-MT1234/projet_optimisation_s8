@@ -47,17 +47,21 @@ class FlightSolution:
         for i, flights in assignment.items():
             cost += sum(problem.flight_costs[flight_id - 1, i] for flight_id in flights)
 
-        assignment = {
-            i: [problem.flights[flight_id - 1] for flight_id in flights]
-            for i, flights in assignment.items()
+        assignment_flights = {
+            aircraft.id: []
+            for aircraft in problem.aircrafts
         }
+
+        for i, flights in assignment.items():
+            for flight in flights:
+                assignment_flights[i].append(problem.flights[flight - 1])
         
         return cls(
             airports=problem.airports,
             aircrafts=problem.aircrafts,
             flights=problem.flights,
             flight_costs=problem.flight_costs,
-            assignment=assignment,
+            assignment=assignment_flights,
             cost=cost,
         )
 
@@ -68,16 +72,20 @@ class FlightSolution:
         for i, flights in assignment.items():
             cost += sum(problem.flight_costs[flight_id - 1, i] for flight_id in flights)
 
-        assignment_flight = {
-            i: [problem.flights[flight_id - 1] for flight_id in flights]
-            for i, flights in assignment.items()
+        assignment_flights = {
+            aircraft.id: []
+            for aircraft in problem.aircrafts
         }
+
+        for i, flights in assignment.items():
+            for flight in flights:
+                assignment_flights[i].append(problem.flights[flight - 1])
 
         return cls(
             airports=problem.airports,
             aircrafts=problem.aircrafts,
             flights=problem.flights,
             flight_costs=problem.flight_costs,
-            assignment=assignment_flight,
+            assignment=assignment_flights,
             cost=cost,
         )
