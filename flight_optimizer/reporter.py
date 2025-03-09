@@ -1,5 +1,7 @@
 import os
 import itertools
+import random
+import colorsys
 
 import matplotlib.pyplot as plt
 import networkx as nx
@@ -94,10 +96,15 @@ class Reporter:
                 file.write(f"execution time={execution_time}s\n")
             file.write(str(solution))
 
-    def plot_solution_graph(self, solution: FlightSolution):
-        figs = [plt.figure(figsize=(50, 10)) for aircraft in solution.aircrafts]
+    def plot_solution_graph(self, solution: FlightSolution, aircraft_subset=None):
+        if aircraft_subset is None:
+            aircraft_subset = [x.id for x in solution.aircrafts]
+
+        fig = plt.figure(figsize=(50, 10))
+        ax = fig.subplots(1, 1)
         flight_graph_nx = nx.DiGraph()
         flight_graph = {i: [] for i in range(1, len(solution.flights) + 1)}
+
         for flight1, flight2 in itertools.combinations(solution.flights, 2):
             if (
                 flight1.arrival_airport == flight2.departure_airport
@@ -112,46 +119,70 @@ class Reporter:
                 flight_graph_nx.add_edge(flight2.id, flight1.id)
                 flight_graph[flight2.id].append(flight1.id)
 
-        for aircraft, fig in zip(solution.aircrafts, figs):
-            ax = fig.subplots(1, 1)
+        layers = self.__assign_layers(flight_graph)
+        pos = nx.multipartite_layout(flight_graph_nx, subset_key=layers)
 
-            layers = self.__assign_layers(flight_graph)
-            pos = nx.multipartite_layout(flight_graph_nx, subset_key=layers)
+        nx.draw_networkx_edges(
+            flight_graph_nx,
+            pos,
+            node_size=250,
+            arrows=True,
+            edge_color="gray",
+            alpha=0.1,
+            arrowstyle="-|>",
+            arrowsize=10,
+            ax=ax,
+        )
+        nx.draw_networkx_nodes(
+            flight_graph_nx,
+            pos,
+            node_size=250,
+            node_color="lightblue",
+            alpha=0.5,
+            ax=ax,
+        )
+        nx.draw_networkx_labels(
+            flight_graph_nx,
+            pos,
+            font_size=12,
+            ax=ax,
+        )
 
-            nx.draw(
-                flight_graph_nx,
-                pos,
-                with_labels=True,
-                node_size=250,
-                node_color="lightblue",
-                arrows=True,
-                font_size=12,
-                edge_color="gray",
-                arrowstyle="-|>",
-                arrowsize=20,
-                ax=ax,
-            )
+        for aircraft in solution.aircrafts:
+            if aircraft.id not in aircraft_subset:
+                continue
 
             sorted_flights = sorted(
                 solution.assignment[aircraft.id], key=lambda x: x.departure_time
             )
 
+            sorted_flights_ids = [flight.id for flight in sorted_flights]
+
             path_valid = [
-                (sorted_flights[i].id, sorted_flights[i + 1].id)
-                for i in range(len(sorted_flights) - 1)
-                if sorted_flights[i + 1].id in flight_graph[sorted_flights[i].id]
+                (sorted_flights_ids[i], sorted_flights_ids[i + 1])
+                for i in range(len(sorted_flights_ids) - 1)
+                if sorted_flights_ids[i + 1] in flight_graph[sorted_flights_ids[i]]
             ]
             path_invalid = [
-                (sorted_flights[i].id, sorted_flights[i + 1].id)
-                for i in range(len(sorted_flights) - 1)
-                if sorted_flights[i + 1].id not in flight_graph[sorted_flights[i].id]
+                (sorted_flights_ids[i], sorted_flights_ids[i + 1])
+                for i in range(len(sorted_flights_ids) - 1)
+                if sorted_flights_ids[i + 1] not in flight_graph[sorted_flights_ids[i]]
             ]
 
+            color = colorsys.hsv_to_rgb(aircraft.id / len(solution.aircrafts), 0.8, 0.8)
             nx.draw_networkx_edges(
                 flight_graph_nx,
                 pos,
                 path_valid,
-                edge_color="b",
+                edge_color=color,
+                arrowsize=40,
+                ax=ax,
+            )
+            nx.draw_networkx_nodes(
+                flight_graph_nx,
+                pos,
+                sorted_flights_ids,
+                node_color=color,
                 ax=ax,
             )
             nx.draw_networkx_edges(
@@ -159,10 +190,29 @@ class Reporter:
                 pos,
                 path_invalid,
                 edge_color="r",
+                arrowsize=60,
                 ax=ax,
             )
+            if sorted_flights_ids:
+                ax.text(
+                    *pos[sorted_flights_ids[0]],
+                    s=f"$S_{{{aircraft.id}}}$",
+                    color=color,
+                    horizontalalignment="right",
+                    verticalalignment="bottom",
+                    size=20
+                )
+                ax.text(
+                    *pos[sorted_flights_ids[-1]],
+                    s=f"$E_{{{aircraft.id}}}$",
+                    color=color,
+                    horizontalalignment="left",
+                    verticalalignment="top",
+                    size=20
+                )
 
-            ax.set_title(f"Flight graph aircraft {aircraft}")
+        
+        ax.set_title(f"Flight graph aircraft {aircraft}")
 
     def __assign_layers(self, graph: dict[int, list[int]]):
         layer_assignment = {x: 0 for x in graph}
