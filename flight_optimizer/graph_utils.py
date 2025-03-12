@@ -1,4 +1,3 @@
-
 def inverse_graph(graph):
     inv = {}
 

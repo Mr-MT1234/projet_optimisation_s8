@@ -35,24 +35,24 @@ def parse_problem(filepath: str):
             data[5].replace("Aircraft = \n", "").strip(";").strip("[]").split(" ,")[:-1]
         )
         InitialPositions = [i.strip("<>").split(",") for i in InitialPositions]
-        InitialPositions = {
-            int(i[0]):  i[1] for i in InitialPositions
-        }
+        InitialPositions = {int(i[0]): i[1] for i in InitialPositions}
 
     return Airports, Aircrafts, Flights, Cost, InitialPositions
 
-def parse_solution(path):
-     with open(path, 'r') as f:
-            assignment = {}
-            current_aircraft = None
-            for line in f:
-                if line.startswith("**********Flights assigned to aircraft"):
-                    splited = line.strip("*").split(" ")
-                    current_aircraft = int(splited[4])
-                elif line.startswith("Flight n"):
-                    start = line.find('<') + 1
-                    end = line.find(' ', start)
-                    flight_id = int(line[start:end])
-                    assignment.setdefault(current_aircraft, []).append(flight_id)
 
-            return assignment
+def parse_solution(path):
+    assignment = {}
+
+    with open(path, "r") as f:
+        current_aircraft = None
+        for line in f:
+            if line.startswith("**********Flights assigned to aircraft"):
+                splited = line.strip("*").split(" ")
+                current_aircraft = int(splited[4])
+            elif line.startswith("Flight n"):
+                start = line.find("<") + 1
+                end = line.find(" ", start)
+                flight_id = int(line[start:end])
+                assignment.setdefault(current_aircraft, []).append(flight_id)
+
+    return assignment

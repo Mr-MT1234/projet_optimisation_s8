@@ -24,8 +24,9 @@ class FlowSolver(Solver):
             ):
                 flight_graph[flight2.id].append(flight1.id)
 
+
         dependency_graph = {
-            aircraft.id: {flight: out.copy() for flight, out in flight_graph.items()}
+            aircraft.id: {flight: out for flight, out in flight_graph.items()}
             for aircraft in problem.aircrafts
         }
 
@@ -35,7 +36,6 @@ class FlowSolver(Solver):
                 for flight in problem.flights
                 if flight.departure_airport == aircraft.starting_airport
             ]
-
         dependency_graph_inv = {
             aircraft: inverse_graph(subgraph)
             for aircraft, subgraph in dependency_graph.items()
@@ -56,6 +56,8 @@ class FlowSolver(Solver):
             }
             for aircraft, subgraph in dependency_graph.items()
         }
+        variable_count = sum( len(out) for subgraph in vars.values() for out in subgraph.values() )
+        print(f'number of decision variables : {variable_count}')
 
         # Objective
         objective = 0
@@ -121,4 +123,3 @@ class FlowSolver(Solver):
         }
 
         return FlightSolution.from_assignment(assignment, problem)
-

@@ -40,6 +40,11 @@ class FlowSolver2(Solver):
             for flight in subgraph:
                 subgraph[flight].append(-2)
 
+        for aircraft, subgraph in dependency_graph.items():
+            subgraph[-2] = []
+
+        print(dependency_graph)
+
         dependency_graph_inv = {
             aircraft: inverse_graph(subgraph)
             for aircraft, subgraph in dependency_graph.items()
@@ -104,7 +109,7 @@ class FlowSolver2(Solver):
                     x = vars[aircraft.id][pred][i]
                     _in += x
 
-                model.addConstr(_in >= out)
+                model.addConstr(_in == out)
 
         """
         Each plain can serve at most one flight from its initial position
