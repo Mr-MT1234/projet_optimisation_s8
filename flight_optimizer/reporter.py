@@ -200,7 +200,7 @@ class Reporter:
                     color=color,
                     horizontalalignment="right",
                     verticalalignment="bottom",
-                    size=20
+                    size=20,
                 )
                 ax.text(
                     *pos[sorted_flights_ids[-1]],
@@ -208,11 +208,12 @@ class Reporter:
                     color=color,
                     horizontalalignment="left",
                     verticalalignment="top",
-                    size=20
+                    size=20,
                 )
 
-        
         ax.set_title(f"Flight graph aircraft {aircraft}")
+
+        return fig
 
     def __assign_layers(self, graph: dict[int, list[int]]):
         layer_assignment = {x: 0 for x in graph}
