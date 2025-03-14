@@ -110,6 +110,7 @@ def parse_solution(path):
     return assignment
 
 def parse_solution_with_maintenance(path):
+    
     assignment = {}
     maintenance = {}
 

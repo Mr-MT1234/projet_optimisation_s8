@@ -86,6 +86,7 @@ class FlightSolution:
         
 @dataclass
 class FlightSolutionMaintenance:
+
     airports: list[Airport]
     aircrafts: list[Aircraft]
     flights: list[Flight]

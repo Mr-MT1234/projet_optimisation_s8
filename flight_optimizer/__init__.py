@@ -1,5 +1,6 @@
 from .commun import *
-from .flight_problem import FlightProblem, FlightProblemMaintenance
+from .flight_problem import FlightProblem, FlightProblemMaintenance 
+
 from .solution import FlightSolution, FlightSolutionMaintenance
 from .reporter import Reporter
 from .solvers.solver import Solver
