@@ -65,7 +65,7 @@ class FlightProblemMaintenance:
         return instants
 
     @classmethod
-    def from_file(cls, path: str) -> "FlightProblem":
+    def from_file(cls, path: str) -> "FlightProblemMaintenance":
         Airports, Aircrafts, Flights, Cost, InitialPositions, AirportMaintenance, Days, CostMaintenance, CapacityMaintenance = parse_problem_with_maintenance(path)
 
         airports_map = {
