@@ -14,6 +14,7 @@ class Flight:
     arrival_airport: Airport
     departure_time: int
     arrival_time: int
+    day: int
 
 
 @dataclass

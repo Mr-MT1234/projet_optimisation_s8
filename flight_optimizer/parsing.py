@@ -43,7 +43,6 @@ def parse_problem_with_maintenance(filepath: str):
     with open(filepath, 'r') as file:
         data = file.read().split(";\n")
         Airports = data[0].replace("Airports =  ", "").strip("{}").split(",")[:-1]
-        Airports = {i: Airports[i] for i in range(len(Airports))}
         
         AirportMaintenance = data[1].replace("Airportmaintenance =  ", "").strip("{}").split(",")[:-1]
         
