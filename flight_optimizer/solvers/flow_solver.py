@@ -42,7 +42,7 @@ class FlowSolver(Solver):
         }
 
         model = gp.Model()
-        model.params.OutputFlag = 0
+        # model.params.OutputFlag = 0
 
         vars = {
             aircraft: {
