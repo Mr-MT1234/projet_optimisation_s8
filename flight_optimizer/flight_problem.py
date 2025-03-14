@@ -38,7 +38,7 @@ class FlightProblem:
                 arrival_airport=airports_map[flight["destination"]],
                 departure_time=int(flight["departure"]),
                 arrival_time=int(flight["arrival"]),
-                day=int(flight["departure"] // (60*24)),
+                day=int(flight["departure"] // (60*24)) + 1,
             )
             for flight in Flights
         ]
@@ -65,7 +65,7 @@ class FlightProblemMaintenance:
         return instants
 
     @classmethod
-    def from_file(cls, path: str) -> "FlightProblem":
+    def from_file(cls, path: str) -> "FlightProblemMaintenance":
         Airports, Aircrafts, Flights, Cost, InitialPositions, AirportMaintenance, Days, CostMaintenance, CapacityMaintenance = parse_problem_with_maintenance(path)
 
         airports_map = {
