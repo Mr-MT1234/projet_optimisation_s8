@@ -1,4 +1,6 @@
 import gurobipy as gp
+
+from flight_optimizer.flight_problem import FlightProblemMaintenance
 from .solver import Solver
 from ..commun import *
 from ..solution import FlightSolution
@@ -126,6 +128,10 @@ class IntervalSolver(Solver):
         assignment = self.__assignment(x_solution)
 
         return FlightSolution.from_assignment(assignment, problem)    
+    
+
+    def solve_maintenance(self, problem: FlightProblemMaintenance):
+        raise NotImplementedError()
     
     def __assignment(self, solution: np.ndarray) -> FlightSolution:
         solution = solution.argmax(axis=1)

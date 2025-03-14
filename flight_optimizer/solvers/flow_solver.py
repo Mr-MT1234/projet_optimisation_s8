@@ -2,7 +2,7 @@ import itertools
 
 import gurobipy as gp
 
-from flight_optimizer.flight_problem import FlightProblem
+from flight_optimizer.flight_problem import FlightProblem, FlightProblemMaintenance
 from flight_optimizer.solution import FlightSolution
 from .solver import Solver
 from ..graph_utils import inverse_graph
@@ -123,3 +123,6 @@ class FlowSolver(Solver):
         }
 
         return FlightSolution.from_assignment(assignment, problem)
+    
+    def solve_maintenance(self, problem: FlightProblemMaintenance):
+        raise NotImplementedError()
