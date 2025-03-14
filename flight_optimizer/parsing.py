@@ -108,3 +108,27 @@ def parse_solution(path):
                 assignment.setdefault(current_aircraft, []).append(flight_id)
 
     return assignment
+
+def parse_solution_with_maintenance(path):
+    assignment = {}
+    maintenance = {}
+
+    with open(path, "r", encoding = "ISO-8859-1") as f:
+        current_aircraft = None
+        for line in f:
+            if line.startswith("**********Flights assigned to aircraft"):
+                splited = line.strip("*").split(" ")
+                current_aircraft = int(splited[4])
+            elif line.startswith("Flight n"):
+                start = line.find("<") + 1
+                end = line.find(" ", start)
+                flight_id = int(line[start:end])
+                assignment.setdefault(current_aircraft, []).append(flight_id)
+            elif line.startswith("Plane"):
+                splited = line.split(" ")
+                current_aircraft = int(splited[1])
+            elif line.startswith("( "):
+                splited = line.strip("()").split(" ")
+                maintenance.setdefault(current_aircraft, []).append((splited[1],splited[4]))
+                
+    return assignment, maintenance
