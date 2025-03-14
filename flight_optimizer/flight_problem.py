@@ -38,7 +38,7 @@ class FlightProblem:
                 arrival_airport=airports_map[flight["destination"]],
                 departure_time=int(flight["departure"]),
                 arrival_time=int(flight["arrival"]),
-                day=int(flight["departure"] // (60*24)),
+                day=int(flight["departure"] // (60*24)) + 1,
             )
             for flight in Flights
         ]
