@@ -1,11 +1,13 @@
 import itertools
+import bisect
 
 import gurobipy as gp
 
-from flight_optimizer.flight_problem import FlightProblem
+from flight_optimizer.flight_problem import FlightProblem, FlightProblemMaintenance
 from flight_optimizer.solution import FlightSolution
 from .solver import Solver
 from ..graph_utils import inverse_graph
+from ..commun import *
 
 
 class ReducedFlowSolver(Solver):
@@ -73,7 +75,7 @@ class ReducedFlowSolver(Solver):
 
                 if flight.departure_airport == aircraft.starting_airport:
                     model.addConstr(
-                        currently_in_airport + 1>= x[flight.id - 1, aircraft.id]
+                        currently_in_airport + 1 >= x[flight.id - 1, aircraft.id]
                     )
                 else:
                     model.addConstr(
@@ -102,3 +104,39 @@ class ReducedFlowSolver(Solver):
             assignment[aircraft].append(flight.id)
 
         return FlightSolution.from_assignment(assignment, problem)
+
+    def solve_maintenance(self, problem: FlightProblemMaintenance):
+        flight_count = len(problem.flights)
+        aircraft_count = len(problem.aircrafts)
+        day_count = len(problem.days)
+
+        departure_map = {airport.id: [] for airport in problem.airports}
+        arrival_map = {airport.id: [] for airport in problem.airports}
+
+        for flight in problem.flights:
+            bisect.insort(departure_map[flight.departure_airport.id], flight, key=lambda x: x.departure_time)
+            bisect.insort(arrival_map[flight.arrival_airport.id], flight, key=lambda x: x.departure_time)
+
+        
+
+        return
+    
+    def __position_at(self, aircraft: Aircraft, airport:Airport, time: int, x: gp.Var, depature_map, arrival_map) -> gp.Var:
+        incomming = arrival_map[airport.id]
+        outgoing  = depature_map[airport.id]
+
+    def __binary_search(self, flights: list, value, key=lambda x: x) -> int:
+        l, r = 0, len(flights) - 1
+
+        while l <= r:
+            m = (l+r)//2
+
+            current = key(flights[m])
+            if current < value:
+                r = m - 1
+            elif current > value:
+                l = m + 1
+            else: 
+                return m
+            
+        
