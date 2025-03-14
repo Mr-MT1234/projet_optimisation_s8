@@ -1,0 +1,1948 @@
+
+
+**********Flights assigned to aircraft 0 are :**********
+
+Flight n°  <89 "HAM" "LGW" 15150 15355 11> 1
+
+Flight n°  <90 "LGW" "BCN" 15410 15655 11> 1
+
+Flight n°  <122 "MAD" "FRA" 3495 3730 3> 1
+
+Flight n°  <123 "FRA" "LIS" 3800 3910 3> 1
+
+Flight n°  <125 "HAM" "FRA" 4220 4395 3> 1
+
+Flight n°  <126 "FRA" "MXP" 4865 5035 4> 1
+
+Flight n°  <130 "DUB" "HAM" 7110 7260 5> 1
+
+Flight n°  <182 "LIS" "HAM" 3980 4185 3> 1
+
+Flight n°  <185 "MXP" "FRA" 5065 5230 4> 1
+
+Flight n°  <186 "FRA" "HAM" 5260 5435 4> 1
+
+Flight n°  <258 "BCN" "HEW" 16395 16560 12> 1
+
+Flight n°  <259 "HEW" "LUX" 16640 16750 12> 1
+
+Flight n°  <260 "LUX" "LGW" 16780 16955 12> 1
+
+Flight n°  <275 "MAN" "HAM" 28265 28395 20> 1
+
+Flight n°  <364 "HAM" "HEW" 25410 25580 18> 1
+
+Flight n°  <422 "HAM" "MAD" 8140 8425 6> 1
+
+Flight n°  <423 "MAD" "GLA" 8515 8630 6> 1
+
+Flight n°  <424 "GLA" "MAD" 9870 9990 7> 1
+
+Flight n°  <425 "MAD" "AMS" 10720 10985 8> 1
+
+Flight n°  <426 "AMS" "NCE" 11015 11125 8> 1
+
+Flight n°  <427 "NCE" "DUB" 11395 11535 8> 1
+
+Flight n°  <428 "DUB" "FRA" 12950 13060 9> 1
+
+Flight n°  <431 "FRA" "HAM" 14950 15120 11> 1
+
+Flight n°  <458 "HEW" "LGW" 2050 2265 2> 1
+
+Flight n°  <459 "LGW" "OSL" 2350 2455 2> 1
+
+Flight n°  <460 "OSL" "LGW" 2485 2595 2> 1
+
+Flight n°  <461 "LGW" "MAD" 2650 2855 2> 1
+
+Flight n°  <479 "FRA" "LGW" 13565 13805 10> 1
+
+Flight n°  <480 "LGW" "FRA" 13875 14110 10> 1
+
+Flight n°  <488 "HAM" "FRA" 21190 21365 15> 1
+
+Flight n°  <489 "FRA" "LGW" 22205 22445 16> 1
+
+Flight n°  <490 "LGW" "OSL" 22510 22615 16> 1
+
+Flight n°  <508 "HAM" "DUB" 5535 5640 4> 1
+
+Flight n°  <534 "BCN" "ZRH" 620 730 1> 1
+
+Flight n°  <556 "HAM" "AMS" 19840 20025 14> 1
+
+Flight n°  <557 "AMS" "HAM" 20705 20885 15> 1
+
+Flight n°  <560 "OSL" "HAM" 24285 24495 17> 1
+
+Flight n°  <564 "HAM" "HEM" 29925 30140 21> 1
+
+Flight n°  <671 "HEW" "LGW" 26530 26745 19> 1
+
+Flight n°  <672 "LGW" "FRA" 26850 27135 19> 1
+
+Flight n°  <673 "FRA" "MAN" 27985 28165 20> 1
+
+Flight n°  <719 "ZRH" "LIS" 1000 1050 1> 1
+
+Flight n°  <720 "LIS" "BCN" 1120 1235 1> 1
+
+Flight n°  <721 "BCN" "HEW" 1310 1420 1> 1
+
+Flight n°  <796 "LGW" "HAM" 19445 19655 14> 1
+
+Flight n°  <878 "LGW" "MRS" 18080 18195 13> 1
+
+Flight n°  <879 "MRS" "LGW" 18710 18825 13> 1
+
+**********Flights assigned to aircraft 1 are :**********
+
+Flight n°  <47 "MAD" "HAM" 23640 23895 17> 1
+
+Flight n°  <157 "LGW" "HAM" 18320 18530 13> 1
+
+Flight n°  <238 "LGW" "OSL" 5230 5335 4> 1
+
+Flight n°  <239 "OSL" "LGW" 5365 5475 4> 1
+
+Flight n°  <240 "LGW" "MAD" 5530 5735 4> 1
+
+Flight n°  <241 "MAD" "BCN" 6385 6600 5> 1
+
+Flight n°  <242 "BCN" "LGW" 6670 6960 5> 1
+
+Flight n°  <243 "LGW" "OSL" 6995 7105 5> 1
+
+Flight n°  <244 "OSL" "HAM" 8000 8225 6> 1
+
+Flight n°  <328 "LGW" "FRA" 625 915 1> 1
+
+Flight n°  <329 "FRA" "MXP" 950 1115 1> 1
+
+Flight n°  <330 "MXP" "LGW" 1145 1350 1> 1
+
+Flight n°  <331 "LGW" "DUB" 1430 1705 1> 1
+
+Flight n°  <402 "HAM" "MAD" 22540 22825 16> 1
+
+Flight n°  <414 "DUB" "FRA" 2870 2980 2> 1
+
+Flight n°  <477 "FRA" "HAM" 12070 12240 9> 1
+
+Flight n°  <503 "FRA" "MAN" 3505 3685 3> 1
+
+Flight n°  <504 "MAN" "MXP" 3995 4110 3> 1
+
+Flight n°  <505 "MXP" "NCE" 4180 4295 3> 1
+
+Flight n°  <506 "NCE" "LGW" 4970 5140 4> 1
+
+Flight n°  <530 "HAM" "MRS" 24160 24390 17> 1
+
+Flight n°  <533 "MRS" "MUC" 28780 28860 20> 1
+
+Flight n°  <574 "HAM" "HEM" 8325 8540 6> 1
+
+Flight n°  <613 "HAM" "MAN" 12650 12770 9> 1
+
+Flight n°  <614 "MAN" "HAM" 14280 14410 10> 1
+
+Flight n°  <706 "HAM" "ZRH" 16980 17170 12> 1
+
+Flight n°  <707 "ZRH" "LGW" 17985 18290 13> 1
+
+Flight n°  <783 "LGW" "MAD" 10790 11005 8> 1
+
+Flight n°  <784 "MAD" "FRA" 11035 11305 8> 1
+
+Flight n°  <866 "HEM" "LGW" 10090 10260 7> 1
+
+**********Flights assigned to aircraft 2 are :**********
+
+Flight n°  <30 "MAD" "GLA" 12570 12675 9> 1
+
+Flight n°  <31 "GLA" "MAD" 12750 12870 9> 1
+
+Flight n°  <54 "HAM" "AMS" 29335 29520 21> 1
+
+Flight n°  <55 "AMS" "MAD" 29555 29810 21> 1
+
+Flight n°  <57 "HAM" "NCE" 825 925 1> 1
+
+Flight n°  <58 "NCE" "HAM" 955 1105 1> 1
+
+Flight n°  <59 "HAM" "MAD" 1135 1410 1> 1
+
+Flight n°  <71 "HAM" "FRA" 7810 7950 6> 1
+
+Flight n°  <72 "FRA" "HEW" 8020 8125 6> 1
+
+Flight n°  <73 "HEW" "BCN" 8155 8300 6> 1
+
+Flight n°  <75 "MXP" "BCN" 9195 9375 7> 1
+
+Flight n°  <76 "BCN" "MAD" 9450 9665 7> 1
+
+Flight n°  <114 "HEW" "HAM" 550 710 1> 1
+
+Flight n°  <134 "BCN" "MXP" 8330 8505 6> 1
+
+Flight n°  <137 "MAD" "HAM" 9695 9990 7> 1
+
+Flight n°  <138 "HAM" "FRA" 10690 10830 8> 1
+
+Flight n°  <139 "FRA" "HEW" 10900 11005 8> 1
+
+Flight n°  <140 "HEW" "BCN" 11035 11180 8> 1
+
+Flight n°  <141 "BCN" "HEW" 11220 11325 8> 1
+
+Flight n°  <142 "HEW" "HAM" 12070 12230 9> 1
+
+Flight n°  <143 "HAM" "MAD" 12260 12535 9> 1
+
+Flight n°  <161 "LGW" "MAN" 21065 21205 15> 1
+
+Flight n°  <164 "BER" "LGW" 23980 24155 17> 1
+
+Flight n°  <216 "HAM" "LGW" 20780 20985 15> 1
+
+Flight n°  <218 "MAN" "LGW" 22345 22515 16> 1
+
+Flight n°  <219 "LGW" "BER" 22555 22725 16> 1
+
+Flight n°  <229 "MAD" "FRA" 2055 2290 2> 1
+
+Flight n°  <230 "FRA" "LIS" 2360 2470 2> 1
+
+Flight n°  <231 "LIS" "BCN" 2560 2675 2> 1
+
+Flight n°  <232 "BCN" "HEW" 2750 2860 2> 1
+
+Flight n°  <233 "HEW" "HAM" 3430 3590 3> 1
+
+Flight n°  <234 "HAM" "BER" 3635 3780 3> 1
+
+Flight n°  <235 "BER" "LGW" 3820 3995 3> 1
+
+Flight n°  <236 "LGW" "HAM" 4030 4230 3> 1
+
+Flight n°  <253 "MAD" "BCN" 13585 13800 10> 1
+
+Flight n°  <254 "BCN" "LGW" 13870 14160 10> 1
+
+Flight n°  <272 "HAM" "MAN" 26555 26725 19> 1
+
+Flight n°  <273 "MAN" "HAM" 26825 26955 19> 1
+
+Flight n°  <274 "HAM" "MAN" 27995 28165 20> 1
+
+Flight n°  <293 "HAM" "BER" 6515 6660 5> 1
+
+Flight n°  <294 "BER" "LGW" 6700 6875 5> 1
+
+Flight n°  <295 "LGW" "HAM" 6910 7110 5> 1
+
+Flight n°  <308 "HAM" "MUC" 15500 15735 11> 1
+
+Flight n°  <309 "MUC" "LGW" 16950 17080 12> 1
+
+Flight n°  <357 "LGW" "MUC" 18390 18510 13> 1
+
+Flight n°  <464 "HAM" "BCN" 5325 5520 4> 1
+
+Flight n°  <465 "BCN" "HAM" 5550 5745 4> 1
+
+Flight n°  <487 "MUC" "HAM" 20125 20370 14> 1
+
+Flight n°  <674 "MAN" "HAM" 28680 28810 20> 1
+
+Flight n°  <749 "LGW" "NCE" 17990 18120 13> 1
+
+Flight n°  <750 "NCE" "LGW" 18180 18310 13> 1
+
+Flight n°  <760 "LGW" "NCE" 25190 25320 18> 1
+
+Flight n°  <790 "LGW" "HAM" 15125 15335 11> 1
+
+Flight n°  <804 "NCE" "HAM" 25435 25585 18> 1
+
+**********Flights assigned to aircraft 3 are :**********
+
+Flight n°  <5 "MAD" "AMS" 1975 2180 2> 1
+
+Flight n°  <6 "AMS" "NCE" 2250 2360 2> 1
+
+Flight n°  <7 "NCE" "BCN" 2390 2650 2> 1
+
+Flight n°  <8 "BCN" "NCE" 2745 2960 2> 1
+
+Flight n°  <9 "NCE" "HAM" 3425 3530 3> 1
+
+Flight n°  <10 "HAM" "MAD" 3620 3895 3> 1
+
+Flight n°  <11 "MAD" "GLA" 3930 4035 3> 1
+
+Flight n°  <12 "GLA" "MAD" 4110 4230 3> 1
+
+Flight n°  <13 "MAD" "AMS" 4870 5125 4> 1
+
+Flight n°  <14 "AMS" "NCE" 5155 5265 4> 1
+
+Flight n°  <15 "NCE" "BCN" 5435 5655 4> 1
+
+Flight n°  <16 "BCN" "HAM" 6285 6475 5> 1
+
+Flight n°  <52 "HAM" "MAD" 26660 26935 19> 1
+
+Flight n°  <53 "MAD" "HAM" 27960 28215 20> 1
+
+Flight n°  <160 "HAM" "LGW" 20780 20985 15> 1
+
+Flight n°  <162 "MAN" "LGW" 22345 22515 16> 1
+
+Flight n°  <163 "LGW" "BER" 22555 22725 16> 1
+
+Flight n°  <215 "BCN" "HAM" 19570 19825 14> 1
+
+Flight n°  <217 "LGW" "MAN" 21065 21205 15> 1
+
+Flight n°  <220 "BER" "LGW" 23980 24155 17> 1
+
+Flight n°  <247 "LGW" "ZRH" 10700 11005 8> 1
+
+Flight n°  <248 "ZRH" "LIS" 11080 11130 8> 1
+
+Flight n°  <249 "LIS" "HAM" 11180 11385 8> 1
+
+Flight n°  <263 "MXP" "BCN" 19275 19455 14> 1
+
+Flight n°  <303 "HAM" "LGW" 12350 12560 9> 1
+
+Flight n°  <365 "HEW" "HAM" 26470 26630 19> 1
+
+Flight n°  <518 "LGW" "BCN" 15045 15335 11> 1
+
+Flight n°  <519 "BCN" "HEW" 15540 15645 11> 1
+
+Flight n°  <520 "HEW" "LGW" 16450 16665 12> 1
+
+Flight n°  <521 "LGW" "FRA" 16770 17055 12> 1
+
+Flight n°  <522 "FRA" "MAN" 17905 18085 13> 1
+
+Flight n°  <523 "MAN" "MXP" 18395 18510 13> 1
+
+Flight n°  <596 "HAM" "MAN" 29930 30050 21> 1
+
+Flight n°  <606 "HAM" "LGW" 6890 7095 5> 1
+
+Flight n°  <633 "LGW" "LUX" 655 845 1> 1
+
+Flight n°  <634 "LUX" "MAD" 1625 1735 1> 1
+
+Flight n°  <670 "LGW" "HEW" 25180 25385 18> 1
+
+Flight n°  <743 "LGW" "MUC" 12630 12750 9> 1
+
+Flight n°  <744 "MUC" "LGW" 14385 14560 10> 1
+
+Flight n°  <777 "LGW" "NCE" 7910 8040 6> 1
+
+Flight n°  <778 "NCE" "FRA" 8110 8315 6> 1
+
+Flight n°  <779 "FRA" "LGW" 8345 8625 6> 1
+
+Flight n°  <780 "LGW" "NCE" 9350 9480 7> 1
+
+Flight n°  <781 "NCE" "FRA" 9550 9755 7> 1
+
+Flight n°  <782 "FRA" "LGW" 9785 10065 7> 1
+
+**********Flights assigned to aircraft 4 are :**********
+
+Flight n°  <115 "HAM" "MAD" 740 1015 1> 1
+
+Flight n°  <116 "MAD" "GLA" 1050 1155 1> 1
+
+Flight n°  <117 "GLA" "LGW" 1320 1610 1> 1
+
+Flight n°  <386 "HAM" "CDG" 8140 8350 6> 1
+
+Flight n°  <387 "CDG" "HAM" 8425 8650 6> 1
+
+Flight n°  <400 "HAM" "CDG" 19660 19870 14> 1
+
+Flight n°  <401 "CDG" "HAM" 21010 21270 15> 1
+
+Flight n°  <449 "LIS" "BCN" 25600 25715 18> 1
+
+Flight n°  <450 "BCN" "ZRH" 26540 26650 19> 1
+
+Flight n°  <451 "ZRH" "HAM" 26735 26940 19> 1
+
+Flight n°  <554 "LGW" "BCN" 17925 18215 13> 1
+
+Flight n°  <555 "BCN" "HAM" 18510 18705 13> 1
+
+Flight n°  <568 "GLA" "LGW" 2760 3050 2> 1
+
+Flight n°  <569 "LGW" "BCN" 3525 3815 3> 1
+
+Flight n°  <570 "BCN" "HAM" 4110 4305 3> 1
+
+Flight n°  <571 "HAM" "HEM" 5445 5660 4> 1
+
+Flight n°  <572 "HEM" "OSL" 6875 6975 5> 1
+
+Flight n°  <573 "OSL" "HAM" 7005 7215 5> 1
+
+Flight n°  <578 "MAN" "LGW" 12265 12435 9> 1
+
+Flight n°  <611 "HAM" "MAN" 9770 9890 7> 1
+
+Flight n°  <659 "HAM" "LGW" 16970 17175 12> 1
+
+Flight n°  <702 "MAD" "HEW" 13660 13870 10> 1
+
+Flight n°  <703 "HEW" "MAD" 13900 14095 10> 1
+
+Flight n°  <704 "MAD" "CDG" 14180 14280 10> 1
+
+Flight n°  <705 "CDG" "HAM" 15250 15510 11> 1
+
+Flight n°  <711 "HAM" "ZRH" 22740 22930 16> 1
+
+Flight n°  <712 "ZRH" "LIS" 24040 24090 17> 1
+
+Flight n°  <827 "LGW" "MAD" 12475 12720 9> 1
+
+Flight n°  <852 "LGW" "GLA" 2185 2445 2> 1
+
+**********Flights assigned to aircraft 5 are :**********
+
+Flight n°  <17 "HAM" "LGW" 6510 6715 5> 1
+
+Flight n°  <18 "LGW" "BCN" 6770 7015 5> 1
+
+Flight n°  <19 "BCN" "HEW" 7070 7180 5> 1
+
+Flight n°  <33 "HAM" "LGW" 13885 14085 10> 1
+
+Flight n°  <34 "LGW" "DUB" 14115 14390 10> 1
+
+Flight n°  <35 "DUB" "HAM" 15750 15900 11> 1
+
+Flight n°  <49 "LGW" "HAM" 25015 25225 18> 1
+
+Flight n°  <56 "LGW" "HAM" 535 745 1> 1
+
+Flight n°  <92 "HAM" "LGW" 16590 16795 12> 1
+
+Flight n°  <93 "LGW" "BCN" 16850 17095 12> 1
+
+Flight n°  <100 "LGW" "GLA" 20695 20910 15> 1
+
+Flight n°  <101 "GLA" "LGW" 21270 21560 15> 1
+
+Flight n°  <119 "HAM" "NCE" 2265 2365 2> 1
+
+Flight n°  <120 "NCE" "HAM" 2395 2545 2> 1
+
+Flight n°  <190 "LGW" "MAN" 8105 8245 6> 1
+
+Flight n°  <191 "MAN" "MXP" 8315 8430 6> 1
+
+Flight n°  <192 "MXP" "NCE" 8500 8615 6> 1
+
+Flight n°  <193 "NCE" "HAM" 9185 9290 7> 1
+
+Flight n°  <194 "HAM" "BER" 9395 9540 7> 1
+
+Flight n°  <195 "BER" "LGW" 9580 9755 7> 1
+
+Flight n°  <196 "LGW" "HAM" 9790 9990 7> 1
+
+Flight n°  <197 "HAM" "BCN" 10700 10895 8> 1
+
+Flight n°  <198 "BCN" "HAM" 10930 11185 8> 1
+
+Flight n°  <199 "HAM" "MAD" 11215 11490 8> 1
+
+Flight n°  <334 "HAM" "LGW" 3710 3920 3> 1
+
+Flight n°  <335 "LGW" "MUC" 3990 4110 3> 1
+
+Flight n°  <374 "FRA" "HAM" 1990 2160 2> 1
+
+Flight n°  <391 "MAD" "BCN" 12145 12360 9> 1
+
+Flight n°  <392 "BCN" "LGW" 12430 12720 9> 1
+
+Flight n°  <393 "LGW" "HAM" 13600 13800 10> 1
+
+Flight n°  <408 "LGW" "HAM" 28000 28200 20> 1
+
+Flight n°  <415 "FRA" "HAM" 3430 3600 3> 1
+
+Flight n°  <452 "HAM" "BCN" 28365 28560 20> 1
+
+Flight n°  <453 "BCN" "HEW" 29355 29520 21> 1
+
+Flight n°  <454 "HEW" "CDG" 29615 29745 21> 1
+
+Flight n°  <468 "HEW" "LGW" 7810 8025 6> 1
+
+Flight n°  <484 "BCN" "ZRH" 17900 18010 13> 1
+
+Flight n°  <485 "ZRH" "HAM" 18095 18300 13> 1
+
+Flight n°  <492 "HAM" "FRA" 25510 25685 18> 1
+
+Flight n°  <493 "FRA" "LGW" 26525 26765 19> 1
+
+Flight n°  <494 "LGW" "HAM" 26845 27055 19> 1
+
+Flight n°  <496 "HAM" "FRA" 1030 1205 1> 1
+
+Flight n°  <497 "FRA" "HEW" 1235 1340 1> 1
+
+Flight n°  <498 "HEW" "FRA" 1420 1530 1> 1
+
+Flight n°  <501 "HAM" "DUB" 2655 2760 2> 1
+
+Flight n°  <502 "DUB" "FRA" 2870 2980 2> 1
+
+Flight n°  <540 "MUC" "LGW" 4305 4480 3> 1
+
+Flight n°  <584 "HAM" "LGW" 18410 18615 13> 1
+
+Flight n°  <602 "LGW" "LUX" 4975 5165 4> 1
+
+Flight n°  <603 "LUX" "HEW" 5235 5360 4> 1
+
+Flight n°  <604 "HEW" "FRA" 5430 5535 4> 1
+
+Flight n°  <605 "FRA" "HAM" 5570 5750 4> 1
+
+Flight n°  <756 "LGW" "MAD" 22310 22525 16> 1
+
+Flight n°  <757 "MAD" "FRA" 22555 22825 16> 1
+
+Flight n°  <758 "FRA" "NCE" 23670 23870 17> 1
+
+Flight n°  <759 "NCE" "LGW" 23940 24070 17> 1
+
+Flight n°  <805 "HAM" "LGW" 27175 27425 19> 1
+
+Flight n°  <880 "LGW" "MRS" 19520 19635 14> 1
+
+Flight n°  <881 "MRS" "LGW" 20150 20265 14> 1
+
+**********Flights assigned to aircraft 6 are :**********
+
+Flight n°  <32 "MAD" "HAM" 13560 13815 10> 1
+
+Flight n°  <74 "BCN" "MXP" 8330 8505 6> 1
+
+Flight n°  <77 "MAD" "HAM" 9695 9990 7> 1
+
+Flight n°  <95 "HAM" "LGW" 18030 18235 13> 1
+
+Flight n°  <96 "LGW" "BCN" 18290 18535 13> 1
+
+Flight n°  <97 "BCN" "HEW" 19275 19440 14> 1
+
+Flight n°  <102 "LGW" "GLA" 22135 22350 16> 1
+
+Flight n°  <103 "GLA" "LGW" 22710 23000 16> 1
+
+Flight n°  <106 "LGW" "GLA" 25015 25230 18> 1
+
+Flight n°  <131 "HAM" "FRA" 7810 7950 6> 1
+
+Flight n°  <132 "FRA" "HEW" 8020 8125 6> 1
+
+Flight n°  <133 "HEW" "BCN" 8155 8300 6> 1
+
+Flight n°  <135 "MXP" "BCN" 9195 9375 7> 1
+
+Flight n°  <136 "BCN" "MAD" 9450 9665 7> 1
+
+Flight n°  <155 "BCN" "HAM" 17805 17995 13> 1
+
+Flight n°  <166 "GLA" "LGW" 25590 25880 18> 1
+
+Flight n°  <167 "LGW" "MAD" 26530 26735 19> 1
+
+Flight n°  <168 "MAD" "LGW" 26770 27030 19> 1
+
+Flight n°  <223 "LGW" "ZRH" 27980 28285 20> 1
+
+Flight n°  <224 "ZRH" "LGW" 29505 29810 21> 1
+
+Flight n°  <227 "OSL" "LGW" 1045 1155 1> 1
+
+Flight n°  <278 "LGW" "OSL" 625 730 1> 1
+
+Flight n°  <290 "HAM" "BER" 5075 5220 4> 1
+
+Flight n°  <291 "BER" "LGW" 5260 5435 4> 1
+
+Flight n°  <292 "LGW" "HAM" 5470 5670 4> 1
+
+Flight n°  <332 "DUB" "FRA" 2870 2980 2> 1
+
+Flight n°  <333 "FRA" "HAM" 3430 3600 3> 1
+
+Flight n°  <394 "HAM" "CDG" 13900 14110 10> 1
+
+Flight n°  <412 "LGW" "NCE" 1200 1335 1> 1
+
+Flight n°  <413 "NCE" "DUB" 1405 1545 1> 1
+
+Flight n°  <416 "HAM" "CDG" 3820 4030 3> 1
+
+Flight n°  <417 "CDG" "HAM" 4105 4330 3> 1
+
+Flight n°  <420 "HAM" "CDG" 6700 6910 5> 1
+
+Flight n°  <421 "CDG" "HAM" 6985 7210 5> 1
+
+Flight n°  <439 "HEW" "LUX" 19520 19630 14> 1
+
+Flight n°  <440 "LUX" "LGW" 19660 19835 14> 1
+
+Flight n°  <483 "HAM" "BCN" 16845 17040 12> 1
+
+Flight n°  <652 "HAM" "LGW" 11210 11415 8> 1
+
+Flight n°  <653 "LGW" "LUX" 12175 12365 9> 1
+
+Flight n°  <654 "LUX" "MAD" 13145 13255 9> 1
+
+Flight n°  <664 "LGW" "CDG" 20860 21060 15> 1
+
+Flight n°  <665 "CDG" "LGW" 21090 21300 15> 1
+
+Flight n°  <668 "LGW" "CDG" 23740 23940 17> 1
+
+Flight n°  <669 "CDG" "LGW" 23970 24180 17> 1
+
+Flight n°  <832 "HEW" "NCE" 16460 16595 12> 1
+
+Flight n°  <833 "NCE" "HAM" 16680 16790 12> 1
+
+Flight n°  <874 "CDG" "HEW" 15415 15550 11> 1
+
+**********Flights assigned to aircraft 7 are :**********
+
+Flight n°  <27 "DUB" "HAM" 11430 11580 8> 1
+
+Flight n°  <359 "HAM" "LGW" 21085 21285 15> 1
+
+Flight n°  <362 "LGW" "OSL" 23665 23770 17> 1
+
+Flight n°  <363 "OSL" "HAM" 23840 24065 17> 1
+
+Flight n°  <370 "MAD" "BCN" 625 840 1> 1
+
+Flight n°  <371 "BCN" "LGW" 910 1200 1> 1
+
+Flight n°  <372 "LGW" "OSL" 1235 1345 1> 1
+
+Flight n°  <373 "OSL" "FRA" 1405 1620 1> 1
+
+Flight n°  <382 "HAM" "HEW" 5250 5420 4> 1
+
+Flight n°  <383 "HEW" "HAM" 5540 5665 4> 1
+
+Flight n°  <384 "HAM" "HEW" 6690 6860 5> 1
+
+Flight n°  <385 "HEW" "HAM" 6980 7105 5> 1
+
+Flight n°  <396 "HAM" "MAD" 16780 17065 12> 1
+
+Flight n°  <397 "MAD" "BCN" 17905 18120 13> 1
+
+Flight n°  <398 "BCN" "LGW" 18190 18480 13> 1
+
+Flight n°  <399 "LGW" "HAM" 19360 19560 14> 1
+
+Flight n°  <409 "HAM" "MAD" 29740 30025 21> 1
+
+Flight n°  <429 "FRA" "MXP" 13505 13675 10> 1
+
+Flight n°  <430 "MXP" "FRA" 14000 14170 10> 1
+
+Flight n°  <445 "LUX" "LGW" 22540 22715 16> 1
+
+Flight n°  <478 "HAM" "FRA" 12550 12725 9> 1
+
+Flight n°  <481 "FRA" "LGW" 15005 15245 11> 1
+
+Flight n°  <482 "LGW" "HAM" 15325 15535 11> 1
+
+Flight n°  <499 "FRA" "LGW" 2045 2285 2> 1
+
+Flight n°  <500 "LGW" "HAM" 2365 2575 2> 1
+
+Flight n°  <512 "HAM" "DUB" 8415 8520 6> 1
+
+Flight n°  <588 "LGW" "LUX" 22255 22445 16> 1
+
+Flight n°  <594 "HAM" "MAN" 27050 27170 19> 1
+
+Flight n°  <595 "MAN" "HAM" 28680 28810 20> 1
+
+Flight n°  <813 "HAM" "ZRH" 2770 2965 2> 1
+
+Flight n°  <814 "ZRH" "HAM" 4280 4430 3> 1
+
+**********Flights assigned to aircraft 8 are :**********
+
+Flight n°  <21 "HAM" "MAD" 7940 8215 6> 1
+
+Flight n°  <22 "MAD" "GLA" 8250 8355 6> 1
+
+Flight n°  <48 "HAM" "LGW" 23965 24165 17> 1
+
+Flight n°  <67 "GLA" "MAD" 5550 5670 4> 1
+
+Flight n°  <68 "MAD" "FRA" 6375 6610 5> 1
+
+Flight n°  <69 "FRA" "LIS" 6680 6790 5> 1
+
+Flight n°  <70 "LIS" "HAM" 6860 7065 5> 1
+
+Flight n°  <85 "HAM" "AMS" 13495 13680 10> 1
+
+Flight n°  <86 "AMS" "NCE" 13895 14005 10> 1
+
+Flight n°  <87 "NCE" "BCN" 14075 14295 10> 1
+
+Flight n°  <88 "BCN" "HAM" 14925 15115 11> 1
+
+Flight n°  <107 "GLA" "MAD" 25710 25830 18> 1
+
+Flight n°  <165 "LGW" "GLA" 25015 25230 18> 1
+
+Flight n°  <210 "FRA" "LIS" 16760 16870 12> 1
+
+Flight n°  <211 "LIS" "HAM" 16940 17145 12> 1
+
+Flight n°  <228 "LGW" "MAD" 1210 1415 1> 1
+
+Flight n°  <318 "LGW" "OSL" 22225 22330 16> 1
+
+Flight n°  <319 "OSL" "HAM" 22400 22625 16> 1
+
+Flight n°  <351 "HAM" "NCE" 15225 15325 11> 1
+
+Flight n°  <352 "NCE" "HAM" 15355 15505 11> 1
+
+Flight n°  <353 "HAM" "MAD" 15535 15810 11> 1
+
+Flight n°  <354 "MAD" "FRA" 16455 16690 12> 1
+
+Flight n°  <495 "HAM" "MRS" 28480 28710 20> 1
+
+Flight n°  <528 "HAM" "AMS" 22720 22905 16> 1
+
+Flight n°  <529 "AMS" "HAM" 23585 23765 17> 1
+
+Flight n°  <579 "LGW" "BER" 12475 12645 9> 1
+
+Flight n°  <580 "BER" "HAM" 12675 12775 9> 1
+
+Flight n°  <635 "MAD" "HEW" 2140 2350 2> 1
+
+Flight n°  <636 "HEW" "MAD" 2380 2575 2> 1
+
+Flight n°  <637 "MAD" "CDG" 2660 2760 2> 1
+
+Flight n°  <638 "CDG" "LGW" 3295 3545 2> 1
+
+Flight n°  <640 "CDG" "LGW" 3810 4020 3> 1
+
+Flight n°  <676 "LGW" "CDG" 700 900 1> 1
+
+Flight n°  <677 "CDG" "LGW" 930 1140 1> 1
+
+Flight n°  <682 "LGW" "CDG" 3580 3780 3> 1
+
+Flight n°  <684 "LGW" "HEW" 4100 4305 3> 1
+
+Flight n°  <685 "HEW" "FRA" 4935 5040 4> 1
+
+Flight n°  <686 "FRA" "GLA" 5070 5370 4> 1
+
+Flight n°  <693 "GLA" "LGW" 8520 8810 6> 1
+
+Flight n°  <694 "LGW" "HEW" 9340 9545 7> 1
+
+Flight n°  <695 "HEW" "LGW" 9575 9785 7> 1
+
+Flight n°  <696 "LGW" "HEW" 9860 10065 7> 1
+
+Flight n°  <697 "HEW" "FRA" 10695 10800 8> 1
+
+Flight n°  <698 "FRA" "GLA" 10830 11130 8> 1
+
+Flight n°  <716 "HEW" "NCE" 27980 28165 20> 1
+
+Flight n°  <717 "NCE" "HAM" 28200 28310 20> 1
+
+Flight n°  <754 "FRA" "NCE" 20790 20990 15> 1
+
+Flight n°  <755 "NCE" "LGW" 21060 21190 15> 1
+
+Flight n°  <825 "GLA" "MAD" 11590 11710 8> 1
+
+Flight n°  <826 "MAD" "LGW" 12225 12435 9> 1
+
+Flight n°  <834 "HAM" "FRA" 17180 17355 12> 1
+
+Flight n°  <835 "FRA" "MAD" 17920 18180 13> 1
+
+Flight n°  <836 "MAD" "HEM" 18220 18325 13> 1
+
+Flight n°  <837 "HEM" "OSL" 18395 18495 13> 1
+
+Flight n°  <838 "OSL" "FRA" 20125 20340 14> 1
+
+Flight n°  <844 "MAD" "CDG" 26640 26740 19> 1
+
+Flight n°  <845 "CDG" "HEW" 26935 27070 19> 1
+
+**********Flights assigned to aircraft 9 are :**********
+
+Flight n°  <78 "HAM" "FRA" 10690 10830 8> 1
+
+Flight n°  <79 "FRA" "HEW" 10900 11005 8> 1
+
+Flight n°  <80 "HEW" "BCN" 11035 11180 8> 1
+
+Flight n°  <81 "BCN" "MXP" 11210 11385 8> 1
+
+Flight n°  <82 "MXP" "BCN" 12075 12255 9> 1
+
+Flight n°  <83 "BCN" "MAD" 12330 12545 9> 1
+
+Flight n°  <104 "LGW" "GLA" 23575 23790 17> 1
+
+Flight n°  <105 "GLA" "LGW" 24150 24440 17> 1
+
+Flight n°  <144 "MAD" "HAM" 12575 12870 9> 1
+
+Flight n°  <169 "LGW" "MAD" 27970 28175 20> 1
+
+Flight n°  <170 "MAD" "LGW" 28210 28470 20> 1
+
+Flight n°  <203 "HAM" "LGW" 13580 13785 10> 1
+
+Flight n°  <204 "LGW" "MAN" 13865 14005 10> 1
+
+Flight n°  <205 "MAN" "MXP" 14075 14190 10> 1
+
+Flight n°  <206 "MXP" "MAN" 15000 15115 11> 1
+
+Flight n°  <207 "MAN" "LGW" 15145 15315 11> 1
+
+Flight n°  <208 "LGW" "MAD" 15355 15600 11> 1
+
+Flight n°  <321 "LGW" "FRA" 25105 25395 18> 1
+
+Flight n°  <356 "HAM" "LGW" 18110 18320 13> 1
+
+Flight n°  <369 "LGW" "FRA" 29425 29715 21> 1
+
+Flight n°  <433 "MAD" "LUX" 16490 16655 12> 1
+
+Flight n°  <434 "LUX" "HEW" 16755 16880 12> 1
+
+Flight n°  <435 "HEW" "FRA" 16950 17055 12> 1
+
+Flight n°  <436 "FRA" "HAM" 17830 18000 13> 1
+
+Flight n°  <471 "LGW" "MAD" 8410 8615 6> 1
+
+Flight n°  <472 "MAD" "LUX" 9290 9455 7> 1
+
+Flight n°  <473 "LUX" "HEW" 9555 9680 7> 1
+
+Flight n°  <474 "HEW" "FRA" 9750 9855 7> 1
+
+Flight n°  <475 "FRA" "HAM" 9890 10070 7> 1
+
+Flight n°  <565 "BCN" "LGW" 625 915 1> 1
+
+Flight n°  <566 "LGW" "MAD" 955 1200 1> 1
+
+Flight n°  <567 "MAD" "GLA" 1315 1430 1> 1
+
+Flight n°  <733 "LGW" "HEW" 7900 8105 6> 1
+
+Flight n°  <734 "HEW" "LGW" 8135 8345 6> 1
+
+Flight n°  <751 "LGW" "NCE" 18400 18525 13> 1
+
+Flight n°  <752 "NCE" "LGW" 19370 19540 14> 1
+
+Flight n°  <753 "LGW" "FRA" 19650 19935 14> 1
+
+Flight n°  <762 "FRA" "NCE" 26550 26750 19> 1
+
+Flight n°  <763 "NCE" "LGW" 26820 26950 19> 1
+
+Flight n°  <816 "FRA" "HEW" 6400 6505 5> 1
+
+Flight n°  <817 "HEW" "CDG" 6575 6705 5> 1
+
+Flight n°  <819 "HEW" "LGW" 7075 7275 5> 1
+
+Flight n°  <839 "FRA" "MAD" 20800 21060 15> 1
+
+Flight n°  <840 "MAD" "HEM" 21100 21205 15> 1
+
+Flight n°  <841 "HEM" "LGW" 23050 23220 16> 1
+
+Flight n°  <853 "GLA" "FRA" 3090 3445 2> 1
+
+Flight n°  <854 "FRA" "HEW" 3520 3625 3> 1
+
+Flight n°  <855 "HEW" "LUX" 3680 3790 3> 1
+
+Flight n°  <856 "LUX" "LGW" 4805 5005 3> 1
+
+Flight n°  <857 "LGW" "GLA" 5065 5325 4> 1
+
+Flight n°  <858 "GLA" "FRA" 5970 6325 4> 1
+
+Flight n°  <861 "CDG" "HEW" 6775 6910 5> 1
+
+**********Flights assigned to aircraft 10 are :**********
+
+Flight n°  <40 "LGW" "GLA" 19255 19470 14> 1
+
+Flight n°  <41 "GLA" "LGW" 19830 20120 14> 1
+
+Flight n°  <129 "HAM" "DUB" 5535 5640 4> 1
+
+Flight n°  <188 "DUB" "HAM" 7110 7260 5> 1
+
+Flight n°  <225 "HAM" "LGW" 620 825 1> 1
+
+Flight n°  <226 "LGW" "OSL" 910 1015 1> 1
+
+Flight n°  <245 "HAM" "MUC" 8300 8535 6> 1
+
+Flight n°  <344 "MUC" "MRS" 9940 10040 7> 1
+
+Flight n°  <349 "MRS" "MUC" 13905 13990 10> 1
+
+Flight n°  <350 "MUC" "HAM" 14365 14610 10> 1
+
+Flight n°  <381 "AMS" "HAM" 4220 4405 3> 1
+
+Flight n°  <411 "OSL" "LGW" 1045 1155 1> 1
+
+Flight n°  <462 "MAD" "AMS" 3520 3785 3> 1
+
+Flight n°  <531 "MRS" "MUC" 25900 25980 18> 1
+
+Flight n°  <532 "MUC" "MRS" 27220 27320 19> 1
+
+Flight n°  <552 "HAM" "MRS" 15520 15750 11> 1
+
+Flight n°  <553 "MRS" "LGW" 17270 17385 12> 1
+
+Flight n°  <660 "LGW" "HEW" 17980 18185 13> 1
+
+Flight n°  <661 "HEW" "LGW" 18215 18425 13> 1
+
+Flight n°  <678 "LGW" "HEW" 1220 1425 1> 1
+
+Flight n°  <679 "HEW" "FRA" 2055 2160 2> 1
+
+Flight n°  <723 "FRA" "GLA" 2190 2490 2> 1
+
+Flight n°  <724 "GLA" "MAD" 2950 3070 2> 1
+
+Flight n°  <882 "LGW" "MRS" 20960 21075 15> 1
+
+**********Flights assigned to aircraft 11 are :**********
+
+Flight n°  <4 "BCN" "MAD" 1305 1525 1> 1
+
+Flight n°  <20 "HEW" "HAM" 7750 7910 6> 1
+
+Flight n°  <60 "MAD" "HAM" 2040 2295 2> 1
+
+Flight n°  <61 "HAM" "LGW" 2365 2565 2> 1
+
+Flight n°  <62 "LGW" "DUB" 2595 2870 2> 1
+
+Flight n°  <64 "HAM" "AMS" 4855 5040 4> 1
+
+Flight n°  <65 "AMS" "MAD" 5075 5330 4> 1
+
+Flight n°  <66 "MAD" "GLA" 5370 5475 4> 1
+
+Flight n°  <98 "HEW" "LUX" 19520 19630 14> 1
+
+Flight n°  <99 "LUX" "LGW" 19660 19835 14> 1
+
+Flight n°  <108 "MAD" "HAM" 26520 26775 19> 1
+
+Flight n°  <109 "HAM" "LGW" 26845 27045 19> 1
+
+Flight n°  <110 "LGW" "HAM" 27895 28105 20> 1
+
+Flight n°  <111 "HAM" "NCE" 28185 28285 20> 1
+
+Flight n°  <112 "NCE" "HAM" 29345 29450 21> 1
+
+Flight n°  <113 "HAM" "MAD" 29540 29815 21> 1
+
+Flight n°  <250 "HAM" "BCN" 12140 12335 9> 1
+
+Flight n°  <251 "BCN" "HAM" 12370 12625 9> 1
+
+Flight n°  <252 "HAM" "MAD" 12655 12930 9> 1
+
+Flight n°  <296 "HAM" "BER" 7955 8100 6> 1
+
+Flight n°  <297 "BER" "HAM" 8355 8455 6> 1
+
+Flight n°  <301 "HAM" "BER" 10835 10980 8> 1
+
+Flight n°  <302 "BER" "HAM" 11235 11335 8> 1
+
+Flight n°  <378 "LGW" "OSL" 3505 3610 3> 1
+
+Flight n°  <379 "OSL" "HAM" 3680 3905 3> 1
+
+Flight n°  <380 "HAM" "AMS" 4000 4185 3> 1
+
+Flight n°  <437 "HAM" "BCN" 18285 18480 13> 1
+
+Flight n°  <438 "BCN" "HEW" 19275 19440 14> 1
+
+Flight n°  <442 "HAM" "BCN" 21165 21360 15> 1
+
+Flight n°  <443 "BCN" "HEW" 22155 22320 16> 1
+
+Flight n°  <444 "HEW" "LUX" 22400 22510 16> 1
+
+Flight n°  <455 "BCN" "LIS" 620 740 1> 1
+
+Flight n°  <456 "LIS" "BCN" 1120 1235 1> 1
+
+Flight n°  <463 "AMS" "HAM" 4220 4405 3> 1
+
+Flight n°  <575 "HEM" "OSL" 9755 9855 7> 1
+
+Flight n°  <576 "OSL" "HAM" 9885 10095 7> 1
+
+Flight n°  <625 "LUX" "MAD" 23225 23335 16> 1
+
+Flight n°  <626 "MAD" "LUX" 23690 23855 17> 1
+
+Flight n°  <627 "LUX" "MAD" 24665 24775 17> 1
+
+Flight n°  <628 "MAD" "LUX" 25130 25295 18> 1
+
+Flight n°  <629 "LUX" "MAD" 26105 26215 18> 1
+
+Flight n°  <655 "MAD" "HEW" 13660 13870 10> 1
+
+Flight n°  <656 "HEW" "MAD" 13900 14095 10> 1
+
+Flight n°  <657 "MAD" "CDG" 14180 14280 10> 1
+
+Flight n°  <658 "CDG" "HAM" 15250 15510 11> 1
+
+Flight n°  <687 "GLA" "LGW" 5640 5930 4> 1
+
+Flight n°  <688 "LGW" "CDG" 6460 6660 5> 1
+
+Flight n°  <689 "CDG" "LGW" 6690 6900 5> 1
+
+Flight n°  <690 "LGW" "HEW" 6980 7185 5> 1
+
+Flight n°  <769 "DUB" "LGW" 2940 3170 2> 1
+
+Flight n°  <791 "HAM" "ZRH" 15540 15730 11> 1
+
+Flight n°  <792 "ZRH" "HEW" 17140 17275 12> 1
+
+Flight n°  <793 "HEW" "NCE" 17900 18085 13> 1
+
+Flight n°  <794 "NCE" "HAM" 18120 18230 13> 1
+
+Flight n°  <798 "LGW" "HAM" 20885 21095 15> 1
+
+Flight n°  <863 "HAM" "FRA" 8540 8715 6> 1
+
+Flight n°  <864 "FRA" "MAD" 9280 9540 7> 1
+
+Flight n°  <865 "MAD" "HEM" 9580 9685 7> 1
+
+**********Flights assigned to aircraft 12 are :**********
+
+Flight n°  <1 "BCN" "HAM" 525 715 1> 1
+
+Flight n°  <2 "HAM" "LGW" 750 955 1> 1
+
+Flight n°  <3 "LGW" "BCN" 1010 1255 1> 1
+
+Flight n°  <261 "LGW" "FRA" 17905 18195 13> 1
+
+Flight n°  <304 "LGW" "MUC" 12630 12750 9> 1
+
+Flight n°  <311 "FRA" "MXP" 18230 18395 13> 1
+
+Flight n°  <322 "FRA" "MXP" 26465 26635 19> 1
+
+Flight n°  <323 "MXP" "FRA" 26665 26830 19> 1
+
+Flight n°  <324 "FRA" "MXP" 27905 28075 20> 1
+
+Flight n°  <325 "MXP" "FRA" 28105 28270 20> 1
+
+Flight n°  <326 "FRA" "MXP" 29345 29515 21> 1
+
+Flight n°  <327 "MXP" "FRA" 29545 29710 21> 1
+
+Flight n°  <388 "HAM" "HEW" 9570 9740 7> 1
+
+Flight n°  <389 "HEW" "HAM" 9860 9985 7> 1
+
+Flight n°  <457 "BCN" "HEW" 1310 1420 1> 1
+
+Flight n°  <476 "HAM" "FRA" 11110 11285 8> 1
+
+Flight n°  <517 "MUC" "LGW" 14385 14560 10> 1
+
+Flight n°  <524 "MXP" "MAN" 19320 19435 14> 1
+
+Flight n°  <525 "MAN" "LGW" 19465 19635 14> 1
+
+Flight n°  <526 "LGW" "BER" 19675 19845 14> 1
+
+Flight n°  <527 "BER" "HAM" 21315 21415 15> 1
+
+Flight n°  <607 "LGW" "LUX" 7855 8045 6> 1
+
+Flight n°  <608 "LUX" "HEW" 8115 8240 6> 1
+
+Flight n°  <609 "HEW" "FRA" 8310 8415 6> 1
+
+Flight n°  <610 "FRA" "HAM" 8450 8630 6> 1
+
+Flight n°  <639 "LGW" "CDG" 3580 3780 3> 1
+
+Flight n°  <641 "LGW" "MAD" 4090 4295 3> 1
+
+Flight n°  <642 "MAD" "HEW" 5020 5230 4> 1
+
+Flight n°  <643 "HEW" "MAD" 5260 5455 4> 1
+
+Flight n°  <644 "MAD" "CDG" 5540 5640 4> 1
+
+Flight n°  <645 "CDG" "HAM" 6610 6870 5> 1
+
+Flight n°  <680 "FRA" "GLA" 2190 2490 2> 1
+
+Flight n°  <681 "GLA" "LGW" 2760 3050 2> 1
+
+Flight n°  <683 "CDG" "LGW" 3810 4020 3> 1
+
+Flight n°  <722 "HEW" "FRA" 2055 2160 2> 1
+
+Flight n°  <732 "HAM" "LGW" 7015 7265 5> 1
+
+Flight n°  <741 "FRA" "NCE" 12150 12350 9> 1
+
+Flight n°  <742 "NCE" "LGW" 12420 12550 9> 1
+
+Flight n°  <745 "LGW" "NCE" 15110 15240 11> 1
+
+Flight n°  <746 "NCE" "LGW" 15300 15430 11> 1
+
+Flight n°  <747 "LGW" "MUC" 15510 15630 11> 1
+
+Flight n°  <748 "MUC" "LGW" 17350 17480 12> 1
+
+Flight n°  <761 "NCE" "FRA" 25390 25595 18> 1
+
+Flight n°  <799 "HAM" "ZRH" 21490 21685 15> 1
+
+Flight n°  <800 "ZRH" "HEW" 22900 23035 16> 1
+
+Flight n°  <801 "HEW" "NCE" 23660 23845 17> 1
+
+Flight n°  <802 "NCE" "FRA" 23950 24155 17> 1
+
+Flight n°  <803 "FRA" "NCE" 25110 25310 18> 1
+
+**********Flights assigned to aircraft 13 are :**********
+
+Flight n°  <121 "HAM" "MAD" 2575 2850 2> 1
+
+Flight n°  <158 "HAM" "BCN" 19340 19535 14> 1
+
+Flight n°  <159 "BCN" "HAM" 19570 19825 14> 1
+
+Flight n°  <209 "MAD" "FRA" 16455 16690 12> 1
+
+Flight n°  <355 "FRA" "HAM" 16780 16955 12> 1
+
+Flight n°  <360 "LGW" "FRA" 22225 22515 16> 1
+
+Flight n°  <361 "FRA" "LGW" 22550 22830 16> 1
+
+Flight n°  <367 "HEW" "HAM" 27910 28070 20> 1
+
+Flight n°  <432 "HAM" "MAD" 15340 15625 11> 1
+
+Flight n°  <543 "HAM" "AMS" 6880 7065 5> 1
+
+Flight n°  <544 "AMS" "HAM" 7745 7925 6> 1
+
+Flight n°  <545 "HAM" "MRS" 8320 8550 6> 1
+
+Flight n°  <546 "MRS" "MUC" 10060 10140 7> 1
+
+Flight n°  <547 "MUC" "LGW" 11505 11680 8> 1
+
+Flight n°  <548 "LGW" "BCN" 12165 12455 9> 1
+
+Flight n°  <549 "BCN" "HAM" 12750 12945 9> 1
+
+Flight n°  <550 "HAM" "AMS" 14080 14265 10> 1
+
+Flight n°  <551 "AMS" "HAM" 14945 15125 11> 1
+
+Flight n°  <587 "HAM" "LGW" 21290 21495 15> 1
+
+Flight n°  <597 "FRA" "MAN" 625 805 1> 1
+
+Flight n°  <598 "MAN" "HAM" 1320 1450 1> 1
+
+Flight n°  <630 "MAD" "HEW" 26620 26830 19> 1
+
+Flight n°  <709 "HAM" "ZRH" 19860 20050 14> 1
+
+Flight n°  <710 "ZRH" "HAM" 20975 21180 15> 1
+
+Flight n°  <718 "HAM" "ZRH" 29940 30130 21> 1
+
+Flight n°  <725 "MAD" "LGW" 3585 3795 3> 1
+
+Flight n°  <726 "LGW" "BER" 3835 4005 3> 1
+
+Flight n°  <727 "BER" "HAM" 4035 4135 3> 1
+
+Flight n°  <728 "HAM" "ZRH" 4210 4405 3> 1
+
+Flight n°  <729 "ZRH" "HEW" 5620 5755 4> 1
+
+Flight n°  <730 "HEW" "NCE" 6380 6565 5> 1
+
+Flight n°  <731 "NCE" "HAM" 6600 6710 5> 1
+
+Flight n°  <842 "LGW" "GLA" 23785 24045 17> 1
+
+Flight n°  <843 "GLA" "MAD" 25990 26110 18> 1
+
+**********Flights assigned to aircraft 14 are :**********
+
+Flight n°  <28 "HAM" "AMS" 12055 12240 9> 1
+
+Flight n°  <29 "AMS" "MAD" 12275 12530 9> 1
+
+Flight n°  <42 "LGW" "HAM" 20695 20905 15> 1
+
+Flight n°  <43 "HAM" "NCE" 20985 21085 15> 1
+
+Flight n°  <44 "NCE" "HAM" 21115 21265 15> 1
+
+Flight n°  <84 "MAD" "HAM" 12575 12870 9> 1
+
+Flight n°  <94 "BCN" "HAM" 17805 17995 13> 1
+
+Flight n°  <118 "LGW" "HAM" 1975 2185 2> 1
+
+Flight n°  <124 "LIS" "HAM" 3980 4185 3> 1
+
+Flight n°  <127 "MXP" "FRA" 5065 5230 4> 1
+
+Flight n°  <128 "FRA" "HAM" 5260 5435 4> 1
+
+Flight n°  <145 "HAM" "FRA" 13570 13710 10> 1
+
+Flight n°  <146 "FRA" "HEW" 13780 13885 10> 1
+
+Flight n°  <147 "HEW" "BCN" 13915 14060 10> 1
+
+Flight n°  <148 "BCN" "MXP" 14090 14265 10> 1
+
+Flight n°  <149 "MXP" "BCN" 14955 15135 11> 1
+
+Flight n°  <150 "BCN" "MAD" 15210 15425 11> 1
+
+Flight n°  <151 "MAD" "HAM" 15455 15750 11> 1
+
+Flight n°  <152 "HAM" "FRA" 16450 16590 12> 1
+
+Flight n°  <153 "FRA" "HEW" 16660 16765 12> 1
+
+Flight n°  <154 "HEW" "BCN" 16795 16940 12> 1
+
+Flight n°  <156 "HAM" "LGW" 18030 18235 13> 1
+
+Flight n°  <172 "LGW" "MAD" 610 815 1> 1
+
+Flight n°  <173 "MAD" "LGW" 850 1110 1> 1
+
+Flight n°  <174 "LGW" "HAM" 1150 1350 1> 1
+
+Flight n°  <175 "HAM" "LGW" 1405 1605 1> 1
+
+Flight n°  <179 "HAM" "LGW" 2845 3045 2> 1
+
+Flight n°  <180 "LGW" "ZRH" 3500 3805 3> 1
+
+Flight n°  <181 "ZRH" "LIS" 3880 3930 3> 1
+
+Flight n°  <183 "HAM" "FRA" 4220 4395 3> 1
+
+Flight n°  <184 "FRA" "MXP" 4865 5035 4> 1
+
+Flight n°  <189 "HAM" "LGW" 7820 8025 6> 1
+
+Flight n°  <214 "HAM" "BCN" 19340 19535 14> 1
+
+Flight n°  <264 "BCN" "HAM" 19570 19825 14> 1
+
+Flight n°  <267 "HAM" "BCN" 22220 22415 16> 1
+
+Flight n°  <268 "BCN" "LGW" 22510 22800 16> 1
+
+Flight n°  <269 "LGW" "ZRH" 23660 23965 17> 1
+
+Flight n°  <270 "ZRH" "LIS" 24040 24090 17> 1
+
+Flight n°  <271 "LIS" "HAM" 25290 25500 18> 1
+
+Flight n°  <276 "HAM" "MAN" 29435 29605 21> 1
+
+Flight n°  <277 "MAN" "HAM" 29705 29835 21> 1
+
+Flight n°  <375 "HAM" "HEW" 2370 2540 2> 1
+
+Flight n°  <376 "HEW" "HAM" 2660 2785 2> 1
+
+Flight n°  <469 "LGW" "OSL" 8110 8215 6> 1
+
+Flight n°  <470 "OSL" "LGW" 8245 8355 6> 1
+
+Flight n°  <514 "LGW" "HAM" 10720 10920 8> 1
+
+Flight n°  <561 "HAM" "HEM" 25605 25820 18> 1
+
+Flight n°  <562 "HEM" "OSL" 27035 27135 19> 1
+
+Flight n°  <563 "OSL" "HAM" 28605 28815 20> 1
+
+Flight n°  <577 "HAM" "MAN" 11210 11330 8> 1
+
+Flight n°  <612 "MAN" "HAM" 11400 11530 8> 1
+
+Flight n°  <675 "HAM" "MAD" 29935 30210 21> 1
+
+Flight n°  <708 "LGW" "HAM" 18320 18530 13> 1
+
+Flight n°  <735 "LGW" "HEW" 8420 8625 6> 1
+
+Flight n°  <736 "HEW" "NCE" 9260 9445 7> 1
+
+Flight n°  <737 "NCE" "HAM" 9480 9590 7> 1
+
+Flight n°  <738 "HAM" "LGW" 9895 10145 7> 1
+
+Flight n°  <797 "HAM" "LGW" 19975 20225 14> 1
+
+Flight n°  <815 "HAM" "FRA" 5660 5835 4> 1
+
+Flight n°  <818 "CDG" "HEW" 6775 6910 5> 1
+
+Flight n°  <859 "FRA" "HEW" 6400 6505 5> 1
+
+Flight n°  <860 "HEW" "CDG" 6575 6705 5> 1
+
+Flight n°  <862 "HEW" "HAM" 6980 7105 5> 1
+
+**********Flights assigned to aircraft 15 are :**********
+
+Flight n°  <45 "HAM" "AMS" 22135 22320 16> 1
+
+Flight n°  <46 "AMS" "MAD" 22355 22610 16> 1
+
+Flight n°  <212 "HAM" "BCN" 17900 18095 13> 1
+
+Flight n°  <213 "BCN" "HAM" 18130 18385 13> 1
+
+Flight n°  <246 "MUC" "LGW" 9750 9880 7> 1
+
+Flight n°  <279 "OSL" "HAM" 800 1025 1> 1
+
+Flight n°  <282 "HAM" "MAN" 2075 2245 2> 1
+
+Flight n°  <283 "MAN" "HAM" 2345 2475 2> 1
+
+Flight n°  <336 "MUC" "MRS" 4180 4280 3> 1
+
+Flight n°  <337 "MRS" "MUC" 5265 5350 4> 1
+
+Flight n°  <338 "MUC" "LGW" 5430 5560 4> 1
+
+Flight n°  <339 "LGW" "MUC" 5635 5755 4> 1
+
+Flight n°  <340 "MUC" "LGW" 6870 7000 5> 1
+
+Flight n°  <341 "LGW" "MUC" 7075 7195 5> 1
+
+Flight n°  <342 "MUC" "MRS" 8500 8600 6> 1
+
+Flight n°  <343 "MRS" "MUC" 9585 9670 7> 1
+
+Flight n°  <403 "MAD" "AMS" 23680 23945 17> 1
+
+Flight n°  <404 "AMS" "NCE" 23975 24085 17> 1
+
+Flight n°  <405 "NCE" "LGW" 25130 25300 18> 1
+
+Flight n°  <406 "LGW" "OSL" 25390 25495 18> 1
+
+Flight n°  <407 "OSL" "LGW" 26965 27075 19> 1
+
+Flight n°  <410 "LGW" "OSL" 625 730 1> 1
+
+Flight n°  <441 "LGW" "HAM" 20800 21000 15> 1
+
+Flight n°  <536 "HAM" "AMS" 1120 1305 1> 1
+
+Flight n°  <537 "AMS" "HAM" 1340 1525 1> 1
+
+Flight n°  <538 "HAM" "MRS" 2560 2790 2> 1
+
+Flight n°  <539 "MRS" "MUC" 2860 2940 2> 1
+
+Flight n°  <581 "HAM" "HEM" 14085 14300 10> 1
+
+Flight n°  <582 "HEM" "OSL" 15515 15615 11> 1
+
+Flight n°  <583 "OSL" "HAM" 17085 17295 12> 1
+
+Flight n°  <662 "LGW" "HEW" 19420 19625 14> 1
+
+Flight n°  <663 "HEW" "LGW" 19655 19865 14> 1
+
+Flight n°  <739 "LGW" "MAD" 10790 11005 8> 1
+
+Flight n°  <740 "MAD" "FRA" 11035 11305 8> 1
+
+Flight n°  <764 "LGW" "MAD" 28070 28285 20> 1
+
+Flight n°  <765 "MAD" "LGW" 29505 29715 21> 1
+
+Flight n°  <785 "FRA" "NCE" 12150 12350 9> 1
+
+Flight n°  <786 "NCE" "FRA" 12430 12635 9> 1
+
+Flight n°  <787 "FRA" "LGW" 12665 12945 9> 1
+
+Flight n°  <788 "LGW" "HAM" 13685 13895 10> 1
+
+Flight n°  <795 "HAM" "LGW" 18535 18785 13> 1
+
+**********Flights assigned to aircraft 16 are :**********
+
+Flight n°  <63 "DUB" "HAM" 4230 4380 3> 1
+
+Flight n°  <91 "BCN" "HAM" 16365 16555 12> 1
+
+Flight n°  <221 "LGW" "ZRH" 25100 25405 18> 1
+
+Flight n°  <222 "ZRH" "LGW" 26625 26930 19> 1
+
+Flight n°  <255 "LGW" "ZRH" 15020 15325 11> 1
+
+Flight n°  <256 "ZRH" "LIS" 15400 15450 11> 1
+
+Flight n°  <257 "LIS" "BCN" 15520 15635 11> 1
+
+Flight n°  <265 "HAM" "MAN" 20795 20965 15> 1
+
+Flight n°  <266 "MAN" "HAM" 21065 21195 15> 1
+
+Flight n°  <280 "HAM" "MUC" 1100 1335 1> 1
+
+Flight n°  <281 "MUC" "HAM" 1405 1650 1> 1
+
+Flight n°  <298 "HAM" "ZRH" 8530 8725 6> 1
+
+Flight n°  <300 "LGW" "HAM" 9680 9890 7> 1
+
+Flight n°  <305 "MUC" "LGW" 14070 14200 10> 1
+
+Flight n°  <320 "HAM" "LGW" 23870 24080 17> 1
+
+Flight n°  <358 "MUC" "HAM" 20125 20370 14> 1
+
+Flight n°  <418 "HAM" "CDG" 5260 5470 4> 1
+
+Flight n°  <419 "CDG" "HAM" 5545 5770 4> 1
+
+Flight n°  <486 "HAM" "MUC" 18380 18615 13> 1
+
+Flight n°  <515 "HAM" "MRS" 11200 11430 8> 1
+
+Flight n°  <516 "MRS" "MUC" 12940 13020 9> 1
+
+Flight n°  <535 "ZRH" "HAM" 815 1020 1> 1
+
+Flight n°  <599 "HAM" "LGW" 2570 2775 2> 1
+
+Flight n°  <600 "LGW" "DUB" 2870 3145 2> 1
+
+Flight n°  <646 "HAM" "ZRH" 6900 7090 5> 1
+
+Flight n°  <647 "ZRH" "LGW" 7905 8210 6> 1
+
+Flight n°  <648 "LGW" "HAM" 8240 8450 6> 1
+
+Flight n°  <650 "ZRH" "LGW" 9345 9650 7> 1
+
+Flight n°  <806 "LGW" "HAM" 28085 28295 20> 1
+
+**********Flights assigned to aircraft 17 are :**********
+
+Flight n°  <24 "MAD" "HAM" 9240 9495 7> 1
+
+Flight n°  <25 "HAM" "LGW" 9565 9765 7> 1
+
+Flight n°  <26 "LGW" "DUB" 9795 10070 7> 1
+
+Flight n°  <176 "LGW" "MAD" 2050 2255 2> 1
+
+Flight n°  <177 "MAD" "LGW" 2290 2550 2> 1
+
+Flight n°  <178 "LGW" "HAM" 2590 2790 2> 1
+
+Flight n°  <262 "FRA" "MXP" 18230 18395 13> 1
+
+Flight n°  <310 "LGW" "FRA" 17905 18195 13> 1
+
+Flight n°  <312 "MXP" "MAN" 19320 19435 14> 1
+
+Flight n°  <313 "MAN" "LGW" 19465 19635 14> 1
+
+Flight n°  <314 "LGW" "BCN" 19670 19955 14> 1
+
+Flight n°  <315 "BCN" "HEW" 20715 20880 15> 1
+
+Flight n°  <316 "HEW" "LUX" 20960 21070 15> 1
+
+Flight n°  <345 "MRS" "MUC" 11025 11110 8> 1
+
+Flight n°  <346 "MUC" "MRS" 11380 11480 8> 1
+
+Flight n°  <347 "MRS" "MUC" 12465 12550 9> 1
+
+Flight n°  <348 "MUC" "MRS" 12820 12920 9> 1
+
+Flight n°  <377 "HAM" "LGW" 2845 3045 2> 1
+
+Flight n°  <446 "LGW" "HAM" 23680 23885 17> 1
+
+Flight n°  <447 "HAM" "BCN" 24045 24240 17> 1
+
+Flight n°  <448 "BCN" "LIS" 25100 25220 18> 1
+
+Flight n°  <466 "HAM" "FRA" 6765 6910 5> 1
+
+Flight n°  <467 "FRA" "HEW" 6980 7090 5> 1
+
+Flight n°  <513 "DUB" "LGW" 10140 10370 7> 1
+
+Flight n°  <541 "LGW" "BCN" 4965 5255 4> 1
+
+Flight n°  <542 "BCN" "HAM" 5550 5745 4> 1
+
+Flight n°  <623 "LUX" "LGW" 21100 21275 15> 1
+
+Flight n°  <666 "LGW" "HEW" 22300 22505 16> 1
+
+Flight n°  <667 "HEW" "LGW" 22535 22745 16> 1
+
+Flight n°  <691 "HEW" "FRA" 7815 7920 6> 1
+
+Flight n°  <692 "FRA" "GLA" 7950 8250 6> 1
+
+Flight n°  <713 "LIS" "BCN" 25600 25715 18> 1
+
+Flight n°  <714 "BCN" "ZRH" 26540 26650 19> 1
+
+Flight n°  <715 "ZRH" "HEW" 27220 27355 19> 1
+
+Flight n°  <770 "LGW" "NCE" 3590 3720 3> 1
+
+Flight n°  <771 "NCE" "FRA" 3790 3995 3> 1
+
+Flight n°  <772 "FRA" "LGW" 4025 4305 3> 1
+
+Flight n°  <807 "FRA" "HEW" 640 745 1> 1
+
+Flight n°  <808 "HEW" "CDG" 815 945 1> 1
+
+Flight n°  <809 "CDG" "HEW" 1015 1150 1> 1
+
+Flight n°  <810 "HEW" "HAM" 1220 1345 1> 1
+
+Flight n°  <811 "HAM" "LGW" 1405 1605 1> 1
+
+Flight n°  <821 "GLA" "MAD" 8710 8830 6> 1
+
+Flight n°  <830 "MAD" "CDG" 15120 15220 11> 1
+
+Flight n°  <831 "CDG" "HEW" 15415 15550 11> 1
+
+Flight n°  <846 "HEW" "MAD" 27985 28180 20> 1
+
+Flight n°  <847 "MAD" "LGW" 28210 28470 20> 1
+
+Flight n°  <848 "LGW" "GLA" 29545 29805 21> 1
+
+Flight n°  <867 "LGW" "MRS" 10880 10995 8> 1
+
+Flight n°  <868 "MRS" "LGW" 11510 11625 8> 1
+
+Flight n°  <869 "LGW" "MRS" 12320 12435 9> 1
+
+Flight n°  <870 "MRS" "LGW" 12950 13065 9> 1
+
+Flight n°  <871 "LGW" "GLA" 13705 13965 10> 1
+
+Flight n°  <872 "GLA" "MAD" 14470 14590 10> 1
+
+Flight n°  <875 "HEW" "MAD" 16465 16660 12> 1
+
+Flight n°  <876 "MAD" "HEM" 16780 16885 12> 1
+
+Flight n°  <877 "HEM" "LGW" 17290 17460 12> 1
+
+**********Flights assigned to aircraft 18 are :**********
+
+Flight n°  <187 "HAM" "DUB" 5535 5640 4> 1
+
+Flight n°  <200 "MAD" "FRA" 12135 12370 9> 1
+
+Flight n°  <201 "FRA" "LIS" 12440 12550 9> 1
+
+Flight n°  <202 "LIS" "HAM" 12620 12825 9> 1
+
+Flight n°  <237 "HAM" "LGW" 4940 5145 4> 1
+
+Flight n°  <284 "HAM" "MUC" 2540 2775 2> 1
+
+Flight n°  <285 "MUC" "HAM" 2845 3090 2> 1
+
+Flight n°  <286 "HAM" "MAN" 3515 3685 3> 1
+
+Flight n°  <287 "MAN" "HAM" 3785 3915 3> 1
+
+Flight n°  <288 "HAM" "MUC" 3980 4215 3> 1
+
+Flight n°  <289 "MUC" "HAM" 4285 4530 3> 1
+
+Flight n°  <299 "ZRH" "LGW" 9345 9650 7> 1
+
+Flight n°  <306 "LGW" "OSL" 15025 15130 11> 1
+
+Flight n°  <307 "OSL" "HAM" 15200 15425 11> 1
+
+Flight n°  <317 "LUX" "LGW" 21100 21275 15> 1
+
+Flight n°  <366 "HAM" "HEW" 26850 27020 19> 1
+
+Flight n°  <390 "HAM" "MAD" 11020 11305 8> 1
+
+Flight n°  <507 "LGW" "HAM" 5245 5455 4> 1
+
+Flight n°  <509 "DUB" "FRA" 7190 7300 5> 1
+
+Flight n°  <510 "FRA" "LGW" 7805 8045 6> 1
+
+Flight n°  <511 "LGW" "HAM" 8125 8335 6> 1
+
+Flight n°  <589 "LUX" "HEW" 22515 22640 16> 1
+
+Flight n°  <590 "HEW" "LGW" 23650 23865 17> 1
+
+Flight n°  <591 "LGW" "FRA" 23970 24255 17> 1
+
+Flight n°  <592 "FRA" "MAN" 25105 25285 18> 1
+
+Flight n°  <593 "MAN" "HAM" 25800 25930 18> 1
+
+Flight n°  <615 "HAM" "MAN" 15530 15650 11> 1
+
+Flight n°  <616 "MAN" "MAD" 17595 17780 12> 1
+
+Flight n°  <617 "MAD" "LUX" 17930 18095 13> 1
+
+Flight n°  <618 "LUX" "HEW" 18195 18320 13> 1
+
+Flight n°  <619 "HEW" "FRA" 18390 18495 13> 1
+
+Flight n°  <620 "FRA" "MAN" 19345 19525 14> 1
+
+Flight n°  <621 "MAN" "MAD" 20475 20660 14> 1
+
+Flight n°  <622 "MAD" "LUX" 20810 20975 15> 1
+
+Flight n°  <624 "LGW" "LUX" 22255 22445 16> 1
+
+Flight n°  <631 "HEW" "FRA" 27975 28080 20> 1
+
+Flight n°  <632 "FRA" "GLA" 28110 28410 20> 1
+
+Flight n°  <649 "HAM" "ZRH" 8530 8725 6> 1
+
+Flight n°  <651 "LGW" "HAM" 9680 9890 7> 1
+
+Flight n°  <766 "FRA" "LGW" 755 1045 1> 1
+
+Flight n°  <789 "HAM" "LGW" 14215 14465 10> 1
+
+Flight n°  <812 "LGW" "HAM" 2165 2375 2> 1
+
+Flight n°  <850 "LGW" "MUC" 1110 1230 1> 1
+
+Flight n°  <851 "MUC" "LGW" 1425 1600 1> 1
+
+**********Flights assigned to aircraft 19 are :**********
+
+Flight n°  <23 "GLA" "MAD" 8430 8550 6> 1
+
+Flight n°  <36 "HAM" "AMS" 16375 16560 12> 1
+
+Flight n°  <37 "AMS" "MAD" 16595 16850 12> 1
+
+Flight n°  <38 "MAD" "GLA" 16890 16995 12> 1
+
+Flight n°  <39 "GLA" "LGW" 18390 18680 13> 1
+
+Flight n°  <50 "HAM" "NCE" 25305 25405 18> 1
+
+Flight n°  <51 "NCE" "HAM" 26465 26570 19> 1
+
+Flight n°  <171 "LGW" "MAD" 29410 29615 21> 1
+
+Flight n°  <368 "HAM" "LGW" 28190 28405 20> 1
+
+Flight n°  <395 "CDG" "HAM" 15250 15510 11> 1
+
+Flight n°  <491 "OSL" "HAM" 24285 24495 17> 1
+
+Flight n°  <558 "HAM" "HEM" 21285 21500 15> 1
+
+Flight n°  <559 "HEM" "OSL" 22715 22815 16> 1
+
+Flight n°  <585 "LGW" "BCN" 19365 19655 14> 1
+
+Flight n°  <586 "BCN" "HAM" 19950 20145 14> 1
+
+Flight n°  <601 "DUB" "LGW" 4380 4610 3> 1
+
+Flight n°  <699 "GLA" "MAD" 11590 11710 8> 1
+
+Flight n°  <700 "MAD" "LGW" 12225 12435 9> 1
+
+Flight n°  <701 "LGW" "MAD" 12475 12720 9> 1
+
+Flight n°  <767 "LGW" "NCE" 1120 1245 1> 1
+
+Flight n°  <768 "NCE" "DUB" 1315 1455 1> 1
+
+Flight n°  <773 "LGW" "MAD" 5030 5245 4> 1
+
+Flight n°  <774 "MAD" "FRA" 5275 5545 4> 1
+
+Flight n°  <775 "FRA" "DUB" 5575 5720 4> 1
+
+Flight n°  <776 "DUB" "LGW" 7260 7490 5> 1
+
+Flight n°  <820 "LGW" "GLA" 7945 8205 6> 1
+
+Flight n°  <822 "MAD" "LGW" 9345 9555 7> 1
+
+Flight n°  <823 "LGW" "MAD" 9595 9840 7> 1
+
+Flight n°  <824 "MAD" "GLA" 9955 10070 7> 1
+
+Flight n°  <828 "MAD" "LGW" 13665 13875 10> 1
+
+Flight n°  <829 "LGW" "MAD" 13915 14160 10> 1
+
+Flight n°  <849 "BCN" "LGW" 650 935 1> 1
+
+Flight n°  <873 "MAD" "CDG" 15120 15220 11> 1
+-->1876
+>--25300
+objective = 8054471
+Plane 0
+(day,flight,departure day)
+( 3 125  FRA 3)
+( 7 424  MAD 7)
+( 11 90  BCN 11)
+( 15 488  FRA 15)
+( 19 672  FRA 19)
+Plane 1
+(day,flight,departure day)
+( 4 240  MAD 4)
+( 8 784  FRA 8)
+( 12 706  ZRH 12)
+( 16 402  MAD 16)
+( 20 533  MUC 20)
+Plane 2
+(day,flight,departure day)
+( 3 236  HAM 3)
+( 7 137  HAM 7)
+( 11 308  MUC 11)
+( 14 487  HAM 14)
+( 18 804  HAM 18)
+Plane 3
+(day,flight,departure day)
+( 4 15  BCN 4)
+( 8 249  HAM 8)
+( 12 521  FRA 12)
+( 15 217  MAN 15)
+( 19 52  MAD 19)
+Plane 4
+(day,flight,departure day)
+( 3 570  HAM 3)
+( 7 611  MAN 7)
+( 11 705  HAM 11)
+( 15 401  HAM 15)
+( 18 449  BCN 18)
+Plane 5
+(day,flight,departure day)
+( 4 605  HAM 4)
+( 8 199  MAD 8)
+( 12 93  BCN 12)
+( 16 757  FRA 16)
+( 20 452  BCN 20)
+Plane 6
+(day,flight,departure day)
+( 4 292  HAM 4)
+( 8 652  LGW 8)
+( 12 483  BCN 12)
+( 16 103  LGW 16)
+( 20 223  ZRH 20)
+Plane 7
+(day,flight,departure day)
+( 4 383  HAM 4)
+( 8 27  HAM 8)
+( 12 396  MAD 12)
+( 15 359  LGW 15)
+( 19 594  MAN 19)
+Plane 8
+(day,flight,departure day)
+( 4 67  MAD 4)
+( 8 825  MAD 8)
+( 11 353  MAD 11)
+( 14 838  FRA 14)
+( 18 107  MAD 18)
+Plane 9
+(day,flight,departure day)
+( 4 858  FRA 4)
+( 7 475  HAM 7)
+( 11 208  MAD 11)
+( 14 753  FRA 14)
+( 18 321  FRA 18)
+Plane 10
+(day,flight,departure day)
+( 2 724  MAD 2)
+( 6 245  MUC 6)
+( 10 350  HAM 10)
+( 14 41  LGW 14)
+( 18 531  MUC 18)
+Plane 11
+(day,flight,departure day)
+( 3 463  HAM 3)
+( 7 576  HAM 7)
+( 11 791  ZRH 11)
+( 15 442  BCN 15)
+( 18 629  MAD 18)
+Plane 12
+(day,flight,departure day)
+( 3 641  MAD 3)
+( 7 389  HAM 7)
+( 11 747  MUC 11)
+( 15 799  ZRH 15)
+( 19 323  FRA 19)
+Plane 13
+(day,flight,departure day)
+( 3 728  ZRH 3)
+( 7 546  MUC 7)
+( 11 432  MAD 11)
+( 14 709  ZRH 14)
+( 18 843  MAD 18)
+Plane 14
+(day,flight,departure day)
+( 4 815  FRA 4)
+( 8 612  HAM 8)
+( 12 154  BCN 12)
+( 15 44  HAM 15)
+( 19 562  OSL 19)
+Plane 15
+(day,flight,departure day)
+( 4 339  MUC 4)
+( 8 740  FRA 8)
+( 12 583  HAM 12)
+( 16 46  MAD 16)
+( 20 764  MAD 20)
+Plane 16
+(day,flight,departure day)
+( 3 63  HAM 3)
+( 7 300  HAM 7)
+( 11 257  BCN 11)
+( 15 266  HAM 15)
+( 18 221  ZRH 18)
+Plane 17
+(day,flight,departure day)
+( 4 542  HAM 4)
+( 6 821  MAD 6)
+( 10 872  MAD 10)
+( 14 314  BCN 14)
+( 18 713  BCN 18)
+Plane 18
+(day,flight,departure day)
+( 3 289  HAM 3)
+( 7 651  HAM 7)
+( 11 615  MAN 11)
+( 14 621  MAD 14)
+( 18 593  HAM 18)
+Plane 19
+(day,flight,departure day)
+( 3 601  LGW 3)
+( 6 23  MAD 6)
+( 10 829  MAD 10)
+( 14 586  HAM 14)
+( 18 50  NCE 18)
