@@ -57,6 +57,7 @@ class FlightProblemMaintenance:
     flight_costs: np.ndarray
     maintenance_costs: np.ndarray
     capacity_maintenance: int
+    max_maintenace_delay: int
 
     def get_instants(self) -> list[int]:
         departure_instants = [flight.departure_time for flight in self.flights]
@@ -65,7 +66,7 @@ class FlightProblemMaintenance:
         return instants
 
     @classmethod
-    def from_file(cls, path: str) -> "FlightProblemMaintenance":
+    def from_file(cls, path: str, max_maintenace_delay: int) -> "FlightProblemMaintenance":
         Airports, Aircrafts, Flights, Cost, InitialPositions, AirportMaintenance, Days, CostMaintenance, CapacityMaintenance = parse_problem_with_maintenance(path)
 
         airports_map = {
@@ -97,4 +98,4 @@ class FlightProblemMaintenance:
         capacity_maintenance = CapacityMaintenance
         days = Days
 
-        return cls(airports, airports_maintenance, aircrafts, flights, days, flight_costs, maintenance_costs, capacity_maintenance)
+        return cls(airports, airports_maintenance, aircrafts, flights, days, flight_costs, maintenance_costs, capacity_maintenance, max_maintenace_delay)
