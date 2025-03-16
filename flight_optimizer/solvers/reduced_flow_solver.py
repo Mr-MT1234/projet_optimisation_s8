@@ -82,19 +82,6 @@ class ReducedFlowSolver(Solver):
                         currently_in_airport >= x[flight.id - 1, aircraft.id]
                     )
 
-        # """
-        # Each plain can serve at most one flight from its initial position
-        # """
-        # for aircraft in problem.aircrafts:
-        #     start_flights = [
-        #         flight
-        #         for flight in problem.flights
-        #         if flight.departure_airport == aircraft.starting_airport
-        #     ]
-        #     start_flights_indices = [flight.id - 1 for flight in start_flights]
-
-        #     model.addConstr(x[start_flights_indices, aircraft.id].sum() <= 1)
-
         model.update()
         model.optimize()
 
@@ -108,35 +95,67 @@ class ReducedFlowSolver(Solver):
     def solve_maintenance(self, problem: FlightProblemMaintenance):
         flight_count = len(problem.flights)
         aircraft_count = len(problem.aircrafts)
+        maintenance_airports_count = len(problem.airports_maintenance)
         day_count = len(problem.days)
 
-        departure_map = {airport.id: [] for airport in problem.airports}
-        arrival_map = {airport.id: [] for airport in problem.airports}
+        arrival_graph = {flight.id: [] for flight in problem.flights}
 
-        for flight in problem.flights:
-            bisect.insort(departure_map[flight.departure_airport.id], flight, key=lambda x: x.departure_time)
-            bisect.insort(arrival_map[flight.arrival_airport.id], flight, key=lambda x: x.departure_time)
+        for flight1, flight2 in itertools.combinations(problem.flights, 2):
+            if (
+                flight2.arrival_airport == flight1.departure_airport
+                and flight2.arrival_time <= flight1.departure_time
+            ):
+                arrival_graph[flight1.id].append(flight2.id)
+            if (
+                flight1.arrival_airport == flight2.departure_airport
+                and flight1.arrival_time <= flight2.departure_time
+            ):
+                arrival_graph[flight2.id].append(flight1.id)
 
-        
+        departure_graph = {flight.id: [] for flight in problem.flights}
 
+        for flight1, flight2 in itertools.combinations(problem.flights, 2):
+            if (
+                flight1.departure_airport == flight2.departure_airport
+                and flight1.departure_time >= flight2.departure_time
+            ):
+                departure_graph[flight1.id].append(flight2.id)
+            if (
+                flight2.departure_airport == flight1.departure_airport
+                and flight2.departure_time >= flight1.departure_time
+            ):
+                departure_graph[flight2.id].append(flight1.id)
+
+        model = gp.Model()
+
+        x = model.addMVar((flight_count, aircraft_count), vtype=gp.GRB.BINARY)
+        z = model.addMVar(
+            (aircraft_count, maintenance_airports_count, day_count), vtype=gp.GRB.BINARY
+        )
+
+        # Constraints
+        """
+        Each flight must be assigned exactly one plaine
+        """
+        model.addConstr(x.sum(axis=1) == 1)
+
+        """
+        The incoming flow to a node can not exceed the out going flow 
+        TODO change
+        """
+        for aircraft in problem.aircrafts:
+            for flight in problem.flights:
+                currently_in_airport = self.__present_at(
+                    aircraft,
+                    flight.departure_airport,
+                    flight.departure_time,
+                    x,
+                    departure_map,
+                    arrival_map,
+                )
+                model.addConstr(currently_in_airport >= x[flight.id - 1, aircraft.id])
+
+
+        for day in problem.days[:problem.m]:
+            d
         return
-    
-    def __position_at(self, aircraft: Aircraft, airport:Airport, time: int, x: gp.Var, depature_map, arrival_map) -> gp.Var:
-        incomming = arrival_map[airport.id]
-        outgoing  = depature_map[airport.id]
-
-    def __binary_search(self, flights: list, value, key=lambda x: x) -> int:
-        l, r = 0, len(flights) - 1
-
-        while l <= r:
-            m = (l+r)//2
-
-            current = key(flights[m])
-            if current < value:
-                r = m - 1
-            elif current > value:
-                l = m + 1
-            else: 
-                return m
-            
-        

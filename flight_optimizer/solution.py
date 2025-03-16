@@ -92,6 +92,7 @@ class FlightSolutionMaintenance:
     flights: list[Flight]
     flight_costs: np.ndarray
     maintenance_costs: np.ndarray
+    max_maintenace_delay: int
 
     assignment: dict[int, list[Flight]]
     maintenances : dict[int, list[tuple[int, Airport]]]
@@ -157,6 +158,7 @@ class FlightSolutionMaintenance:
             assignment=assignment_flights,
             maintenances=maintenance_flights,
             cost=cost,
+            max_maintenace_delay=problem.max_maintenace_delay,
         )
 
     @classmethod
@@ -193,5 +195,6 @@ class FlightSolutionMaintenance:
             assignment=assignment_flights,
             maintenances=maintenance_flights,
             cost=cost,
+            max_maintenace_delay=problem.max_maintenace_delay,
         )
     
