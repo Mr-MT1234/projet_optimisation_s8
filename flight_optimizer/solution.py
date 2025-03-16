@@ -169,7 +169,7 @@ class FlightSolutionMaintenance:
             cost += sum(problem.flight_costs[flight_id - 1, i] for flight_id in flights)
         for i, maintenance in maintenances.items():
             for day, airport in maintenance:
-                airport = next(a for a in problem.airports if a.name == airport)
+                airport = next(a for a in problem.airports if a == airport)
                 index_airport = problem.airports_maintenance.index(airport)
                 cost += problem.maintenance_costs[i, index_airport]
                 
@@ -183,7 +183,7 @@ class FlightSolutionMaintenance:
         
         for i, maintenance in maintenances.items():
             for day, airport in maintenance:
-                airport = next(a for a in problem.airports if a.name == airport)
+                airport = next(a for a in problem.airports if a == airport)
                 maintenance_flights[i].append((day, airport))
 
         return cls(
