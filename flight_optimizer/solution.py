@@ -83,7 +83,8 @@ class FlightSolution:
             assignment=assignment_flights,
             cost=cost,
         )
-        
+
+
 @dataclass
 class FlightSolutionMaintenance:
 
@@ -95,7 +96,7 @@ class FlightSolutionMaintenance:
     max_maintenace_delay: int
 
     assignment: dict[int, list[Flight]]
-    maintenances : dict[int, list[tuple[int, Airport]]]
+    maintenances: dict[int, list[tuple[int, Airport]]]
     cost: float
 
     def get_instants(self) -> list[int]:
@@ -135,15 +136,15 @@ class FlightSolutionMaintenance:
                 airport = next(a for a in problem.airports if a.name == airport)
                 index_airport = problem.airports_maintenance.index(airport)
                 cost += problem.maintenance_costs[i, index_airport]
-                
+
         assignment_flights = {aircraft.id: [] for aircraft in problem.aircrafts}
 
         for i, flights in assignment.items():
             for flight in flights:
                 assignment_flights[i].append(problem.flights[flight - 1])
-        
+
         maintenance_flights = {aircraft.id: [] for aircraft in problem.aircrafts}
-        
+
         for i, maintenance in maintenances.items():
             for day, airport in maintenance:
                 airport = next(a for a in problem.airports if a.name == airport)
@@ -162,7 +163,12 @@ class FlightSolutionMaintenance:
         )
 
     @classmethod
-    def from_assignment(cls, assignment: dict[int, list[int]], maintenances: dict[int, list[tuple[int, Airport]]], problem: FlightProblemMaintenance):
+    def from_assignment(
+        cls,
+        assignment: dict[int, list[int]],
+        maintenances: dict[int, list[tuple[int, Airport]]],
+        problem: FlightProblemMaintenance,
+    ):
         cost = 0
 
         for i, flights in assignment.items():
@@ -172,15 +178,15 @@ class FlightSolutionMaintenance:
                 airport = next(a for a in problem.airports if a == airport)
                 index_airport = problem.airports_maintenance.index(airport)
                 cost += problem.maintenance_costs[i, index_airport]
-                
+
         assignment_flights = {aircraft.id: [] for aircraft in problem.aircrafts}
 
         for i, flights in assignment.items():
             for flight in flights:
                 assignment_flights[i].append(problem.flights[flight - 1])
-                
+
         maintenance_flights = {aircraft.id: [] for aircraft in problem.aircrafts}
-        
+
         for i, maintenance in maintenances.items():
             for day, airport in maintenance:
                 airport = next(a for a in problem.airports if a == airport)
@@ -197,4 +203,3 @@ class FlightSolutionMaintenance:
             cost=cost,
             max_maintenace_delay=problem.max_maintenace_delay,
         )
-    

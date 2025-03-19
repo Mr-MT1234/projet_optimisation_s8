@@ -10,6 +10,9 @@ class FlightProblem:
     flights: list[Flight]
     flight_costs: np.ndarray
 
+    def __str__(self):
+        return f"Flight problem without maintenance:\n\t({len(self.airports)} \n\t {len(self.flights)} flights \n\t {len(self.aircrafts)} aircrafts)"
+
     def get_instants(self) -> list[int]:
         departure_instants = [flight.departure_time for flight in self.flights]
         arrival_instants = [flight.arrival_time for flight in self.flights]
@@ -38,7 +41,7 @@ class FlightProblem:
                 arrival_airport=airports_map[flight["destination"]],
                 departure_time=int(flight["departure"]),
                 arrival_time=int(flight["arrival"]),
-                day=int(flight["departure"] // (60*24)) + 1,
+                day=int(flight["departure"] // (60 * 24)) + 1,
             )
             for flight in Flights
         ]
@@ -46,6 +49,7 @@ class FlightProblem:
         flight_costs = Cost
 
         return cls(airports, aircrafts, flights, flight_costs)
+
 
 @dataclass
 class FlightProblemMaintenance:
@@ -59,6 +63,14 @@ class FlightProblemMaintenance:
     capacity_maintenance: int
     max_maintenace_delay: int
 
+    def __str__(self):
+        return f"Flight problem with maintenance:\n\t({len(self.airports)} airports {len(self.airports_maintenance)} of which support maintenance\n\t {len(self.flights)} flights \n\t {len(self.aircrafts)} aircrafts) \n\t {len(self.days)} days"
+
+    def get_maintenance_interval(self, day: int) -> tuple[int, int]:
+        start_hour = 22
+        end_hour = 24 + 6
+        return (start_hour * 60 * 24 * (day - 1), end_hour * 60 * 24 * (day - 1))
+
     def get_instants(self) -> list[int]:
         departure_instants = [flight.departure_time for flight in self.flights]
         arrival_instants = [flight.arrival_time for flight in self.flights]
@@ -66,8 +78,20 @@ class FlightProblemMaintenance:
         return instants
 
     @classmethod
-    def from_file(cls, path: str, max_maintenace_delay: int) -> "FlightProblemMaintenance":
-        Airports, Aircrafts, Flights, Cost, InitialPositions, AirportMaintenance, Days, CostMaintenance, CapacityMaintenance = parse_problem_with_maintenance(path)
+    def from_file(
+        cls, path: str, max_maintenace_delay: int
+    ) -> "FlightProblemMaintenance":
+        (
+            Airports,
+            Aircrafts,
+            Flights,
+            Cost,
+            InitialPositions,
+            AirportMaintenance,
+            Days,
+            CostMaintenance,
+            CapacityMaintenance,
+        ) = parse_problem_with_maintenance(path)
 
         airports_map = {
             name: Airport(id=i, name=name) for i, name in enumerate(Airports)
@@ -96,6 +120,16 @@ class FlightProblemMaintenance:
         flight_costs = Cost
         maintenance_costs = CostMaintenance
         capacity_maintenance = CapacityMaintenance
-        days = Days
+        days = Days[:-1] # The file contains an additinnal day
 
-        return cls(airports, airports_maintenance, aircrafts, flights, days, flight_costs, maintenance_costs, capacity_maintenance, max_maintenace_delay)
+        return cls(
+            airports,
+            airports_maintenance,
+            aircrafts,
+            flights,
+            days,
+            flight_costs,
+            maintenance_costs,
+            capacity_maintenance,
+            max_maintenace_delay,
+        )

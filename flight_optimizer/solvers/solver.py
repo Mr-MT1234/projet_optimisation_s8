@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 from ..commun import *
 from ..flight_problem import FlightProblem, FlightProblemMaintenance
-from ..solution import FlightSolution
+from ..solution import FlightSolution, FlightSolutionMaintenance
 
 
 class Solver(ABC):
@@ -13,7 +13,7 @@ class Solver(ABC):
         """
 
     @abstractmethod
-    def solve_maintenance(self, problem: FlightProblemMaintenance):
+    def solve_maintenance(self, problem: FlightProblemMaintenance) -> FlightSolutionMaintenance:
         """
         Solves the flight assignement problem with maintenance constraints `problem`
         """

@@ -72,8 +72,8 @@ problem = FlightProblem.from_file(
     problem_path(args.density, args.planes, args.horizon, args.index)
 )
 
-# for flight in problem.flights:
-#     flight.arrival_time += 30
+for flight in problem.flights:
+    flight.arrival_time += 30
 
 correct_solution = FlightSolution.from_file(
     solution_path(args.density, args.planes, args.horizon, args.index), problem
