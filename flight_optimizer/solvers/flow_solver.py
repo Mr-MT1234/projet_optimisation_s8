@@ -125,17 +125,7 @@ class FlowSolver(Solver):
 
         return FlightSolution.from_assignment(assignment, problem)
     
-    def solve_maintenance(self, problem: FlightProblemMaintenance):
-        number_of_flights = len(problem.flights)
-        additional_flights = [Flight(number_of_flights + i * len(problem.airports_maintenance) + j, maintenance_airport, maintenance_airport, (24*(i-1)+22)*60, (24*i+6)*60, i)
-                for i in problem.days
-                for j, maintenance_airport in enumerate(problem.airports_maintenance)
-                ]
-        additional_flights_ids = sorted([additional_flights[i].id for i in range(len(additional_flights))])
-        
-        original_flights = problem.flights[:] 
-        problem.flights += additional_flights
-        
+    def solve_maintenance(self, problem: FlightProblemMaintenance) -> FlightSolution:
         flight_graph = {i: [] for i in range(1, len(problem.flights) + 1)}
 
         for flight1, flight2 in itertools.combinations(problem.flights, 2):
@@ -168,14 +158,13 @@ class FlowSolver(Solver):
         }
 
         model = gp.Model()
-        # model.params.OutputFlag = 0
+        model.params.OutputFlag = 0
 
         vars = {
             aircraft: {
                 flight: [
                     model.addVar(
-                        vtype=gp.GRB.BINARY,
-                        name=f"x_{aircraft}_{flight}_{flight2}" 
+                        vtype=gp.GRB.BINARY, name=f"x_{aircraft}_{flight}_{flight2}"
                     )
                     for flight2 in out
                 ]
@@ -183,7 +172,29 @@ class FlowSolver(Solver):
             }
             for aircraft, subgraph in dependency_graph.items()
         }
-        
+
+
+
+        flight_maintenance=[k for k in flight_graph if problem.flights[k-1].arrival_airport in problem.airports_maintenance]
+        print(flight_maintenance)
+
+        vars_maintenance= {
+            aircraft : {
+                flight : model.addVar(
+                    vtype=gp.GRB.BINARY, name=f"z_{flight}_{aircraft}"
+                )
+                for flight in flight_maintenance
+            } 
+            for aircraft in dependency_graph
+        } 
+
+        #for aircraft in dependency_graph:
+        #    for flight in flight_maintenance:
+        #        vars[aircraft][flight].append(model.addVar( vtype=gp.GRB.BINARY, name=f"z_{flight}_{aircraft}"))
+
+                
+
+
         variable_count = sum( len(out) for subgraph in vars.values() for out in subgraph.values() )
         print(f'number of decision variables : {variable_count}')
 
@@ -193,20 +204,34 @@ class FlowSolver(Solver):
         for aircraft, subgraph in dependency_graph.items():
             for flight_s, out in subgraph.items():
                 for i, flight in enumerate(out):
-                    flight_cost = problem.flight_costs
-                    maintenance_cost = problem.maintenance_costs
-                    if flight in additional_flights_ids:
-                        # airport_index = problem.airports_maintenance.index(problem.flights[flight-1].arrival_airport)
-                        # objective += maintenance_cost[aircraft,airport_index] * vars[aircraft][flight_s][i]
-                        pass
-                    else:
-                        objective += flight_cost[flight - 1, aircraft] * vars[aircraft][flight_s][i]
+
+                    objective += (
+                        problem.flight_costs[flight - 1, aircraft]
+                        * vars[aircraft][flight_s][i]
+                    )
+
+
+
+        MC=problem.maintenance_costs
+
+        def ind_airport(aa): 
+            return problem.airports_maintenance.index(aa)
+
+
+        for flight in flight_maintenance:
+            a=problem.flights[flight-1].arrival_airport
+
+            for aircraft in dependency_graph:
+                objective += (
+                    MC[aircraft, ind_airport(a)]
+                    * vars_maintenance[aircraft][flight]
+                )
 
         model.setObjective(objective, gp.GRB.MINIMIZE)
 
         # Constraints
         """
-        Each node must be visited by exactly one plain if it is a flight and at most 5 if it is an additional flight
+        Each node must be visited by exactly one plain
         """
         for flight in problem.flights:
             constraint = 0
@@ -214,10 +239,8 @@ class FlowSolver(Solver):
                 for flight_p in dependency_graph_inv[aircraft.id][flight.id]:
                     i = dependency_graph[aircraft.id][flight_p].index(flight.id)
                     constraint += vars[aircraft.id][flight_p][i]
-            if flight.id in additional_flights_ids:
-                model.addConstr(constraint <= problem.capacity_maintenance, name=f"capacity_mainenance")
-            else:
-                model.addConstr(constraint == 1)
+
+            model.addConstr(constraint == 1)
 
         """
         The incoming flow to a node can not exceed the out going flow
@@ -237,31 +260,87 @@ class FlowSolver(Solver):
                 model.addConstr(_in >= out)
 
         """
-        Each plain can serve at most one flight from its initial position
+        Each plane can serve at most one flight from its initial position
         """
         for aircraft in problem.aircrafts:
             model.addConstr(sum(vars[aircraft.id][-1]) <= 1)
-            
-        """ 
-        Each aircraft must be maintained at least once every problem.max_maintenance_delay days
+
+
+
+
+        def F(d,dd):
+            """
+            d , dd: days
+            return the flights from flight_graph that happen between d and d' and aeroport d arrivee = maintenance and arrival time<=22h + d
+            """
+
+            ct=22*60 + (d-1)*24*60 # 22h +d
+            L=[]
+            for i in flight_maintenance:
+                if (d<=problem.flights[i-1].day<=dd) and problem.flights[i-1].arrival_time<=(22*60 + (problem.flights[i-1].day-1)*24*60):
+                    L.append(i)
+            return L
+
+        def Fa(d,a):
+            """
+            d: day
+            a: airport (an object)
+            returns a list of flights from flight_graph that happen on d st and arrival time<=22h + d and arrival airport = a
+            """
+            ct=22*60 + (d-1)*24*60 # 22h +d
+            L=[]
+            for i in range(len(problem.flights)):
+                if problem.flights[i].day==d and problem.flights[i].arrival_airport==a and problem.flights[i].arrival_time<=ct:
+                    L.append(i+1)
+            return L
+        
+        def Fb(fl,d):
+            """
+            i : flight
+            d: day
+            flights entre 22h+d et 6h + d+1 directement apres le vol i
+            """
+            ct=22*60 + (d-1)*24*60 # 22h +d
+            ct1=6*60 + (d)*24*60 # 6h + d+1
+            L=[]
+            for ind,k in enumerate(dependency_graph[1][fl]):
+                if (problem.flights[k-1].day==d and problem.flights[k-1].departure_time>=ct) or (problem.flights[k-1].day==d+1 and problem.flights[k-1].departure_time<=ct1):
+                    L.append(ind) 
+
+            return L
+
+
         """
-        for aircraft in problem.aircrafts:
-            days = problem.days
-            for i in range(1,len(days)+1,problem.max_maintenace_delay):
-                window_days = days[i:i+problem.max_maintenace_delay]
-                window_flights = [
-                    f for f in additional_flights
-                    if f.day in window_days
-                ]
-                constraint = 0
-                for flight in window_flights:
-                    for flight_p in dependency_graph_inv[aircraft.id][flight.id]:
-                        idx = dependency_graph[aircraft.id][flight_p].index(flight.id)
-                        constraint += vars[aircraft.id][flight_p][idx]
-                model.addConstr(constraint >= 1, name=f"maintenance_{aircraft.id}_window_{i}")
+        maintenance at least every 4 days
+        """
+
+        for aircraft in dependency_graph:
+            for d in range(1,len(problem.days)):
+                model.addConstr(gp.quicksum([vars_maintenance[aircraft][flight] for flight in F(d,d+3)])>=1)
+
+        """
+        maximum capacity of an airport
+        """
+        cap=problem.capacity_maintenance
+
+        for d in range(1,len(problem.days)):
+            for a in problem.airports_maintenance:
+                model.addConstr(gp.quicksum([vars_maintenance[aircraft][flight] for aircraft in dependency_graph for flight in Fa(d,a)])<=cap)
+
+        """
+        no flights during a maintenance
+        """
+        for d in range(1,len(problem.days)):
+            for aircraft in dependency_graph:
+                for ii in flight_maintenance:
+                    for flight in Fb(ii,d):
+                        model.addConstr(vars_maintenance[aircraft][ii] + vars[aircraft][ii][flight]<=1)
 
         model.update()
         model.optimize()
+        if model.status == gp.GRB.INFEASIBLE:
+            print(model.display(), "\n\tN'A PAS DE SOLUTION!!!")
+        print(model.objVal)
 
         assignment = {
             aircraft: [
@@ -272,17 +351,17 @@ class FlowSolver(Solver):
             ]
             for aircraft, subgraph in dependency_graph.items()
         }
-        maintenance = {}
-        for aircraft in problem.aircrafts:
-            maintenance[aircraft.id] = []
-            for flight in assignment[aircraft.id]:
-                if flight in additional_flights_ids:
-                    maintenance_airport = problem.flights[flight-1].arrival_airport
-                    day = problem.flights[flight-1].day
-                    maintenance[aircraft.id].append((day, maintenance_airport))
-        assignment = {aircraft: [flight for flight in flights if flight not in additional_flights_ids] 
-                      for aircraft, flights in assignment.items()}
-        problem.flights = original_flights
 
-        return FlightSolutionMaintenance.from_assignment(assignment,maintenance, problem)
-    
+        maintenances={
+            aircraft : [
+                (problem.flights[flight-1].day,problem.flights[flight-1].arrival_airport)
+                for flight in flight_maintenance
+                if vars_maintenance[aircraft][flight].x>0.0
+                ]
+                for aircraft,subgraph in dependency_graph.items()
+
+        }
+        #assignment: dict[int, list[int]], maintenances: dict[int, list[tuple[int, Airport]]], problem: FlightProblemMaintenance
+
+        return FlightSolutionMaintenance.from_assignment(assignment,maintenances, problem)
+
