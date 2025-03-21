@@ -215,7 +215,7 @@ class FlowSolver(Solver):
                     i = dependency_graph[aircraft.id][flight_p].index(flight.id)
                     constraint += vars[aircraft.id][flight_p][i]
             if flight.id in additional_flights_ids:
-                model.addConstr(constraint <= problem.max_maintenace_delay)
+                model.addConstr(constraint <= problem.capacity_maintenance, name=f"capacity_mainenance")
             else:
                 model.addConstr(constraint == 1)
 
@@ -246,20 +246,19 @@ class FlowSolver(Solver):
         Each aircraft must be maintained at least once every problem.max_maintenance_delay days
         """
         for aircraft in problem.aircrafts:
-            for i in range(0, len(problem.days), problem.max_maintenace_delay):
-                constraint = 0  
-                
-                for flight in additional_flights:
-                    
-                    if flight.day in problem.days[i : i + problem.max_maintenace_delay]:  
-                        airport = flight.arrival_airport  
-                        
-                        for flight_p in dependency_graph_inv[aircraft.id][flight.id]:
-                            j = dependency_graph[aircraft.id][flight_p].index(flight.id)
-                            constraint += vars[aircraft.id][flight_p][j]
-                
-  
-                model.addConstr(constraint >= 1, name=f"maintenance_requirement_{aircraft.id}_{i}")
+            days = problem.days
+            for i in range(1,len(days)+1,problem.max_maintenace_delay):
+                window_days = days[i:i+problem.max_maintenace_delay]
+                window_flights = [
+                    f for f in additional_flights
+                    if f.day in window_days
+                ]
+                constraint = 0
+                for flight in window_flights:
+                    for flight_p in dependency_graph_inv[aircraft.id][flight.id]:
+                        idx = dependency_graph[aircraft.id][flight_p].index(flight.id)
+                        constraint += vars[aircraft.id][flight_p][idx]
+                model.addConstr(constraint >= 1, name=f"maintenance_{aircraft.id}_window_{i}")
 
         model.update()
         model.optimize()
