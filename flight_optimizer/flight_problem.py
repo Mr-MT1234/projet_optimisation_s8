@@ -69,7 +69,7 @@ class FlightProblemMaintenance:
     def get_maintenance_interval(self, day: int) -> tuple[int, int]:
         start_hour = 22
         end_hour = 24 + 6
-        return (start_hour * 60 * 24 * (day - 1), end_hour * 60 * 24 * (day - 1))
+        return (60*start_hour + 60 * 24 * day, 60*end_hour + 60 * 24 * day)
 
     def get_instants(self) -> list[int]:
         departure_instants = [flight.departure_time for flight in self.flights]
