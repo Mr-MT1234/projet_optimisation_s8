@@ -7,14 +7,14 @@ import matplotlib.pyplot as plt
 import networkx as nx
 
 from .commun import *
-from .solution import FlightSolution
+from .solution import FlightSolution, FlightSolutionMaintenance
 from .graph_utils import inverse_graph
 
 
 class Reporter:
 
     def plot_solution(
-        self, solutions: list[FlightSolution], colors: list | None = None, legend=None
+        self, solutions: list[FlightSolution | FlightSolutionMaintenance], colors: list | None = None, legend=None
     ):
         fig = plt.figure(figsize=(50, 10))
         ax = fig.subplots(1, 1)
@@ -40,7 +40,9 @@ class Reporter:
             min_instant = min(min(instants), min_instant)
             max_instant = max(max(instants), max_instant)
             max_aircraft = max(max(a.id for a in solution.aircrafts), max_aircraft)
-            plt.plot([-1000, -1000], [1000, 1000], color=color, label=legend)
+            
+            # Drawing one line with each color to make sure the legend show up completely
+            plt.plot([-1000, -1000], [-1000, -1000], color=color, label=legend)
 
             for aircraft_id, flights in solution.assignment.items():
                 for flight in flights:
@@ -57,21 +59,45 @@ class Reporter:
                         s=10,
                     )
                     plt.text(
-                        flight.departure_time - 25,
-                        aircraft_id - 0.2,
+                        flight.departure_time,
+                        aircraft_id,
                         flight.departure_airport.name,
                         fontsize=10,
                         color=color,
+                        verticalalignment="bottom"
                     )
                     plt.text(
-                        flight.arrival_time - 25,
-                        aircraft_id + 0.05,
+                        flight.arrival_time,
+                        aircraft_id,
                         flight.arrival_airport.name,
                         fontsize=10,
                         color=color,
+                        verticalalignment="top",
+                        horizontalalignment="right"
                     )
 
-        instants_plot = np.round(np.linspace(min_instant, max_instant, 50), 0)
+            if isinstance(solution, FlightSolutionMaintenance):
+                for aircraft, maintenances in solution.maintenances.items():
+                    for day, airport in maintenances:
+                        start, end = solution.get_maintenance_interval(day)
+                        plt.plot(
+                            [start, end],
+                            [aircraft-0.2, aircraft-0.2],
+                            color+'--',
+                        )
+
+                        plt.text(
+                        (start+end)/2,
+                        aircraft-0.2,
+                        airport.name,
+                        fontsize=10,
+                        color=color,
+                        verticalalignment="top"
+                    )
+                pass
+
+        instants_plot = np.round(np.arange(0, max_instant, 24*60), 0)
+        span = max_instant
 
         ax.legend()
         ax.set_xticks(instants_plot)
@@ -79,7 +105,7 @@ class Reporter:
         ax.set_xlabel("Time")
         ax.set_ylabel("Aircraft")
         ax.set_title("Aircraft schedule")
-        ax.set_xlim(min_instant - 100, max_instant + 100)
+        ax.set_xlim(min_instant -0.05*span, max_instant + 0.05*span)
         ax.set_ylim(-1, max_aircraft + 1)
         ax.set_yticks(np.arange(-1, max_aircraft + 1, 1))
         ax.grid(True)
