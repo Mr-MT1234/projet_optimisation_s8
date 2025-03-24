@@ -149,7 +149,7 @@ def parse_solution_with_maintenance(path):
             elif line.startswith("( "):
                 splited = line.strip("()").split(" ")
                 maintenance.setdefault(current_aircraft, []).append(
-                    (splited[1], splited[4])
+                    (int(splited[1]) - 1, splited[4])
                 )
 
     return assignment, maintenance
