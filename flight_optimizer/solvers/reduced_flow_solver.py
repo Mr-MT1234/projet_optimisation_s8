@@ -151,39 +151,7 @@ class ReducedFlowSolver(Solver):
         ):
             incoming = arrival_map[airport.id]
             outgoing = departure_map[airport.id]
-            incoming_var = aircraft.starting_airport == airport
-            outgoing_var = 0
-
-            # i = j = 0
-            # for day in problem.days:
-            #     maintenance_start, maintenance_end = problem.get_maintenance_interval(
-            #         day
-            #     )
-            #     while (
-            #         i < len(outgoing)
-            #         and outgoing[i].departure_time <= maintenance_start
-            #     ):
-            #         outgoing_var += x[outgoing[i].id - 1, aircraft.id]
-            #         i += 1
-            #     while (
-            #         j < len(incoming) and incoming[j].arrival_time <= maintenance_start
-            #     ):
-            #         incoming_var += x[incoming[j].id - 1, aircraft.id]
-            #         j += 1
-
-            #     model.addConstr(
-            #         z[aircraft.id, airport_id, day] <= incoming_var - outgoing_var
-            #     )
-
-            #     k = i
-            #     while (
-            #         k < len(outgoing) and outgoing[k].departure_time <= maintenance_end
-            #     ):
-            #         model.addConstr(
-            #             x[outgoing[k].id - 1, aircraft.id]
-            #             <= 1 - z[aircraft.id, airport_id, day]
-            #         )
-            #         k += 1
+            
             for day in problem.days:
                 i = j = 0
                 incoming_var = aircraft.starting_airport == airport
@@ -199,14 +167,13 @@ class ReducedFlowSolver(Solver):
                     incoming_var += x[incoming[i].id - 1, aircraft.id]
                     i += 1
                 while (
-                    j < len(outgoing)
-                    and outgoing[j].departure_time < maintenance_start
+                    j < len(outgoing) and outgoing[j].departure_time < maintenance_start
                 ):
                     outgoing_var += x[outgoing[j].id - 1, aircraft.id]
                     j += 1
 
                 exists_during_maintenance = 0
-                while i < len(incoming) and incoming[i].arrival_time < maintenance_end:
+                while i < len(incoming) and incoming[i].arrival_time <= maintenance_end:
                     last_incoming = incoming[i]
                     while (
                         i < len(incoming)
@@ -224,7 +191,9 @@ class ReducedFlowSolver(Solver):
 
                     exists_during_maintenance += incoming_var - outgoing_var
 
-                model.addConstr(exists_during_maintenance >= z[aircraft.id, airport_id, day])
+                model.addConstr(
+                    exists_during_maintenance >= z[aircraft.id, airport_id, day]
+                )
 
         # Objective
         objective = (x * problem.flight_costs).sum() + (
@@ -234,6 +203,10 @@ class ReducedFlowSolver(Solver):
 
         model.update()
         model.optimize()
+
+        if model.Status == gp.GRB.INFEASIBLE:
+            print("Warning: the problem is infeasable")
+            return None
 
         assignment = {aircraft.id: [] for aircraft in problem.aircrafts}
         maintenances = {aircraft.id: [] for aircraft in problem.aircrafts}
