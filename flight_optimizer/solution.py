@@ -135,6 +135,7 @@ class FlightSolutionMaintenance:
     aircrafts: list[Aircraft]
     flights: list[Flight]
     flight_costs: np.ndarray
+    airports_maintenance: list[Airport]
     maintenance_costs: np.ndarray
     max_maintenace_delay: int
     days: list[int]
@@ -210,6 +211,7 @@ class FlightSolutionMaintenance:
             cost=cost,
             max_maintenace_delay=problem.max_maintenace_delay,
             days=problem.days,
+            airports_maintenance=problem.airports_maintenance,
         )
 
     @classmethod
@@ -253,6 +255,7 @@ class FlightSolutionMaintenance:
             cost=cost,
             max_maintenace_delay=problem.max_maintenace_delay,
             days=problem.days,
+            airports_maintenance=problem.airports_maintenance,
         )
 
     def is_valide(self) -> tuple[bool, str]:
@@ -301,6 +304,7 @@ class FlightSolutionMaintenance:
             current_instant = 0
             current_airport = aircraft.starting_airport
             current_maintenance = 0
+
             for flight in flights:
                 if current_maintenance >= len(maintenances):
                     break
@@ -320,6 +324,18 @@ class FlightSolutionMaintenance:
                 current_instant = flight.arrival_time
 
             if current_maintenance < len(maintenances):
+                maintenance_day, maintenance_airport = maintenances[current_maintenance]
+                maintenance_start, maintenance_end = self.get_maintenance_interval(
+                    maintenance_day
+                )
+
+                if (
+                    current_airport == maintenance_airport
+                    and current_instant <= maintenance_end
+                ):
+                    current_maintenance += 1
+
+            if current_maintenance < len(maintenances):
                 return (
                     False,
                     f"Aircraft {aircraft.id} cannot satisfy the maintenance {maintenances[current_maintenance]}",
@@ -337,5 +353,28 @@ class FlightSolutionMaintenance:
                 False,
                 f"Flights { [flight.id for flight in self.flights if not flight_exits[flight.id - 1] ] } were not served",
             )
+
+        # Check that the maintnance capacity is repected
+        occupancy = {}
+        for maintenances in self.maintenances.values():
+            for day, airport in maintenances:
+                if (day, airport.id) in occupancy:
+                    occupancy[day, airport.name] += 1
+                else:
+                    occupancy[day, airport.name] = 1
+
+        if not all(
+            [value <= self.max_maintenace_delay for value in occupancy.values()]
+        ):
+            return (
+                False,
+                f"Maintenance capacity is not respected in {[(day, airport.id) for (day, airport.id), v in occupancy.items() if v > self.max_maintenace_delay]}",
+            )
+        
+        # Check that maintenances are only done in maintenance airports
+        for maintenances in self.maintenances.values():
+            for _, airport in maintenances:
+                if airport not in self.airports_maintenance:
+                    return (False, f"The airport {airport} was used for maintenance, where it does not support it")
 
         return (True, "Everything is fine")
