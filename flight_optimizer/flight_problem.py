@@ -70,6 +70,12 @@ class FlightProblemMaintenance:
         start_hour = 22
         end_hour = 24 + 6
         return (60*start_hour + 60 * 24 * day, 60*end_hour + 60 * 24 * day)
+    
+    def get_all_night_flights(self):
+        return [f for f in self.flights if f.departure_time%1440 >= 22*60 and f.arrival_time%1440 <= 6*60]
+
+    def get_maintenance_time(self):
+        return max([f.arrival_time%1440/60 for f in self.get_all_night_flights()])
 
     def get_instants(self) -> list[int]:
         departure_instants = [flight.departure_time for flight in self.flights]

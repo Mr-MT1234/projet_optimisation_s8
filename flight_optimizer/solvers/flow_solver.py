@@ -125,8 +125,11 @@ class FlowSolver(Solver):
         return FlightSolution.from_assignment(assignment, problem)
     
     def solve_maintenance(self, problem: FlightProblemMaintenance):
+        maintenance_time = problem.get_maintenance_time()
+        if maintenance_time > 6:
+            maintenance_time = 2
         number_of_flights = len(problem.flights)
-        additional_flights = [Flight(number_of_flights + i * len(problem.airports_maintenance) + j + 1, maintenance_airport, maintenance_airport, (24*i+22)*60, (24*(i+1)+6)*60, i+1)
+        additional_flights = [Flight(number_of_flights + i * len(problem.airports_maintenance) + j + 1, maintenance_airport, maintenance_airport, (24*(i)+maintenance_time)*60, (24*(i)+maintenance_time)*60, i+1)
                 for i in problem.days
                 for j, maintenance_airport in enumerate(problem.airports_maintenance)
                 ]
@@ -233,19 +236,18 @@ class FlowSolver(Solver):
         The incoming flow to a node can not exceed the out going flow
         """
         for flight in problem.flights:
-            if flight.id not in additional_flights_ids:
-                for aircraft in problem.aircrafts:
-                    preds = dependency_graph_inv[aircraft.id][flight.id]
+            for aircraft in problem.aircrafts:
+                preds = dependency_graph_inv[aircraft.id][flight.id]
 
-                    out = sum(vars[aircraft.id][flight.id])
-                    _in = 0
+                out = sum(vars[aircraft.id][flight.id])
+                _in = 0
 
-                    for pred in preds:
-                        i = dependency_graph[aircraft.id][pred].index(flight.id)
-                        x = vars[aircraft.id][pred][i]
-                        _in += x
+                for pred in preds:
+                    i = dependency_graph[aircraft.id][pred].index(flight.id)
+                    x = vars[aircraft.id][pred][i]
+                    _in += x
 
-                    model.addConstr(_in >= out)
+                model.addConstr(_in >= out)
 
 
         """
