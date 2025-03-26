@@ -130,7 +130,7 @@ class FlowSolver(Solver):
         if maintenance_time > 6:
             maintenance_time = 2
         number_of_flights = len(problem.flights)
-        additional_flights = [Flight(number_of_flights + i * len(problem.airports_maintenance) + j + 1, maintenance_airport, maintenance_airport, (24*i+22)*60, (24*(i+1)+6)*60, i+1)
+        additional_flights = [Flight(number_of_flights + i * len(problem.airports_maintenance) + j + 1, maintenance_airport, maintenance_airport, (24*(i+2)+maintenance_time)*60, (24*(i+2)+maintenance_time)*60, i+1)
                 for i in problem.days
                 for j, maintenance_airport in enumerate(problem.airports_maintenance)
                 ]
@@ -186,28 +186,6 @@ class FlowSolver(Solver):
             for aircraft, subgraph in dependency_graph.items()
         }
 
-
-
-        flight_maintenance=[k for k in flight_graph if problem.flights[k-1].arrival_airport in problem.airports_maintenance]
-        print(flight_maintenance)
-
-        vars_maintenance= {
-            aircraft : {
-                flight : model.addVar(
-                    vtype=gp.GRB.BINARY, name=f"z_{flight}_{aircraft}"
-                )
-                for flight in flight_maintenance
-            } 
-            for aircraft in dependency_graph
-        } 
-
-        #for aircraft in dependency_graph:
-        #    for flight in flight_maintenance:
-        #        vars[aircraft][flight].append(model.addVar( vtype=gp.GRB.BINARY, name=f"z_{flight}_{aircraft}"))
-
-                
-
-
         variable_count = sum( len(out) for subgraph in vars.values() for out in subgraph.values() )
         print(f'number of decision variables : {variable_count}')
 
@@ -220,9 +198,8 @@ class FlowSolver(Solver):
                     flight_cost = problem.flight_costs
                     maintenance_cost = problem.maintenance_costs
                     if flight in additional_flights_ids:
-                        # airport_index = problem.airports_maintenance.index(problem.flights[flight-1].arrival_airport)
-                        # objective += maintenance_cost[aircraft,airport_index] * vars[aircraft][flight_s][i]
-                        pass
+                        airport_index = problem.airports_maintenance.index(problem.flights[flight-1].arrival_airport)
+                        objective += maintenance_cost[aircraft,airport_index] * vars[aircraft][flight_s][i]
                     else:
                         objective += flight_cost[flight - 1, aircraft] * vars[aircraft][flight_s][i]
 
@@ -271,8 +248,8 @@ class FlowSolver(Solver):
         Each aircraft must be maintained at least once every problem.max_maintenance_delay days
         """
         for aircraft in problem.aircrafts:
-            days = problem.days
-            for i in range(1,len(days)+1,problem.max_maintenace_delay):
+            days = [day+1 for day in problem.days]
+            for i in range(len(days)-problem.max_maintenace_delay):
                 window_days = days[i:i+problem.max_maintenace_delay]
                 window_flights = [
                     f for f in additional_flights
