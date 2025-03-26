@@ -9,7 +9,7 @@ from ..flight_problem import FlightProblem
 
 class IntervalSolver(Solver):
 
-    def solve(self, problem: FlightProblem) -> FlightSolution:
+    def solve(self, problem: FlightProblem, timeout=None) -> FlightSolution:
         instants = problem.get_instants()
 
         nb_flights = len(problem.flights)
@@ -27,6 +27,8 @@ class IntervalSolver(Solver):
                 flights_in_interval[t].append(flight)
 
         model = gp.Model()
+        if timeout:
+            model.params.TimeLimit = timeout
 
         x = model.addMVar((nb_flights, nb_aircrafts), vtype=gp.GRB.BINARY, name="x")
         o = model.addMVar((nb_aircrafts, nb_intervals), vtype=gp.GRB.BINARY, name="o")
@@ -123,6 +125,11 @@ class IntervalSolver(Solver):
         model.update()
         model.optimize()
 
+        if model.Status == gp.GRB.INFEASIBLE or (
+            model.Status == gp.GRB.TIME_LIMIT and model.SolCount == 0
+        ):
+            return None
+
         x_solution = x.x
 
         assignment = self.__assignment(x_solution)
@@ -130,7 +137,7 @@ class IntervalSolver(Solver):
         return FlightSolution.from_assignment(assignment, problem)    
     
 
-    def solve_maintenance(self, problem: FlightProblemMaintenance):
+    def solve_maintenance(self, problem: FlightProblemMaintenance, timeout=None):
         raise NotImplementedError()
     
     def __assignment(self, solution: np.ndarray) -> FlightSolution:

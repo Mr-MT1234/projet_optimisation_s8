@@ -10,7 +10,7 @@ from ..commun import Flight
 
 
 class FlowSolver(Solver):
-    def solve(self, problem: FlightProblem) -> FlightSolution:
+    def solve(self, problem: FlightProblem, timeout=None) -> FlightSolution:
         flight_graph = {i: [] for i in range(1, len(problem.flights) + 1)}
 
         for flight1, flight2 in itertools.combinations(problem.flights, 2):
@@ -24,7 +24,6 @@ class FlowSolver(Solver):
                 and flight2.arrival_time <= flight1.departure_time
             ):
                 flight_graph[flight2.id].append(flight1.id)
-
 
         dependency_graph = {
             aircraft.id: {flight: out for flight, out in flight_graph.items()}
@@ -43,7 +42,8 @@ class FlowSolver(Solver):
         }
 
         model = gp.Model()
-        # model.params.OutputFlag = 0
+        if timeout:
+            model.params.TimeLimit = timeout
 
         vars = {
             aircraft: {
@@ -57,8 +57,10 @@ class FlowSolver(Solver):
             }
             for aircraft, subgraph in dependency_graph.items()
         }
-        variable_count = sum( len(out) for subgraph in vars.values() for out in subgraph.values() )
-        print(f'number of decision variables : {variable_count}')
+        variable_count = sum(
+            len(out) for subgraph in vars.values() for out in subgraph.values()
+        )
+        print(f"number of decision variables : {variable_count}")
 
         # Objective
         objective = 0
@@ -112,6 +114,11 @@ class FlowSolver(Solver):
         model.update()
         model.optimize()
 
+        if model.Status == gp.GRB.INFEASIBLE or (
+            model.Status == gp.GRB.TIME_LIMIT and model.SolCount == 0
+        ):
+            return None
+
         assignment = {
             aircraft: [
                 i
@@ -123,23 +130,33 @@ class FlowSolver(Solver):
         }
 
         return FlightSolution.from_assignment(assignment, problem)
-    
-    def solve_maintenance(self, problem: FlightProblemMaintenance):
-        
+
+    def solve_maintenance(self, problem: FlightProblemMaintenance, timeout=None):
+
         maintenance_time = problem.get_maintenance_time()
         if maintenance_time > 6:
             maintenance_time = 2
-            
+
         number_of_flights = len(problem.flights)
-        additional_flights = [Flight(number_of_flights + i * len(problem.airports_maintenance) + j + 1, maintenance_airport, maintenance_airport, (24*(i+1)+maintenance_time)*60, (24*(i+1)+maintenance_time)*60, i+1)
-                for i in problem.days
-                for j, maintenance_airport in enumerate(problem.airports_maintenance)
-                ]
-        additional_flights_ids = sorted([additional_flights[i].id for i in range(len(additional_flights))])
-        
-        original_flights = problem.flights[:] 
+        additional_flights = [
+            Flight(
+                number_of_flights + i * len(problem.airports_maintenance) + j + 1,
+                maintenance_airport,
+                maintenance_airport,
+                (24 * (i + 1) + maintenance_time) * 60,
+                (24 * (i + 1) + maintenance_time) * 60,
+                i + 1,
+            )
+            for i in problem.days
+            for j, maintenance_airport in enumerate(problem.airports_maintenance)
+        ]
+        additional_flights_ids = sorted(
+            [additional_flights[i].id for i in range(len(additional_flights))]
+        )
+
+        original_flights = problem.flights[:]
         problem.flights += additional_flights
-        
+
         flight_graph = {i: [] for i in range(1, len(problem.flights) + 1)}
 
         for flight1, flight2 in itertools.combinations(problem.flights, 2):
@@ -153,7 +170,6 @@ class FlowSolver(Solver):
                 and flight2.arrival_time <= flight1.departure_time
             ):
                 flight_graph[flight2.id].append(flight1.id)
-
 
         dependency_graph = {
             aircraft.id: {flight: out for flight, out in flight_graph.items()}
@@ -172,7 +188,8 @@ class FlowSolver(Solver):
         }
 
         model = gp.Model()
-        model.params.OutputFlag = 0
+        if timeout:
+            model.params.TimeLimit = timeout
 
         vars = {
             aircraft: {
@@ -187,8 +204,10 @@ class FlowSolver(Solver):
             for aircraft, subgraph in dependency_graph.items()
         }
 
-        variable_count = sum( len(out) for subgraph in vars.values() for out in subgraph.values() )
-        print(f'number of decision variables : {variable_count}')
+        variable_count = sum(
+            len(out) for subgraph in vars.values() for out in subgraph.values()
+        )
+        print(f"number of decision variables : {variable_count}")
 
         # Objective
         objective = 0
@@ -199,10 +218,18 @@ class FlowSolver(Solver):
                     flight_cost = problem.flight_costs
                     maintenance_cost = problem.maintenance_costs
                     if flight in additional_flights_ids:
-                        airport_index = problem.airports_maintenance.index(problem.flights[flight-1].arrival_airport)
-                        objective += maintenance_cost[aircraft,airport_index] * vars[aircraft][flight_s][i]
+                        airport_index = problem.airports_maintenance.index(
+                            problem.flights[flight - 1].arrival_airport
+                        )
+                        objective += (
+                            maintenance_cost[aircraft, airport_index]
+                            * vars[aircraft][flight_s][i]
+                        )
                     else:
-                        objective += flight_cost[flight - 1, aircraft] * vars[aircraft][flight_s][i]
+                        objective += (
+                            flight_cost[flight - 1, aircraft]
+                            * vars[aircraft][flight_s][i]
+                        )
 
         model.setObjective(objective, gp.GRB.MINIMIZE)
 
@@ -217,7 +244,10 @@ class FlowSolver(Solver):
                     i = dependency_graph[aircraft.id][flight_p].index(flight.id)
                     constraint += vars[aircraft.id][flight_p][i]
             if flight.id in additional_flights_ids:
-                model.addConstr(constraint <= problem.capacity_maintenance, name=f"capacity_mainenance")
+                model.addConstr(
+                    constraint <= problem.capacity_maintenance,
+                    name=f"capacity_mainenance",
+                )
             else:
                 model.addConstr(constraint == 1)
 
@@ -238,36 +268,39 @@ class FlowSolver(Solver):
 
                 model.addConstr(_in >= out)
 
-
         """
         Each plane can serve at most one flight from its initial position
         """
         for aircraft in problem.aircrafts:
             model.addConstr(sum(vars[aircraft.id][-1]) <= 1)
-            
+
         """ 
         Each aircraft must be maintained at least once every problem.max_maintenance_delay days
         """
         for aircraft in problem.aircrafts:
-            days = [day+1 for day in problem.days]
-            for i in range(len(days)-problem.max_maintenace_delay+1):
-                window_days = days[i:i+problem.max_maintenace_delay]
-                window_flights = [
-                    f for f in additional_flights
-                    if f.day in window_days
-                ]
+            days = [day + 1 for day in problem.days]
+            for i in range(len(days) - problem.max_maintenace_delay + 1):
+                window_days = days[i : i + problem.max_maintenace_delay]
+                window_flights = [f for f in additional_flights if f.day in window_days]
                 constraint = 0
                 for flight in window_flights:
                     for flight_p in dependency_graph_inv[aircraft.id][flight.id]:
                         idx = dependency_graph[aircraft.id][flight_p].index(flight.id)
                         constraint += vars[aircraft.id][flight_p][idx]
-                model.addConstr(constraint >= 1, name=f"maintenance_{aircraft.id}_window_{i}")
+                model.addConstr(
+                    constraint >= 1, name=f"maintenance_{aircraft.id}_window_{i}"
+                )
 
         model.update()
         model.optimize()
         if model.status == gp.GRB.INFEASIBLE:
             print(model.display(), "\n\tN'A PAS DE SOLUTION!!!")
         print(model.objVal)
+
+        if model.Status == gp.GRB.INFEASIBLE or (
+            model.Status == gp.GRB.TIME_LIMIT and model.SolCount == 0
+        ):
+            return None
 
         assignment = {
             aircraft: [
@@ -283,12 +316,17 @@ class FlowSolver(Solver):
             maintenance[aircraft.id] = []
             for flight in assignment[aircraft.id]:
                 if flight in additional_flights_ids:
-                    maintenance_airport = problem.flights[flight-1].arrival_airport
-                    day = problem.flights[flight-1].day
+                    maintenance_airport = problem.flights[flight - 1].arrival_airport
+                    day = problem.flights[flight - 1].day
                     maintenance[aircraft.id].append((day, maintenance_airport))
-        assignment = {aircraft: [flight for flight in flights if flight not in additional_flights_ids] 
-                      for aircraft, flights in assignment.items()}
+        assignment = {
+            aircraft: [
+                flight for flight in flights if flight not in additional_flights_ids
+            ]
+            for aircraft, flights in assignment.items()
+        }
         problem.flights = original_flights
 
-        return FlightSolutionMaintenance.from_assignment(assignment,maintenance, problem)
-    
+        return FlightSolutionMaintenance.from_assignment(
+            assignment, maintenance, problem
+        )

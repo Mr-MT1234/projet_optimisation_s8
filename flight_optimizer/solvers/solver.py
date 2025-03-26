@@ -7,13 +7,13 @@ from ..solution import FlightSolution, FlightSolutionMaintenance
 class Solver(ABC):
 
     @abstractmethod
-    def solve(self, problem: FlightProblem) -> FlightSolution:
+    def solve(self, problem: FlightProblem, timeout=None) -> FlightSolution:
         """
         Solves the flight assignement problem `problem`
         """
 
     @abstractmethod
-    def solve_maintenance(self, problem: FlightProblemMaintenance) -> FlightSolutionMaintenance:
+    def solve_maintenance(self, problem: FlightProblemMaintenance, timeout=None) -> FlightSolutionMaintenance:
         """
         Solves the flight assignement problem with maintenance constraints `problem`
         """

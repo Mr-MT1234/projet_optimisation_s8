@@ -5,7 +5,6 @@ import itertools
 import csv
 
 import matplotlib.pyplot as plt
-from func_timeout import func_timeout, FunctionTimedOut
 
 from flight_optimizer import *
 
@@ -30,30 +29,24 @@ P = [10, 20, 30]
 H = [15, 21, 30]
 
 
-def run_with_timeout(func, args, timeout):
-    try:
-        result = func_timeout(timeout, func, args)
-        return result
-    except FunctionTimedOut:
-        return None
-
-
 @dataclass
 class BenchmarkResult:
     execution_time: float
     cost: float
     gap: float
     relative_gap: float
+    valid:bool
+    optimal
 
 
 def benchmark_solver(
-    solver, problem, optimal_solution, name, instance
+    solver: Solver, problem, optimal_solution, name, instance
 ) -> BenchmarkResult:
     # for flight in problem.flights:
     #     flight.arrival_time += 30
 
     start_flow = datetime.now()
-    solution = run_with_timeout(solver.solve_maintenance, (problem,), SOLUTION_TIMEOUT)
+    solution = solver.solve_maintenance(problem, timeout=SOLUTION_TIMEOUT)
     end_flow = datetime.now()
     solution_time = (end_flow - start_flow).total_seconds()
 
@@ -158,6 +151,8 @@ with open(comparaison_file, "a", newline="") as f:
             "reduced_cost",
             "reduced_gap",
             "reduced_relative_gap (%)",
+            "valid?", 
+            "optimal?"
         ]
     )
 
@@ -193,5 +188,6 @@ with open(comparaison_file, "a", newline="") as f:
                     reduced_results.cost,
                     reduced_results.gap,
                     reduced_results.relative_gap,
+
                 ]
             )

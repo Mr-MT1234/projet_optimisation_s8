@@ -11,13 +11,15 @@ from ..commun import *
 
 
 class ReducedFlowSolver(Solver):
-    def solve(self, problem: FlightProblem) -> FlightSolution:
+    def solve(self, problem: FlightProblem, timeout=None) -> FlightSolution:
         flight_count = len(problem.flights)
         aircraft_count = len(problem.aircrafts)
 
         departure_map, arrival_map = self._construct_flight_maps(problem)
 
         model = gp.Model()
+        if timeout:
+            model.params.TimeLimit = timeout
 
         x = model.addMVar((flight_count, aircraft_count), vtype=gp.GRB.BINARY)
         variable_count = flight_count * aircraft_count
@@ -65,6 +67,11 @@ class ReducedFlowSolver(Solver):
         model.update()
         model.optimize()
 
+        if model.Status == gp.GRB.INFEASIBLE or (
+            model.Status == gp.GRB.TIME_LIMIT and model.SolCount == 0
+        ):
+            return None
+
         assignment = {aircraft.id: [] for aircraft in problem.aircrafts}
 
         for flight, aircraft in zip(problem.flights, x.x.argmax(axis=1)):
@@ -73,7 +80,7 @@ class ReducedFlowSolver(Solver):
         return FlightSolution.from_assignment(assignment, problem)
 
     def solve_maintenance(
-        self, problem: FlightProblemMaintenance
+        self, problem: FlightProblemMaintenance, timeout=None
     ) -> FlightSolutionMaintenance:
         flight_count = len(problem.flights)
         aircraft_count = len(problem.aircrafts)
@@ -83,6 +90,8 @@ class ReducedFlowSolver(Solver):
         departure_map, arrival_map = self._construct_flight_maps(problem)
 
         model = gp.Model()
+        if timeout:
+            model.params.TimeLimit = timeout
 
         x = model.addMVar((flight_count, aircraft_count), vtype=gp.GRB.BINARY)
         z = model.addMVar(
@@ -103,32 +112,6 @@ class ReducedFlowSolver(Solver):
         """
         The incoming flow to a node can not exceed the outgoing flow 
         """
-        # for aircraft, airport in itertools.product(problem.aircrafts, problem.airports):
-        #     incoming = arrival_map[airport.id]
-        #     outgoing = departure_map[airport.id]
-
-        #     i = 0
-        #     j = 0
-        #     incoming_var = aircraft.starting_airport == airport
-        #     outgoing_var = 0
-        #     while i < len(outgoing):
-        #         last_outgoing = outgoing[i]
-        #         while (
-        #             i < len(outgoing)
-        #             and outgoing[i].departure_time == last_outgoing.departure_time
-        #         ):
-        #             outgoing_var += x[outgoing[i].id - 1, aircraft.id]
-        #             i += 1
-
-        #         while (
-        #             j < len(incoming)
-        #             and last_outgoing.departure_time >= incoming[j].arrival_time
-        #         ):
-        #             incoming_var += x[incoming[j].id - 1, aircraft.id]
-        #             j += 1
-
-        #         model.addConstr(incoming_var - outgoing_var >= 0)
-
         for aircraft, airport in itertools.product(problem.aircrafts, problem.airports):
             outgoing_flights = departure_map[airport.id]
 
@@ -156,54 +139,6 @@ class ReducedFlowSolver(Solver):
         For an aircraft to perform a maintenance at and airport a:
         - it must present in the airport a for at least one instant during the maintenance
         """
-        # for aircraft, (airport_id, airport) in itertools.product(
-        #     problem.aircrafts, enumerate(problem.airports_maintenance)
-        # ):
-        #     incoming = arrival_map[airport.id]
-        #     outgoing = departure_map[airport.id]
-
-        #     for day in problem.days:
-        #         i = j = 0
-        #         incoming_var = aircraft.starting_airport == airport
-        #         outgoing_var = 0
-        #         maintenance_start, maintenance_end = problem.get_maintenance_interval(
-        #             day
-        #         )
-
-        #         # Add all the flight before the maintenance
-        #         while (
-        #             i < len(incoming) and incoming[i].arrival_time < maintenance_start
-        #         ):
-        #             incoming_var += x[incoming[i].id - 1, aircraft.id]
-        #             i += 1
-        #         while (
-        #             j < len(outgoing) and outgoing[j].departure_time < maintenance_start
-        #         ):
-        #             outgoing_var += x[outgoing[j].id - 1, aircraft.id]
-        #             j += 1
-
-        #         exists_during_maintenance = 0
-        #         while i < len(incoming) and incoming[i].arrival_time <= maintenance_end:
-        #             last_incoming = incoming[i]
-        #             while (
-        #                 i < len(incoming)
-        #                 and incoming[i].arrival_time == last_incoming.arrival_time
-        #             ):
-        #                 incoming_var += x[incoming[i].id - 1, aircraft.id]
-        #                 i += 1
-
-        #             while (
-        #                 j < len(outgoing)
-        #                 and outgoing[j].departure_time <= last_outgoing.arrival_time
-        #             ):
-        #                 outgoing_var += x[outgoing[j].id - 1, aircraft.id]
-        #                 j += 1
-
-        #             exists_during_maintenance += incoming_var - outgoing_var
-
-        #         model.addConstr(
-        #             exists_during_maintenance >= z[aircraft.id, airport_id, day]
-        #         )
         for aircraft, (airport_id, airport) in itertools.product(
             problem.aircrafts, enumerate(problem.airports_maintenance)
         ):
@@ -234,6 +169,11 @@ class ReducedFlowSolver(Solver):
 
         model.update()
         model.optimize()
+
+        if model.Status == gp.GRB.INFEASIBLE or (
+            model.Status == gp.GRB.TIME_LIMIT and model.SolCount == 0
+        ):
+            return None
 
         if model.Status == gp.GRB.INFEASIBLE:
             print("Warning: the problem is infeasable")
@@ -286,11 +226,11 @@ class ReducedFlowSolver(Solver):
         i = 0
         while i < len(incoming_flights) and incoming_flights[i].arrival_time <= t:
             incoming_var += x[incoming_flights[i].id - 1, plane.id]
-            i+=1
+            i += 1
 
         j = 0
         while j < len(outgoing_flights) and outgoing_flights[j].departure_time <= t:
             outgoing_var += x[outgoing_flights[j].id - 1, plane.id]
-            j+=1
+            j += 1
 
         return incoming_var - outgoing_var
