@@ -41,7 +41,7 @@ def parse_problem(filepath: str):
 
 
 def parse_problem_with_maintenance(filepath: str):
-    with open(filepath, "r") as file:
+    with open(filepath, 'r', encoding="ISO-8859-1") as file:
         data = file.read().split(";\n")
         Airports = data[0].replace("Airports =  ", "").strip("{}").split(",")[:-1]
 

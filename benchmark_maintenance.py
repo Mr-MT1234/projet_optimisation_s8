@@ -52,16 +52,16 @@ class BenchmarkResult:
 def benchmark_solver(
     solver, problem, optimal_solution, name, instance
 ) -> BenchmarkResult:
-    for flight in problem.flights:
-        flight.arrival_time += 30
+    # for flight in problem.flights:
+    #     flight.arrival_time += 30
 
     start_flow = datetime.now()
     solution = run_with_timeout(solver.solve_maintenance, (problem,), SOLUTION_TIMEOUT)
     end_flow = datetime.now()
     solution_time = (end_flow - start_flow).total_seconds()
 
-    for flight in problem.flights:
-        flight.arrival_time -= 30
+    # for flight in problem.flights:
+    #     flight.arrival_time -= 30
     if solution:
         cost = solution.cost
         gap = cost - optimal_solution.cost
