@@ -129,8 +129,9 @@ class FlowSolver(Solver):
         maintenance_time = problem.get_maintenance_time()
         if maintenance_time > 6:
             maintenance_time = 2
+            
         number_of_flights = len(problem.flights)
-        additional_flights = [Flight(number_of_flights + i * len(problem.airports_maintenance) + j + 1, maintenance_airport, maintenance_airport, (24*(i+2)+maintenance_time)*60, (24*(i+2)+maintenance_time)*60, i+1)
+        additional_flights = [Flight(number_of_flights + i * len(problem.airports_maintenance) + j + 1, maintenance_airport, maintenance_airport, (24*(i+1)+maintenance_time)*60, (24*(i+1)+maintenance_time)*60, i+1)
                 for i in problem.days
                 for j, maintenance_airport in enumerate(problem.airports_maintenance)
                 ]
@@ -249,7 +250,7 @@ class FlowSolver(Solver):
         """
         for aircraft in problem.aircrafts:
             days = [day+1 for day in problem.days]
-            for i in range(len(days)-problem.max_maintenace_delay):
+            for i in range(len(days)-problem.max_maintenace_delay+1):
                 window_days = days[i:i+problem.max_maintenace_delay]
                 window_flights = [
                     f for f in additional_flights
