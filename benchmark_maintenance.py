@@ -165,7 +165,7 @@ with open(comparaison_file, "a", newline="") as f:
     )
 
     for params in itertools.product(D, P, H, D_MAX):
-        for i in range(6):
+        for i in range(0):
             instance = (*params, i)
             if instance in already_benchmarked:
                 print(f"skipping {instance} since its already present in the comparaison file")
