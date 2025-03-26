@@ -1,11 +1,8 @@
 import pickle
 import os
 from datetime import datetime
-import multiprocessing
 import itertools
-import random
 import csv
-import sys
 
 import matplotlib.pyplot as plt
 from func_timeout import func_timeout, FunctionTimedOut
@@ -165,7 +162,7 @@ with open(comparaison_file, "a", newline="") as f:
     )
 
     for params in itertools.product(D, P, H, D_MAX):
-        for i in range(0):
+        for i in range(6):
             instance = (*params, i)
             if instance in already_benchmarked:
                 print(f"skipping {instance} since its already present in the comparaison file")
