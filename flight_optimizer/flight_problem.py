@@ -53,6 +53,7 @@ class FlightProblem:
 
 @dataclass
 class FlightProblemMaintenance:
+    
     airports: list[Airport]
     airports_maintenance: list[Airport]
     aircrafts: list[Aircraft]

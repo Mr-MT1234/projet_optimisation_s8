@@ -125,6 +125,7 @@ class FlowSolver(Solver):
         return FlightSolution.from_assignment(assignment, problem)
     
     def solve_maintenance(self, problem: FlightProblemMaintenance):
+        
         maintenance_time = problem.get_maintenance_time()
         if maintenance_time > 6:
             maintenance_time = 2
