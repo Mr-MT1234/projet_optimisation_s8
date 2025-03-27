@@ -35,8 +35,8 @@ class BenchmarkResult:
     cost: float
     gap: float
     relative_gap: float
-    valid:bool
-    optimal
+    valid: bool
+    optimal: bool
 
 
 def benchmark_solver(
@@ -105,7 +105,14 @@ def benchmark_solver(
 
     relative_gap = round(gap / optimal_solution.cost * 100, 2)
 
-    return BenchmarkResult(solution_time, cost, gap, relative_gap)
+    return BenchmarkResult(
+        solution_time,
+        cost,
+        gap,
+        relative_gap,
+        solution.is_valide()[0] if solution else False,
+        solution_time >= SOLUTION_TIMEOUT,
+    )
 
 
 flow_solver = FlowSolver()
@@ -124,8 +131,14 @@ if os.path.exists(comparaison_file):
         reader = csv.reader(f, delimiter=",")
         next(reader)
 
-        for (density, planes, horizon,d_max, i, *rest) in reader:
-            density, planes, horizon, d_max, i = float(density), int(planes), int(horizon), int(d_max), int(i)
+        for (density, planes, horizon, d_max, i, *rest) in reader:
+            density, planes, horizon, d_max, i = (
+                float(density),
+                int(planes),
+                int(horizon),
+                int(d_max),
+                int(i),
+            )
             if density == 1.0:
                 dentity = 1
             already_benchmarked.add((density, planes, horizon, d_max, i))
@@ -151,8 +164,8 @@ with open(comparaison_file, "a", newline="") as f:
             "reduced_cost",
             "reduced_gap",
             "reduced_relative_gap (%)",
-            "valid?", 
-            "optimal?"
+            "valid?",
+            "optimal?",
         ]
     )
 
@@ -160,13 +173,19 @@ with open(comparaison_file, "a", newline="") as f:
         for i in range(6):
             instance = (*params, i)
             if instance in already_benchmarked:
-                print(f"skipping {instance} since its already present in the comparaison file")
+                print(
+                    f"skipping {instance} since its already present in the comparaison file"
+                )
                 continue
 
             print(f"Loading problem {instance}...")
             try:
-                problem = FlightProblemMaintenance.from_file(problem_path(*instance), params[3])
-                optimal_solution = FlightSolutionMaintenance.from_file(solution_path(*instance), problem)
+                problem = FlightProblemMaintenance.from_file(
+                    problem_path(*instance), params[3]
+                )
+                optimal_solution = FlightSolutionMaintenance.from_file(
+                    solution_path(*instance), problem
+                )
             except Exception as e:
                 print(e)
                 print(f"couldn't load {instance}, skipping")
@@ -174,7 +193,11 @@ with open(comparaison_file, "a", newline="") as f:
 
             print("Benchmarking ReducedFlowSolver")
             reduced_results = benchmark_solver(
-                reduced_solver, problem, optimal_solution, "reduced_flow_maintnance", instance
+                reduced_solver,
+                problem,
+                optimal_solution,
+                "reduced_flow_maintnance",
+                instance,
             )
 
             writer.writerow(
@@ -188,6 +211,7 @@ with open(comparaison_file, "a", newline="") as f:
                     reduced_results.cost,
                     reduced_results.gap,
                     reduced_results.relative_gap,
-
+                    reduced_results.valid,
+                    reduced_results.optimal,
                 ]
             )

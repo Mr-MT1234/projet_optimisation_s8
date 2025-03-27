@@ -1,6 +1,6 @@
 Solution:
 cost=3491980.0
-execution time=26.046719s
+execution time=21.176617s
 Flights assigned to aircraft 0
 	 Flight 1 from BCN to HAM (525 - 715)
 	 Flight 2 from HAM to LGW (750 - 955)

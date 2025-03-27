@@ -1,6 +1,6 @@
 Solution:
 cost=3641494.0
-execution time=41.034046s
+execution time=22.274865s
 Flights assigned to aircraft 0
 	 Flight 1 from BCN to HAM (525 - 715)
 	 Flight 91 from HAM to MAD (740 - 1015)

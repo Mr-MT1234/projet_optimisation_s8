@@ -1,6 +1,6 @@
 Solution:
 cost=3502551.0
-execution time=22.583268s
+execution time=18.661766s
 Flights assigned to aircraft 0
 	 Flight 1 from BCN to HAM (525 - 715)
 	 Flight 222 from HAM to NCE (825 - 925)

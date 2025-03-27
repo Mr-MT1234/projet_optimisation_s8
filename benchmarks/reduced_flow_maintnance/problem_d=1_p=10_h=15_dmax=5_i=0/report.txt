@@ -1,6 +1,6 @@
 Solution:
 cost=3481932.0
-execution time=39.149445s
+execution time=18.800423s
 Flights assigned to aircraft 0
 	 Flight 1 from BCN to HAM (525 - 715)
 	 Flight 144 from HAM to NCE (825 - 925)

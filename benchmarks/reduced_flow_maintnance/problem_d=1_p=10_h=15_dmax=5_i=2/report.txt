@@ -1,6 +1,6 @@
 Solution:
 cost=3561749.0
-execution time=27.211349s
+execution time=19.883301s
 Flights assigned to aircraft 0
 	 Flight 386 from BCN to HEW (555 - 720)
 	 Flight 387 from HEW to LUX (800 - 910)

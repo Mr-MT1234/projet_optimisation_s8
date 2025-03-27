@@ -1,6 +1,6 @@
 Solution:
 cost=3559294.0
-execution time=43.651347s
+execution time=32.123198s
 Flights assigned to aircraft 0
 	 Flight 380 from BCN to HEW (555 - 720)
 	 Flight 381 from HEW to LUX (800 - 910)
