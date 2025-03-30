@@ -304,26 +304,32 @@ class FlightSolutionMaintenance:
             current_instant = 0
             current_airport = aircraft.starting_airport
             current_maintenance = 0
+            maintenance_day, maintenance_airport = maintenances[current_maintenance]
+            maintenance_start, maintenance_end = self.get_maintenance_interval(
+                maintenance_day
+            )
 
             for flight in flights:
-                if current_maintenance >= len(maintenances):
-                    break
 
-                maintenance_day, maintenance_airport = maintenances[current_maintenance]
-                maintenance_start, maintenance_end = self.get_maintenance_interval(
-                    maintenance_day
-                )
-                if current_airport == maintenance_airport and (
+                while current_airport == maintenance_airport and (
                     current_instant <= maintenance_start <= flight.departure_time
                     or current_instant <= maintenance_end <= flight.departure_time
                     or maintenance_start <= current_instant <= maintenance_end
                 ):
                     current_maintenance += 1
+                    if current_maintenance >= len(maintenances):
+                        break
+                    maintenance_day, maintenance_airport = maintenances[
+                        current_maintenance
+                    ]
+                    maintenance_start, maintenance_end = self.get_maintenance_interval(
+                        maintenance_day
+                    )
 
                 current_airport = flight.arrival_airport
                 current_instant = flight.arrival_time
 
-            if current_maintenance < len(maintenances):
+            while current_maintenance < len(maintenances):
                 maintenance_day, maintenance_airport = maintenances[current_maintenance]
                 maintenance_start, maintenance_end = self.get_maintenance_interval(
                     maintenance_day
@@ -370,11 +376,14 @@ class FlightSolutionMaintenance:
                 False,
                 f"Maintenance capacity is not respected in {[(day, airport.id) for (day, airport.id), v in occupancy.items() if v > self.max_maintenace_delay]}",
             )
-        
+
         # Check that maintenances are only done in maintenance airports
         for maintenances in self.maintenances.values():
             for _, airport in maintenances:
                 if airport not in self.airports_maintenance:
-                    return (False, f"The airport {airport} was used for maintenance, where it does not support it")
+                    return (
+                        False,
+                        f"The airport {airport} was used for maintenance, where it does not support it",
+                    )
 
         return (True, "Everything is fine")
