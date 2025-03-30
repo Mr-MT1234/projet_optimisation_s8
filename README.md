@@ -2,6 +2,15 @@
 
 The **Tail Assignment Problem** involves optimizing the allocation of flights to aircraft to minimize costs. This project explores various optimization models to find optimal or near-optimal solutions for this problem.
 
+![](figures/example_solution.png)
+An example of a solution to the instance with maintenance constraints $\left(d=1,p=10,h=15,d_{max}=4, i=3\right)$
+
+![](figures/example_solution2.png)
+An example of a solution to the instance with maintenance constraints $\left(d=0.7,p=10,h=15, i=0\right)$
+
+![](figures/example_solution3.png)
+A representation of the dependency graph built by the model 2 during resolution for the instance $\left(d=0.5,p=10,h=7, i=0\right)$
+
 ## Setup
 
 To set up the project, follow these steps:
