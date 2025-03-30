@@ -153,6 +153,9 @@ class ReducedFlowSolver(Solver):
                     if maintenance_strat <= t <= maintenance_end
                 }
 
+                arrival_instants_during_maintenance.add(maintenance_strat)
+                arrival_instants_during_maintenance.add(maintenance_end)
+
                 exists_during_maintenance = sum(
                     self._E(aircraft, airport, t, departure_map, arrival_map, x)
                     for t in arrival_instants_during_maintenance
