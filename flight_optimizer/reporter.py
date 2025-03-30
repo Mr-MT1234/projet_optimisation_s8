@@ -83,7 +83,7 @@ class Reporter:
                         plt.plot(
                             [start, end],
                             [aircraft-0.2, aircraft-0.2],
-                            color+'--',
+                            color="#29BF12",
                         )
 
                         plt.text(
@@ -91,7 +91,7 @@ class Reporter:
                         aircraft-0.2,
                         airport.name,
                         fontsize=10,
-                        color=color,
+                        color="#29BF12",
                         verticalalignment="top"
                     )
                 pass

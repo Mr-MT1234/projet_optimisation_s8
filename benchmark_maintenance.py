@@ -142,32 +142,17 @@ if os.path.exists(comparaison_file):
             if density == 1.0:
                 dentity = 1
             already_benchmarked.add((density, planes, horizon, d_max, i))
+else:
+    with open(comparaison_file, "w") as f:
+        f.write(
+            "density, planes, horizon, d_max, index, reduced_calc_time (s), reduced_cost, reduced_gap, reduced_relative_gap (%), valid?, optimal?\n"
+        )
 
 
 print(already_benchmarked)
 
 with open(comparaison_file, "a", newline="") as f:
     writer = csv.writer(f, delimiter=",", quoting=csv.QUOTE_MINIMAL)
-
-    writer.writerow(
-        [
-            "density",
-            "planes",
-            "horizon",
-            "d_max",
-            "index",
-            # "flow_calc_time (s)",
-            # "flow_cost",
-            # "flow_gap",
-            # "flow_relative_gap (%)",
-            "reduced_calc_time (s)",
-            "reduced_cost",
-            "reduced_gap",
-            "reduced_relative_gap (%)",
-            "valid?",
-            "optimal?",
-        ]
-    )
 
     for params in itertools.product(D, P, H, D_MAX):
         for i in range(6):
@@ -203,10 +188,6 @@ with open(comparaison_file, "a", newline="") as f:
             writer.writerow(
                 [
                     *instance,
-                    # flow_results.execution_time,
-                    # flow_results.cost,
-                    # flow_results.gap,
-                    # flow_results.relative_gap,
                     reduced_results.execution_time,
                     reduced_results.cost,
                     reduced_results.gap,
@@ -215,3 +196,5 @@ with open(comparaison_file, "a", newline="") as f:
                     reduced_results.optimal,
                 ]
             )
+
+            f.flush()
