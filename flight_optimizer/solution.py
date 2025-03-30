@@ -105,13 +105,14 @@ class FlightSolution:
                         f"The assignment contains two consucative flights with incompatible airports for the aircraft {aircraft.id} (flights {f1.id} and {f2.id})",
                     )
 
-            # Check that aircraft start at the correct airport
-            initial_flight = flights[0]
-            if initial_flight.departure_airport != aircraft.starting_airport:
-                return (
-                    False,
-                    f"The assignment requires the aircraft {aircraft.id} starts from airport {initial_flight.departure_airport}, but it start at {aircraft.starting_airport} ",
-                )
+            # Check that aircraft start at the correct airport, if it does any flight at all
+            if flights:
+                initial_flight = flights[0]
+                if initial_flight.departure_airport != aircraft.starting_airport:
+                    return (
+                        False,
+                        f"The assignment requires the aircraft {aircraft.id} starts from airport {initial_flight.departure_airport}, but it start at {aircraft.starting_airport} ",
+                    )
 
         # Check all flight where assigned
         flight_exits = [False] * len(self.flights)
@@ -340,6 +341,8 @@ class FlightSolutionMaintenance:
                     and current_instant <= maintenance_end
                 ):
                     current_maintenance += 1
+                else:
+                    break
 
             if current_maintenance < len(maintenances):
                 return (
