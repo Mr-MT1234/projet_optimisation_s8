@@ -22,7 +22,7 @@ H = [7, 15, 21, 30]
 
 parser = argparse.ArgumentParser(
     prog="benchmark",
-    description="Solves the flight planing problem provided by the arguments and outputs the results",
+    description="Solves the tail assignement problem with no maintenance contraints  provided by an instance and outputs the results",
 )
 
 parser.add_argument(
@@ -51,7 +51,7 @@ parser.add_argument(
     "-m",
     "--method",
     type=str,
-    choices=["interval", "flow"],
+    choices=["interval", "flow", "reduced"],
     help="the mothod to be used",
 )
 
@@ -62,18 +62,19 @@ args = parser.parse_args()
 if args.density == 1.0:
     args.density = 1
 
-if args.method == "interval":
-    solver = IntervalSolver()
-if args.method == "flow":
-    solver = FlowSolver()
+match args.method:
+    case "interval": 
+        solver = IntervalSolver()
+    case "flow": 
+        solver = FlowSolver()
+    case "reduced":
+        solver = ReducedFlowSolver()
 
 print("Loading problem ...")
 problem = FlightProblem.from_file(
     problem_path(args.density, args.planes, args.horizon, args.index)
 )
 
-for flight in problem.flights:
-    flight.arrival_time += 30
 
 correct_solution = FlightSolution.from_file(
     solution_path(args.density, args.planes, args.horizon, args.index), problem
@@ -81,9 +82,15 @@ correct_solution = FlightSolution.from_file(
 
 print("Solving ...")
 
+# Adding 30min to the arrival time of all flights to encode a turn time of 30min
+for flight in problem.flights:
+    flight.arrival_time += 30
+
 start = datetime.now()
 solution = solver.solve(problem)
 end = datetime.now()
+for flight in problem.flights:
+    flight.arrival_time -= 30
 
 execution_time = (end - start).total_seconds()
 
@@ -104,9 +111,9 @@ if not os.path.exists(benchmark_dir):
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
-fig.savefig(os.path.join(output_dir, "visualisation.pdf"), format="pdf")
+fig.savefig(os.path.join(output_dir, "timeline.pdf"), format="pdf")
 
-with open("solution.pickle", "wb") as file:
+with open(os.path.join(output_dir, "solution.pickle"), "wb") as file:
     pickle.dump(solution, file)
 
 reporter.report_txt(
@@ -123,3 +130,6 @@ print(
     f"cost relative delta: {np.round((correct_solution.cost - solution.cost)/ correct_solution.cost * 100, 3)}%"
 )
 print("execution time: ", execution_time)
+
+fig.show()
+plt.show()

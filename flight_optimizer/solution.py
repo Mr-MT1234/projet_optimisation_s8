@@ -42,6 +42,16 @@ class FlightSolution:
 
     @classmethod
     def from_file(cls, path: str, problem: FlightProblem):
+        """
+        Create an instance of FlightSolution from a solution file in the dataset:
+
+        Args:
+            - path: the path to the problem to be loaded
+            - problem : the FlightPloblem corresponding to this solution
+
+        Returns:
+            The solution represented by the file 'path'
+        """
         assignment = parse_solution(path)
 
         cost = 0.0
@@ -66,6 +76,16 @@ class FlightSolution:
 
     @classmethod
     def from_assignment(cls, assignment: dict[int, list[int]], problem: FlightProblem):
+        """
+        Create an instance of FlightSolution from a dictionairy of assignment:
+
+        Args:
+            - assignment: a dict that associates a aircraft id to a list of ids of the flights assigned to it 
+            - problem : the FlightPloblem corresponding to this solution
+
+        Returns:
+            The solution represented by the assignement dict
+        """
         cost = 0
 
         for i, flights in assignment.items():
@@ -86,7 +106,15 @@ class FlightSolution:
             cost=cost,
         )
 
-    def is_valide(self) -> tuple[bool, str]:
+    def is_valid(self) -> tuple[bool, str]:
+        """
+        Validate if this solution is compatible with constraints.
+
+        Returns:
+            (is_valid, reason): tuple[bool, str]
+            - is_valid: True if all contraints are verified, False otherwise
+            - reason: if is_valid == False, will contain an explanaition of the specific problem found in the solution
+        """
         for aircraft in self.aircrafts:
             flights: list[Flight] = self.assignment[aircraft.id]
             flights = sorted(flights, key=lambda x: x.departure_time)
@@ -176,6 +204,16 @@ class FlightSolutionMaintenance:
 
     @classmethod
     def from_file(cls, path: str, problem: FlightProblemMaintenance):
+        """
+        Create an instance of FlightSolution from a solution file in the dataset:
+
+        Args:
+            - path: the path to the problem to be loaded
+            - problem : the FlightPloblemMaintenance corresponding to this solution
+
+        Returns:
+            The solution represented by the file 'path'
+        """
         assignment, maintenances = parse_solution_with_maintenance(path)
 
         cost = 0.0
@@ -222,6 +260,18 @@ class FlightSolutionMaintenance:
         maintenances: dict[int, list[tuple[int, Airport]]],
         problem: FlightProblemMaintenance,
     ):
+        """
+        Create an instance of FlightSolution from dictionairies of assignments and maintenances:
+
+        Args:
+            - assignment: a dict that associates an aircraft's id to a list of ids of the flights assigned to it 
+            - maintenances: a dict that associates an aircraft's id to a list of pairs of the form (maintenance_day, maintenance_airport)
+                discribing the maintenances assigned to the aircraft.
+            - problem : the FlightPloblem corresponding to this solution.
+
+        Returns:
+            The solution represented by the assignement dict
+        """
         cost = 0
 
         for i, flights in assignment.items():
@@ -259,7 +309,15 @@ class FlightSolutionMaintenance:
             airports_maintenance=problem.airports_maintenance,
         )
 
-    def is_valide(self) -> tuple[bool, str]:
+    def is_valid(self) -> tuple[bool, str]:
+        """
+        Validate if this solution is compatible with constraints.
+
+        Returns:
+            (is_valid, reason): tuple[bool, str]
+            - is_valid: True if all contraints are verified, False otherwise
+            - reason: if is_valid == False, will contain an explanaition of the specific problem found in the solution
+        """
         for aircraft in self.aircrafts:
             flights: list[Flight] = self.assignment[aircraft.id]
             flights = sorted(flights, key=lambda x: x.departure_time)

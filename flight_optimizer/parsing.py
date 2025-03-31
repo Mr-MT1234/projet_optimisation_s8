@@ -3,6 +3,9 @@ from .commun import *
 
 
 def parse_problem(filepath: str):
+    """
+    This function is not meant to be called directly by the user. Parses a dataset problem file and returns it's contents.
+    """
     with open(filepath, "r") as file:
         data = file.read().split(";\n")
         Airports = data[0].replace("Airports =  ", "").strip("{}").split(",")[:-1]
@@ -41,6 +44,9 @@ def parse_problem(filepath: str):
 
 
 def parse_problem_with_maintenance(filepath: str):
+    """
+    This function is not meant to be called directly by the user. Parses a dataset problem with maintenances file and returns it's contents.
+    """
     with open(filepath, 'r', encoding="ISO-8859-1") as file:
         data = file.read().split(";\n")
         Airports = data[0].replace("Airports =  ", "").strip("{}").split(",")[:-1]
@@ -110,6 +116,9 @@ def parse_problem_with_maintenance(filepath: str):
 
 
 def parse_solution(path):
+    """
+    This function is not meant to be called directly by the user. Parses a dataset solution file and returns it's contents.
+    """
     assignment = {}
 
     with open(path, "r", encoding="ISO-8859-1") as f:
@@ -128,6 +137,9 @@ def parse_solution(path):
 
 
 def parse_solution_with_maintenance(path):
+    """
+    This function is not meant to be called directly by the user. Parses a dataset solution with maintenance file and returns it's contents.
+    """
 
     assignment = {}
     maintenance = {}

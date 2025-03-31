@@ -110,7 +110,7 @@ def benchmark_solver(
         cost,
         gap,
         relative_gap,
-        solution.is_valide()[0] if solution else False,
+        solution.is_valid()[0] if solution else False,
         solution_time < SOLUTION_TIMEOUT,
     )
 

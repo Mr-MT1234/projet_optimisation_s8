@@ -14,8 +14,22 @@ from .graph_utils import inverse_graph
 class Reporter:
 
     def plot_solution(
-        self, solutions: list[FlightSolution | FlightSolutionMaintenance], colors: list | None = None, legend=None
+        self,
+        solutions: list[FlightSolution | FlightSolutionMaintenance],
+        colors: list | None = None,
+        legend=None,
     ):
+        """
+        Plots the timeline of a list of solution (whether with or without maintenance) and returns it in the form of a matplotlib figure.
+
+        Args:
+            solution: a list of solutions to be ploted.
+            colors(optional): a list of the respective colors to be used in the plot of each solution timeline.
+            legend(optional): a list of the respective labels to be added to the plot.
+
+        Returns:
+            A matplotlib.pyplot.Figure containing the plot
+        """
         fig = plt.figure(figsize=(50, 10))
         ax = fig.subplots(1, 1)
         min_instant = float("inf")
@@ -40,7 +54,7 @@ class Reporter:
             min_instant = min(min(instants), min_instant)
             max_instant = max(max(instants), max_instant)
             max_aircraft = max(max(a.id for a in solution.aircrafts), max_aircraft)
-            
+
             # Drawing one line with each color to make sure the legend show up completely
             plt.plot([-1000, -1000], [-1000, -1000], color=color, label=legend)
 
@@ -64,7 +78,7 @@ class Reporter:
                         flight.departure_airport.name,
                         fontsize=10,
                         color=color,
-                        verticalalignment="bottom"
+                        verticalalignment="bottom",
                     )
                     plt.text(
                         flight.arrival_time,
@@ -73,7 +87,7 @@ class Reporter:
                         fontsize=10,
                         color=color,
                         verticalalignment="top",
-                        horizontalalignment="right"
+                        horizontalalignment="right",
                     )
 
             if isinstance(solution, FlightSolutionMaintenance):
@@ -82,21 +96,21 @@ class Reporter:
                         start, end = solution.get_maintenance_interval(day)
                         plt.plot(
                             [start, end],
-                            [aircraft-0.2, aircraft-0.2],
+                            [aircraft - 0.2, aircraft - 0.2],
                             color="#29BF12",
                         )
 
                         plt.text(
-                        (start+end)/2,
-                        aircraft-0.2,
-                        airport.name,
-                        fontsize=10,
-                        color="#29BF12",
-                        verticalalignment="top"
-                    )
+                            (start + end) / 2,
+                            aircraft - 0.2,
+                            airport.name,
+                            fontsize=10,
+                            color="#29BF12",
+                            verticalalignment="top",
+                        )
                 pass
 
-        instants_plot = np.round(np.arange(0, max_instant, 24*60), 0)
+        instants_plot = np.round(np.arange(0, max_instant, 24 * 60), 0)
         span = max_instant
 
         ax.legend()
@@ -105,7 +119,7 @@ class Reporter:
         ax.set_xlabel("Time")
         ax.set_ylabel("Aircraft")
         ax.set_title("Aircraft schedule")
-        ax.set_xlim(min_instant -0.05*span, max_instant + 0.05*span)
+        ax.set_xlim(min_instant - 0.05 * span, max_instant + 0.05 * span)
         ax.set_ylim(-1, max_aircraft + 1)
         ax.set_yticks(np.arange(-1, max_aircraft + 1, 1))
         ax.grid(True)
@@ -115,6 +129,17 @@ class Reporter:
     def report_txt(
         self, solution: FlightSolution, path: str, execution_time: float | None = None
     ):
+        """
+        Write a report about the solution the a text file:
+
+        Args:
+            - solution: the solution to be written
+            - path: the path of the output file
+            - execution_time (optional): if present, the report file will contain an entry for the execution time
+
+        Returns:
+            None
+        """
         with open(path, "w") as file:
             file.write("Solution:\n")
             file.write(f"cost={solution.cost}\n")
@@ -122,7 +147,20 @@ class Reporter:
                 file.write(f"execution time={execution_time}s\n")
             file.write(str(solution))
 
-    def plot_solution_graph(self, solution: FlightSolution, aircraft_subset=None):
+    def plot_solution_graph(
+        self, solution: FlightSolution | FlightSolutionMaintenance, aircraft_subset=None
+    ):
+        """
+        Plots the flight dependecy graph of a solution (whether with or without maintenance) and returns it in the form of a matplotlib figure
+
+        Args:
+            solution: the solution to be ploted
+            aircraft_subset(optional): a list of identifiers of aircrafts. When provided, only the paths corresponding to the specified aircraft
+                will be highlighted. Otherwise, all aircrfts are represented
+
+        Returns:
+            A matplotlib.pyplot.Figure containing the plot
+        """
         if aircraft_subset is None:
             aircraft_subset = [x.id for x in solution.aircrafts]
 
