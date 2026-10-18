@@ -1,5 +1,7 @@
 # Tail Assignment Problem
 
+This project was carried out as part of the CentraleSupélec project course, supervised by Air France. It compares different optimization models on instances with and without maintenance constraints.
+
 The **Tail Assignment Problem** involves optimizing the allocation of flights to aircraft to minimize costs. This project explores various optimization models to find optimal or near-optimal solutions for this problem.
 
 ![](figures/example_solution.png)
